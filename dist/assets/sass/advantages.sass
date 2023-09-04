@@ -1,0 +1,43 @@
+@import colors
+@import mixins
+
+#advantages
+
+.advantages
+    &-container
+        padding-top: 70px
+        padding-bottom: 70px
+    &-row
+        justify-content: center
+    &-item
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        gap: 8px
+        flex: 1 2 260px
+        max-width: 320px
+    &-icon
+        width: 60px
+        height: 60px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 0
+    &-title
+        p
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            margin-bottom: 0
+    &-description
+        p
+            color: transparentize($mainBlack, .6)
+            font-size: 12px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            text-align: center
+            text-wrap: balance
+            margin-bottom: 0
