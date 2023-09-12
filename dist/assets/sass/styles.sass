@@ -33,3 +33,28 @@ body
         border-radius: 20px
         border: 1px solid rgb(89 155 254 / 70%)
         box-shadow: 0 0 8px 2px #599bfe
+    &-form
+        .form
+            &-floating
+                margin-bottom: 20px
+            &-control
+                border-radius: 12px !important
+.wpcf7
+    &-response
+        &-output
+            margin: 0 !important
+            padding: 12px 20px !important
+            border-radius: 12px !important
+form
+    input
+        &[type="submit"]
+            @include btn()
+            @include btn_blue()
+            padding: 12px 36px
+            width: 100% !important
+            max-width: none
+            &:hover
+                svg
+                    fill: $mainBlue
+            svg
+                transition: .3s

@@ -2714,6 +2714,62 @@ body {
           box-shadow: 0 0 8px 2px #599bfe;
 }
 
+.modal-form .form-floating {
+  margin-bottom: 20px;
+}
+
+.modal-form .form-control {
+  border-radius: 12px !important;
+}
+
+.wpcf7-response-output {
+  margin: 0 !important;
+  padding: 12px 20px !important;
+  border-radius: 12px !important;
+}
+
+form input[type=submit] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s, color 0.2s;
+  -o-transition: background-color 0.3s, color 0.2s;
+  transition: background-color 0.3s, color 0.2s;
+  text-decoration: none;
+  border: none;
+  background-color: #599BFE;
+  -webkit-box-shadow: 0 0 0 2px #599BFE;
+          box-shadow: 0 0 0 2px #599BFE;
+  color: #fff;
+  padding: 12px 36px;
+  width: 100% !important;
+  max-width: none;
+}
+
+form input[type=submit]:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 2px #599BFE;
+          box-shadow: 0 0 0 2px #599BFE;
+  color: #599BFE;
+}
+
+form input[type=submit]:hover svg {
+  fill: #599BFE;
+}
+
+form input[type=submit] svg {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
 @media screen and (min-width: 768px) {
   .firstScreen-row {
     padding: 0 80px;
