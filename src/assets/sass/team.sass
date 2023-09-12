@@ -1,0 +1,58 @@
+@import colors
+@import mixins
+
+#team
+    padding: 40px 0
+    overflow: hidden
+
+.team
+    &-container
+    &-row
+    &-title
+        margin-bottom: 40px
+        h3
+            @include title_h3
+            margin-bottom: 16px
+        p
+            text-align: center
+            margin-bottom: 0
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+    &-slider
+        overflow: visible
+    &-wrapper
+    &-item
+        display: flex
+        flex-direction: column
+        max-width: 290px
+        &_photo
+            width: 100%
+            max-width: 290px
+            height: 350px
+            border-radius: 20px
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &_bio
+            margin-top: 16px
+            display: flex
+            flex-direction: column
+            gap: 6px
+            padding-right: 30px
+            .name
+                font-size: 18px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                margin-bottom: 0
+            .position
+                color: #969696
+                font-size: 14px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                margin-bottom: 0

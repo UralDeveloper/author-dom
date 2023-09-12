@@ -10,9 +10,11 @@
         display: grid
         grid-template-columns: repeat(2, 1fr)
         grid-gap: 20px
+        @media screen and ( max-width: 768px )
+            grid-template-columns: repeat(1, 1fr)
         &_header
             h3
-                @extend %title_h3
+                @include title_h3
     &-item
         display: grid
         grid-template-columns: 1fr 1.2fr
@@ -20,6 +22,10 @@
         border-radius: 20px
         overflow: hidden
         background-color: #fff
+        @media screen and ( width: 1024px )
+            grid-template-columns: repeat(1, 1fr)
+        @media screen and ( max-width: 450px )
+            grid-template-columns: repeat(1, 1fr)
         &_preview
             overflow: hidden
             max-height: 280px
@@ -33,12 +39,21 @@
             img
                 // width: auto
                 height: 100%
+                @media screen and ( width: 1024px )
+                    width: 100%
+                    height: auto
         &_information
             padding: 20px 20px 20px 0
             display: flex
             flex-direction: column
             justify-content: space-between
             gap: 8px
+            @media screen and ( width: 1024px )
+                padding-top: 0
+                padding-left: 20px
+            @media screen and ( max-width: 450px )
+                padding-top: 0
+                padding-left: 20px
         &_header
         &_title
             margin-bottom: 4px
@@ -96,8 +111,18 @@
                         line-height: 1.2em
         &_footer
             display: grid
-            grid-template-columns: 1fr max-content
+            grid-template-columns: 1fr 1fr
             grid-gap: 8px
+            @media screen and ( width: 1024px )
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 20px
+                margin-top: 20px
+            @media screen and ( max-width: 450px )
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 20px
+                margin-top: 20px
+            @media screen and ( max-width: 400px )
+                grid-template-columns: repeat(1, 1fr)
             .price
                 display: flex
                 flex-direction: column
@@ -120,5 +145,6 @@
                 a
                     padding: 4px 12px
                     text-decoration: none
-                    @extend %btn
-                    @extend %btn_blue
+                    width: 100%
+                    @include btn()
+                    @include btn_blue()

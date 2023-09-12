@@ -1,10 +1,141 @@
 @@include('modules/header.html')
+
+<!-- Доделать -->
+<div id="firstScreen">
+    <div class="swiper firstScreen-slider">
+        <div class="swiper-wrapper firstScreen-wrapper">
+            @@include('modules/items/firstScreen-item.html')
+            @@include('modules/items/firstScreen-item_tpl_2.html')
+            @@include('modules/items/firstScreen-item_tpl_3.html')
+        </div>
+        <div class="swiper-button-next">
+            <img src="@img/icons/chevron_right.svg" alt="">
+        </div>
+        <div class="swiper-button-prev">
+            <img src="@img/icons/chevron_left.svg" alt="">
+        </div>
+    </div>
+</div>
+
+
 <div id="advantages">
     <div class="advantages-container container">
         <div class="advantages-row row">
             @@loop('modules/items/advantages-item.html',[
-                {},{},{},{},{}
+                {
+                    'img_name' : 'personal_manager.svg',
+                    'title' : 'Личный менеджер',
+                    'text' : 'Персональный менеджер на всех этапах работ',
+                },
+                {
+                    'img_name' : 'payment_in_installments.svg',
+                    'title' : 'Оплата частями',
+                    'text' : 'Возможность оплачивать услуги частями',
+                },
+                {
+                    'img_name' : 'mortgage.svg',
+                    'title' : 'Ипотека и субсидии',
+                    'text' : 'Работаем с любым видом ипотеки и субсидий',
+                },
+                {
+                    'img_name' : 'quality.svg',
+                    'title' : 'Качество',
+                    'text' : 'Собственный отдел закупок и контроля качества',
+                },
+                {
+                    'img_name' : 'fix_price.svg',
+                    'title' : 'Фиксированная цена',
+                    'text' : 'Исключено удорожание цены по договору',
+                },
             ])
+        </div>
+    </div>
+</div>
+
+<div id="actions">
+    <div class="container actions-container">
+        <div class="row actions-row">
+            <div class="col-lg-4 actions-item_static">
+                <div class="actions-item_static-title">
+                    <h3>Акции</h3>
+                    <p>Вы можете выбрать один, два или три подарка при заказе дома</p>
+                </div>
+                <div class="actions-item_static-list">
+                    <dl>
+                        <dt>
+                            <img src="@img/icons/home.svg">
+                            <div class="title"><span>до</span> 100 м<sup>2</sup></div>
+                        </dt>
+                        <dd>1 <img src="@img/icons/redeem_blue.svg"></dd>
+                        <dt>
+                            <img src="@img/icons/home.svg">
+                            <div class="title"><span>от</span> 100 м<sup>2</sup> <span>до</span> 150 м<sup>2</sup></div>
+                        </dt>
+                        <dd>2 <img src="@img/icons/redeem_blue.svg"></dd>
+                        <dt>
+                            <img src="@img/icons/home.svg">
+                            <div class="title"><span>от</span> 150 м<sup>2</sup></div>
+                        </dt>
+                        <dd>3 <img src="@img/icons/redeem_blue.svg"></dd>
+                    </dl>
+                </div>
+                <div class="actions-item_static-btn">
+                    <button>Получить предложение
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                <rect width="24" height="24" fill="#D9D9D9" />
+                            </mask>
+                            <g mask="url(#mask0_262_13243)">
+                                <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-8 actions-item">
+                <div class="swiper actions-slider">
+                    <div class="swiper-wrapper actions-slider_wrapper">
+                        @@loop('modules/items/actions-item.html',[
+                            {
+                                'img' : 'kitchen.png',
+                                'title' : 'Кухня с техникой в подарок'
+                            },
+                            {
+                                'img' : 'mangal.png',
+                                'title' : 'Обустройство зоны барбекю в подарок'
+                            },
+                            {
+                                'img' : 'gates.png',
+                                'title' : 'Откатаные ворота с автоматикой в подарок'
+                            },
+                            {
+                                'img' : 'wood.png',
+                                'title' : 'Тех. Постройка (дровник) в подарок'
+                            },
+                        ])
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="projects">
+    <div class="container projects-container">
+        <div class="row projects-row">
+            <div class="swiper projects-slider">
+                <div class="swiper-wrapper projects-wrapper">
+                    @@loop('modules/items/projects-item.html',[
+                        {},{},{},{},{},
+                    ])
+                </div>
+                <div class="swiper-button-next">
+                    <img src="@img/icons/chevron_right.svg" alt="">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="@img/icons/chevron_left.svg" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -17,8 +148,502 @@
             </div>
             <div class="catalog-row">
                 @@loop('modules/items/catalog-item.html',[
-                    {},{},{},
+                    {},{},{},{},
                 ])
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Блок про ипотеку и кредит -->
+
+<div id="housesByKey" style="background-image: url(@img/housesByKey.jpeg);">
+    <div class="housesByKey-container container">
+        <div class="housesByKey-header">
+            <h3>Дома под ключ</h3>
+            <p>Задача организации, в особенности же новая модель организационной деятельности влечет за собой процесс внедрения и модернизации позиций</p>
+        </div>
+        <div class="housesByKey-row row">
+            <div class="housesByKey-item">
+                <div class="housesByKey-item_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <mask id="mask0_105_385" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+                          <rect width="60" height="60" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_105_385)">
+                          <path d="M30 50.0961C27.5545 50.0961 25.4688 49.2331 23.7429 47.5072C22.0169 45.7812 21.1539 43.6955 21.1539 41.25H12.5C11.4688 41.25 10.586 40.8828 9.85162 40.1485C9.11725 39.4141 8.75006 38.5313 8.75006 37.5001C8.75006 31.9713 10.6106 27.1764 14.3318 23.1155C18.0529 19.0546 22.6507 16.7918 28.1251 16.3271V11.106C28.1251 10.5747 28.3048 10.1294 28.6643 9.77002C29.0239 9.41064 29.4694 9.23096 30.0008 9.23096C30.5323 9.23096 30.9775 9.41064 31.3365 9.77002C31.6955 10.1294 31.8749 10.5747 31.8749 11.106V16.3271C37.3493 16.7918 41.9471 19.0546 45.6682 23.1155C49.3894 27.1764 51.2499 31.9713 51.2499 37.5001C51.2499 38.5313 50.8828 39.4141 50.1484 40.1485C49.414 40.8828 48.5312 41.25 47.5 41.25H38.8461C38.8461 43.6955 37.9831 45.7812 36.2571 47.5072C34.5312 49.2331 32.4455 50.0961 30 50.0961ZM12.5 37.5001H47.5C47.5 32.6668 45.7917 28.5418 42.375 25.1251C38.9583 21.7084 34.8333 20.0001 30 20.0001C25.1667 20.0001 21.0417 21.7084 17.625 25.1251C14.2083 28.5418 12.5 32.6668 12.5 37.5001Z" fill="white"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="housesByKey-item_info">
+                    <div class="title">Электричество</div>
+                    <div class="text">15 кВТ</div>
+                </div>
+            </div>
+            <div class="housesByKey-item">
+                <div class="housesByKey-item_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <mask id="mask0_105_120" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+                          <rect width="60" height="60" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_105_120)">
+                          <path d="M8.26931 52.7501C7.02652 52.7501 5.96262 52.3075 5.07762 51.4225C4.19262 50.5375 3.75012 49.4736 3.75012 48.2308V31.9329C3.75012 31.2926 3.96666 30.756 4.39975 30.3229C4.83283 29.8898 5.36948 29.6732 6.00968 29.6732H53.9903C54.6305 29.6732 55.1672 29.8898 55.6002 30.3229C56.0334 30.756 56.2499 31.2926 56.2499 31.9329V48.2308C56.2499 49.4736 55.8074 50.5375 54.9224 51.4225C54.0374 52.3075 52.9735 52.7501 51.7307 52.7501H8.26931ZM17.4972 45.1539C19.4061 45.1539 21.0296 44.4855 22.3677 43.1487C23.7059 41.8119 24.3749 40.1886 24.3749 38.2789V24.8175C24.3749 23.9489 24.6786 23.2109 25.286 22.6035C25.8934 21.9961 26.6314 21.6924 27.5 21.6924C28.3686 21.6924 29.1066 21.9961 29.714 22.6035C30.3214 23.2109 30.6251 23.9489 30.6251 24.8175V38.2789C30.6251 40.1886 31.2932 41.8119 32.6294 43.1487C33.9657 44.4855 35.5883 45.1539 37.4972 45.1539C39.4061 45.1539 41.0296 44.4855 42.3677 43.1487C43.7059 41.8119 44.3749 40.1886 44.3749 38.2789V22.3175C44.3749 21.4489 44.6786 20.7109 45.286 20.1035C45.8934 19.4961 46.6314 19.1924 47.5 19.1924H51.9761L49.7452 21.4233C49.3991 21.7694 49.226 22.2005 49.226 22.7166C49.226 23.2326 49.3975 23.6622 49.7404 24.0056C50.1145 24.3489 50.551 24.5284 51.0498 24.5441C51.5486 24.5596 51.9711 24.3944 52.3172 24.0482L57.4663 18.8992C57.9182 18.4462 58.1442 17.9083 58.1442 17.2854C58.1442 16.6626 57.9182 16.1252 57.4663 15.6732L52.3172 10.5242C51.9397 10.1524 51.4991 9.96655 50.9956 9.96655C50.4921 9.96655 50.0545 10.1524 49.6827 10.5242C49.311 10.896 49.1251 11.3375 49.1251 11.8487C49.1251 12.3599 49.311 12.8014 49.6827 13.1732L51.9521 15.4426H47.5C45.5903 15.4426 43.967 16.1109 42.6302 17.4477C41.2935 18.7845 40.6251 20.4078 40.6251 22.3175V38.2789C40.6251 39.1475 40.3214 39.8855 39.714 40.4929C39.1066 41.1002 38.3686 41.4039 37.5 41.4039C36.6314 41.4039 35.8934 41.1002 35.286 40.4929C34.6786 39.8855 34.3749 39.1475 34.3749 38.2789V24.8175C34.3749 22.9078 33.7068 21.2845 32.3706 19.9477C31.0343 18.6109 29.4117 17.9426 27.5028 17.9426C25.5939 17.9426 23.9704 18.6109 22.6322 19.9477C21.2941 21.2845 20.6251 22.9078 20.6251 24.8175V38.2789C20.6251 39.1475 20.3214 39.8855 19.714 40.4929C19.1066 41.1002 18.3686 41.4039 17.5 41.4039C16.6314 41.4039 15.8934 41.1002 15.286 40.4929C14.6786 39.8855 14.3749 39.1475 14.3749 38.2789V19.8175C14.3749 19.2862 14.1952 18.8409 13.8357 18.4816C13.4761 18.1222 13.0306 17.9426 12.4992 17.9426C11.9677 17.9426 11.5225 18.1222 11.1635 18.4816C10.8045 18.8409 10.6251 19.2862 10.6251 19.8175V38.2789C10.6251 40.1886 11.2932 41.8119 12.6294 43.1487C13.9657 44.4855 15.5883 45.1539 17.4972 45.1539Z" fill="white"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="housesByKey-item_info">
+                    <div class="title">Отопление</div>
+                    <div class="text">Текст</div>
+                </div>
+            </div>
+            <div class="housesByKey-item">
+                <div class="housesByKey-item_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <mask id="mask0_105_945" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+                          <rect width="60" height="60" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_105_945)">
+                          <path d="M20.0945 43.6537C19.4674 43.6537 18.9423 43.4416 18.5192 43.0174C18.0962 42.5932 17.8846 42.0675 17.8846 41.4405C17.8846 40.8134 18.0967 40.2883 18.5209 39.8653C18.9451 39.4422 19.4708 39.2306 20.0979 39.2306C20.7249 39.2306 21.25 39.4427 21.6731 39.8669C22.0961 40.2912 22.3077 40.8168 22.3077 41.4439C22.3077 42.0709 22.0956 42.596 21.6714 43.0191C21.2472 43.4422 20.7215 43.6537 20.0945 43.6537ZM29.9983 43.6537C29.3712 43.6537 28.8461 43.4416 28.4231 43.0174C28 42.5932 27.7885 42.0675 27.7885 41.4405C27.7885 40.8134 28.0006 40.2883 28.4247 39.8653C28.849 39.4422 29.3746 39.2306 30.0017 39.2306C30.6288 39.2306 31.1539 39.4427 31.5769 39.8669C32 40.2912 32.2115 40.8168 32.2115 41.4439C32.2115 42.0709 31.9994 42.596 31.5752 43.0191C31.151 43.4422 30.6254 43.6537 29.9983 43.6537ZM39.9021 43.6537C39.2751 43.6537 38.75 43.4416 38.3269 43.0174C37.9039 42.5932 37.6923 42.0675 37.6923 41.4405C37.6923 40.8134 37.9044 40.2883 38.3286 39.8653C38.7528 39.4422 39.2785 39.2306 39.9055 39.2306C40.5326 39.2306 41.0577 39.4427 41.4808 39.8669C41.9038 40.2912 42.1154 40.8168 42.1154 41.4439C42.1154 42.0709 41.9033 42.596 41.4791 43.0191C41.0549 43.4422 40.5292 43.6537 39.9021 43.6537ZM15.9616 33.7499C15.3495 33.7499 14.8278 33.5343 14.3967 33.1032C13.9656 32.6721 13.7501 32.1505 13.7501 31.5383V29.9999C13.7501 25.8237 15.1227 22.2107 17.8679 19.1611C20.613 16.1114 24.0321 14.359 28.1251 13.9039V10.625C28.1251 10.0938 28.3048 9.64844 28.6643 9.28906C29.0239 8.92969 29.4694 8.75 30.0008 8.75C30.5323 8.75 30.9775 8.92969 31.3365 9.28906C31.6955 9.64844 31.8749 10.0938 31.8749 10.625V13.9039C35.9679 14.359 39.387 16.1114 42.1321 19.1611C44.8773 22.2107 46.2499 25.8237 46.2499 29.9999V31.5383C46.2499 32.1505 46.0344 32.6721 45.6032 33.1032C45.1722 33.5343 44.6505 33.7499 44.0384 33.7499H15.9616ZM17.5 29.9999H42.5C42.5 26.5416 41.2812 23.5937 38.8437 21.1562C36.4062 18.7187 33.4583 17.4999 30 17.4999C26.5417 17.4999 23.5937 18.7187 21.1562 21.1562C18.7187 23.5937 17.5 26.5416 17.5 29.9999ZM20.0945 51.0575C19.4674 51.0575 18.9423 50.8454 18.5192 50.4213C18.0962 49.997 17.8846 49.4714 17.8846 48.8443C17.8846 48.2172 18.0967 47.6922 18.5209 47.2691C18.9451 46.846 19.4708 46.6345 20.0979 46.6345C20.7249 46.6345 21.25 46.8466 21.6731 47.2708C22.0961 47.695 22.3077 48.2206 22.3077 48.8477C22.3077 49.4748 22.0956 49.9999 21.6714 50.4229C21.2472 50.846 20.7215 51.0575 20.0945 51.0575ZM29.9983 51.0575C29.3712 51.0575 28.8461 50.8454 28.4231 50.4213C28 49.997 27.7885 49.4714 27.7885 48.8443C27.7885 48.2172 28.0006 47.6922 28.4247 47.2691C28.849 46.846 29.3746 46.6345 30.0017 46.6345C30.6288 46.6345 31.1539 46.8466 31.5769 47.2708C32 47.695 32.2115 48.2206 32.2115 48.8477C32.2115 49.4748 31.9994 49.9999 31.5752 50.4229C31.151 50.846 30.6254 51.0575 29.9983 51.0575ZM39.9021 51.0575C39.2751 51.0575 38.75 50.8454 38.3269 50.4213C37.9039 49.997 37.6923 49.4714 37.6923 48.8443C37.6923 48.2172 37.9044 47.6922 38.3286 47.2691C38.7528 46.846 39.2785 46.6345 39.9055 46.6345C40.5326 46.6345 41.0577 46.8466 41.4808 47.2708C41.9038 47.695 42.1154 48.2206 42.1154 48.8477C42.1154 49.4748 41.9033 49.9999 41.4791 50.4229C41.0549 50.846 40.5292 51.0575 39.9021 51.0575Z" fill="white"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="housesByKey-item_info">
+                    <div class="title">Санузел</div>
+                    <div class="text">По проекту</div>
+                </div>
+            </div>
+            <div class="housesByKey-item">
+                <div class="housesByKey-item_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <mask id="mask0_105_407" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+                          <rect width="60" height="60" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_105_407)">
+                          <path d="M30 36.5144C31.2147 36.5144 32.2476 36.0889 33.0985 35.238C33.9495 34.387 34.3749 33.3541 34.3749 32.1394C34.3749 31.3274 34.2091 30.5243 33.8774 29.7299C33.5456 28.9357 32.8814 27.7837 31.8846 26.2741L30.9423 24.8799C30.7083 24.5369 30.3902 24.3654 29.988 24.3654C29.5857 24.3654 29.2676 24.5369 29.0337 24.8799L28.0919 26.2629C27.0948 27.812 26.4343 28.9712 26.1106 29.7404C25.7869 30.5096 25.6251 31.3125 25.6251 32.1492C25.6251 33.3496 26.0505 34.3772 26.9015 35.2321C27.7524 36.087 28.7852 36.5144 30 36.5144ZM29.9974 45.0961C25.8101 45.0961 22.2476 43.6265 19.3101 40.6873C16.3726 37.7481 14.9039 34.1848 14.9039 29.9974C14.9039 25.8101 16.3735 22.2476 19.3127 19.3101C22.2519 16.3726 25.8152 14.9039 30.0026 14.9039C34.1899 14.9039 37.7524 16.3735 40.6899 19.3127C43.6274 22.2519 45.0961 25.8152 45.0961 30.0026C45.0961 34.1899 43.6265 37.7524 40.6873 40.6899C37.7481 43.6274 34.1848 45.0961 29.9974 45.0961ZM51.8749 27.2115V26.875H47.7451C47.2643 24.0256 46.1658 21.4439 44.4494 19.1299C42.7331 16.8158 40.5592 15.0225 37.9279 13.7501H51.8749V13.4135C51.8749 12.8823 52.0547 12.437 52.4142 12.0776C52.7738 11.7183 53.2193 11.5386 53.7507 11.5386C54.2822 11.5386 54.7274 11.7183 55.0864 12.0776C55.4454 12.437 55.6249 12.8823 55.6249 13.4135V27.2115C55.6249 27.7428 55.4451 28.1881 55.0856 28.5474C54.726 28.9068 54.2805 29.0865 53.7491 29.0865C53.2432 29.0865 52.8749 28.8684 52.6442 28.4321C52.4134 27.9958 52.157 27.5889 51.8749 27.2115ZM4.37512 46.5865V32.7885C4.37512 32.2573 4.55489 31.8119 4.91443 31.4526C5.27398 31.0932 5.71948 30.9135 6.25093 30.9135C6.78239 30.9135 7.22762 31.0932 7.58662 31.4526C7.94558 31.8119 8.12506 32.2573 8.12506 32.7885V33.1251H12.2549C12.7357 35.9744 13.8342 38.5561 15.5506 40.8701C17.2669 43.1842 19.4407 44.9775 22.0721 46.2499H8.12506V46.5865C8.12506 47.1177 7.94529 47.563 7.58575 47.9224C7.22621 48.2818 6.78071 48.4614 6.24925 48.4614C5.71779 48.4614 5.27258 48.2818 4.91362 47.9224C4.55462 47.563 4.37512 47.1177 4.37512 46.5865Z" fill="white"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="housesByKey-item_info">
+                    <div class="title">Вода</div>
+                    <div class="text">Скважина, ксеон и насос</div>
+                </div>
+            </div>
+            <div class="housesByKey-item">
+                <div class="housesByKey-item_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <mask id="mask0_105_735" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+                        <rect width="60" height="60" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_105_735)">
+                        <path d="M15.3846 49.3748C14.7444 49.3748 14.2078 49.1583 13.7747 48.7252C13.3416 48.2921 13.1251 47.7555 13.1251 47.1153V39.3748H11.2492C10.7178 39.3748 10.2726 39.1951 9.91356 38.8356C9.5546 38.476 9.37512 38.0305 9.37512 37.4991C9.37512 36.9676 9.55481 36.5224 9.91418 36.1634C10.2736 35.8044 10.7189 35.625 11.2501 35.625H13.1251V29.3748H11.2492C10.7178 29.3748 10.2726 29.1951 9.91356 28.8356C9.5546 28.476 9.37512 28.0305 9.37512 27.4991C9.37512 26.9676 9.55481 26.5224 9.91418 26.1634C10.2736 25.8044 10.7189 25.625 11.2501 25.625H13.1251V18.7067C13.1251 18.4123 13.1795 18.1272 13.2885 17.8513C13.3975 17.5754 13.5674 17.3219 13.7984 17.091L18.4183 12.4711C18.8702 12.0192 19.3975 11.7932 20 11.7932C20.6025 11.7932 21.1298 12.0192 21.5817 12.4711L25 15.8894L28.4183 12.4711C28.8713 12.0192 29.4092 11.7932 30.0321 11.7932C30.6549 11.7932 31.1923 12.0192 31.6442 12.4711L35.0625 15.8894L38.4183 12.4711C38.8713 12.0192 39.4092 11.7932 40.0321 11.7932C40.6549 11.7932 41.1923 12.0192 41.6442 12.4711L46.2641 17.091C46.4951 17.3219 46.665 17.5754 46.774 17.8513C46.8829 18.1272 46.9374 18.4123 46.9374 18.7067V25.625H48.7555C49.2838 25.625 49.7274 25.8047 50.0864 26.1642C50.4454 26.5238 50.6249 26.9693 50.6249 27.5007C50.6249 28.0322 50.4459 28.4774 50.0881 28.8364C49.7302 29.1954 49.2868 29.3748 48.7578 29.3748H46.9374V35.625H48.7555C49.2838 35.625 49.7274 35.8047 50.0864 36.1642C50.4454 36.5238 50.6249 36.9693 50.6249 37.5007C50.6249 38.0322 50.4459 38.4774 50.0881 38.8364C49.7302 39.1954 49.2868 39.3748 48.7578 39.3748H46.9374V47.1153C46.9374 47.7555 46.7209 48.2921 46.2878 48.7252C45.8547 49.1583 45.3181 49.3748 44.6779 49.3748H15.3846ZM16.8749 25.625H23.1251V19.298L20 16.1729L16.8749 19.298V25.625ZM26.8749 25.625H33.1251V19.298L30 16.1729L26.8749 19.298V25.625ZM36.9374 25.625H43.1251V19.298L40 16.1729L36.9374 19.2595V25.625ZM16.8749 35.625H23.1251V29.3748H16.8749V35.625ZM26.8749 35.625H33.1251V29.3748H26.8749V35.625ZM36.9374 35.625H43.1251V29.3748H36.9374V35.625ZM16.8749 45.625H23.1251V39.3748H16.8749V45.625ZM26.8749 45.625H33.1251V39.3748H26.8749V45.625ZM36.9374 45.625H43.1251V39.3748H36.9374V45.625Z" fill="white"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="housesByKey-item_info">
+                    <div class="title">Забор</div>
+                    <div class="text">Профлист. Высота 2 метра</div>
+                </div>
+            </div>
+            <div class="housesByKey-item">
+                <div class="housesByKey-item_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <mask id="mask0_105_492" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+                        <rect width="60" height="60" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_105_492)">
+                        <path d="M11.2501 51.25V23.1251L30 9.01465L48.7499 23.1251V51.25H41.8749V27.476H18.1251V51.25H11.2501ZM21.8749 47.476H38.1251V41.226H21.8749V47.476ZM21.8749 37.476H38.1251V31.226H21.8749V37.476Z" fill="white"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="housesByKey-item_info">
+                    <div class="title">Автоматическиие ворота</div>
+                    <div class="text">На пульте</div>
+                </div>
+            </div>
+            <div class="housesByKey-item">
+                <div class="housesByKey-item_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <mask id="mask0_105_686" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+                        <rect width="60" height="60" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_105_686)">
+                        <path d="M11.2501 32.6442V24.0383C11.2501 21.8556 11.9384 19.9735 13.315 18.3918C14.6916 16.81 16.4071 15.8397 18.4616 15.4808V10.7693C18.4616 9.52246 18.9031 8.45756 19.7861 7.57456C20.6691 6.69152 21.734 6.25 22.9808 6.25H37.0192C38.266 6.25 39.3309 6.69152 40.2139 7.57456C41.0969 8.45756 41.5384 9.52246 41.5384 10.7693V15.4808C43.5929 15.8397 45.3084 16.81 46.685 18.3918C48.0616 19.9735 48.7499 21.8556 48.7499 24.0383V32.6442H11.2501ZM20 53.7499C17.5866 53.7499 15.5249 52.8949 13.8149 51.185C12.105 49.475 11.2501 47.4134 11.2501 44.9999V36.3941H48.7499V44.9999C48.7499 47.4134 47.895 49.475 46.1851 51.185C44.4751 52.8949 42.4134 53.7499 40 53.7499H20ZM22.2115 15.2884H27.7885C27.7885 14.6763 28.004 14.1546 28.4351 13.7236C28.8662 13.2924 29.3878 13.0769 30 13.0769C30.6122 13.0769 31.1338 13.2924 31.5649 13.7236C31.996 14.1546 32.2115 14.6763 32.2115 15.2884H37.7885V10.7693C37.7885 10.5449 37.7164 10.3606 37.5721 10.2163C37.4279 10.0721 37.2436 9.99994 37.0192 9.99994H22.9808C22.7564 9.99994 22.5721 10.0721 22.4279 10.2163C22.2836 10.3606 22.2115 10.5449 22.2115 10.7693V15.2884Z" fill="white"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="housesByKey-item_info">
+                    <div class="title">Канализация</div>
+                    <div class="text">Септик на 5 кубов</div>
+                </div>
+            </div>
+        </div>
+        <div class="housesByKey-buttons">
+            <a href="#">Заказать</a>
+        </div>
+    </div>
+</div>
+
+<div id="timeLine">
+    <div class="container timeLine-container">
+        <div class="timeLine-row_header row">
+            <h3>Этапы работ</h3>
+        </div>
+        <div class="row timeLine-row">
+            <div class="timeLine-col">
+                <div class="timeLine-line">
+                    <div class="timeLine-line_load"></div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info">
+                        @@loop('modules/items/timeLine-item.html',[
+                            {
+                                'id' : '1',
+                                'step_id' : '1',
+                                'title' : 'Бронирование',
+                                'description' : 'Первый этап покупки, после которого мы фиксируем цену и закрепляем объект за Вами. Стоимость 5000 ₽',
+                            },
+                            {
+                                'id' : '2',
+                                'step_id' : '1',
+                                'title' : 'Одобрение кредита',
+                                'description' : 'Разработка проектно-сметной документации',
+                            },
+                        ])
+                    </div>
+                    <div data-step-id="step-1" class="step_img">
+                        <img src="@img/timeLine/step_1-2.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info">
+                        @@loop('modules/items/timeLine-item.html',[
+                            {
+                            'id' : '3',
+                            'step_id' : '3',
+                            'title' : 'Подбор земельного участка',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                            {
+                            'id' : '4',
+                            'step_id' : '3',
+                            'title' : 'Разработка проектно-сметной документации',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                        ])
+                    </div>
+                    <div data-step-id="step-3" class="step_img">
+                        <img src="@img/timeLine/step_3-4.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info">
+                    @@loop('modules/items/timeLine-item.html',[
+                    {
+                    'id' : '5',
+                    'step_id' : '5',
+                    'title' : 'Оценка земельного участка',
+                    'description' : 'Разработка проектно-сметной документации',
+                    },
+                    {
+                    'id' : '6',
+                    'step_id' : '5',
+                    'title' : 'Проверка документов по земельному участку',
+                    'description' : 'Разработка проектно-сметной документации',
+                    },
+                    {
+                    'id' : '7',
+                    'step_id' : '5',
+                    'title' : 'Отправка документов на согласование в банк',
+                    'description' : 'Разработка проектно-сметной документации',
+                    },
+                    ])
+                    </div>
+                    <div data-step-id="step-5" class="step_img">
+                        <img src="@img/timeLine/step_5-7.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info">
+                        @@loop('modules/items/timeLine-item.html',[
+                            {
+                            'id' : '8',
+                            'step_id' : '8',
+                            'title' : 'Согласование сделки в банке',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                            {
+                            'id' : '9',
+                            'step_id' : '8',
+                            'title' : 'Сделка',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                        ])
+                    </div>
+                    <div data-step-id="step-8" class="step_img">
+                        <img src="@img/timeLine/step_8-9.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info">
+                        @@loop('modules/items/timeLine-item.html',[
+                            {
+                            'id' : '10',
+                            'step_id' : '10',
+                            'title' : 'Стройка',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                        ])
+                    </div>
+                    <div data-step-id="step-10" class="step_img">
+                        <img src="@img/timeLine/step_10.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info step_info_v2">
+                        @@loop('modules/items/timeLine-item.html',[
+                            {
+                            'id' : '',
+                            'step_id' : '10_1',
+                            'title' : 'Стройка',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                        ])
+                    </div>
+                    <div data-step-id="step-10_1" class="step_img">
+                        <img src="@img/timeLine/step_10_1.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info step_info_v2">
+                        @@loop('modules/items/timeLine-item.html',[
+                            {
+                            'id' : '',
+                            'step_id' : '10_2',
+                            'title' : 'Стройка',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                        ])
+                    </div>
+                    <div data-step-id="step-10_2" class="step_img">
+                        <img src="@img/timeLine/step_10_2.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info step_info_v2">
+                        @@loop('modules/items/timeLine-item.html',[
+                            {
+                            'id' : '',
+                            'step_id' : '10_3',
+                            'title' : 'Стройка',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                        ])
+                    </div>
+                    <div data-step-id="step-10_3" class="step_img">
+                        <img src="@img/timeLine/step_10_3.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info">
+                        @@loop('modules/items/timeLine-item.html',[
+                            {
+                            'id' : '11',
+                            'step_id' : '11',
+                            'title' : 'Подписание Акта приема передачи объекта (дома)',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                        ])
+                    </div>
+                    <div data-step-id="step-11" class="step_img">
+                        <img src="@img/timeLine/step_11.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info">
+                        @@loop('modules/items/timeLine-item.html',[
+                            {
+                            'id' : '12',
+                            'step_id' : '12',
+                            'title' : 'Оформление собственности',
+                            'description' : 'Разработка проектно-сметной документации',
+                            },
+                        ])
+                    </div>
+                    <div data-step-id="step-12" class="step_img">
+                        <img src="@img/timeLine/step_12.png" alt="">
+                    </div>
+                </div>
+                <div class="timeLine-row_item">
+                    <div class="step_info">
+                    @@loop('modules/items/timeLine-item.html',[
+                    {
+                    'id' : '13',
+                    'step_id' : '13',
+                    'title' : 'Вселение – новоселье!',
+                    'description' : 'Разработка проектно-сметной документации',
+                    },
+                    ])
+                    </div>
+                    <div data-step-id="step-13" class="step_img">
+                        <img src="@img/timeLine/step_13.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="howBuy">
+    <div class="howBuy-title">
+        <h3>Как купить Автор дом?</h3>
+    </div>
+    <div class="container-fluid howBuy-container">
+        <div class="howBuy-video">
+            <div class="video-preview">
+                <img src="@img/video_cover.png" alt="">
+            </div>
+            <div class="video-play">
+                <a href="#">
+                    <img src="@img/icons/play_arrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="howBuy-messageContainer">
+            <div class="howBuy-text">
+                <div class="howBuy-item">
+                    <div class="howBuy-item_icon">
+                        <img src="@img/icons/check_blue.svg" alt="">
+                    </div>
+                    <div class="howBuy-item_text">Текст</div>
+                </div>
+                <div class="howBuy-item">
+                    <div class="howBuy-item_icon">
+                        <img src="@img/icons/check_blue.svg" alt="">
+                    </div>
+                    <div class="howBuy-item_text">Текст</div>
+                </div>
+                <div class="howBuy-item">
+                    <div class="howBuy-item_icon">
+                        <img src="@img/icons/check_blue.svg" alt="">
+                    </div>
+                    <div class="howBuy-item_text">Текст</div>
+                </div>
+                <div class="howBuy-item">
+                    <div class="howBuy-item_icon">
+                        <img src="@img/icons/check_blue.svg" alt="">
+                    </div>
+                    <div class="howBuy-item_text">Текст</div>
+                </div>
+                <div class="howBuy-item">
+                    <div class="howBuy-item_icon">
+                        <img src="@img/icons/check_blue.svg" alt="">
+                    </div>
+                    <div class="howBuy-item_text">Текст</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="message">
+    <div class="container-fluid message-container">
+        <div class="message-video">
+            <div class="video-preview">
+                <img src="@img/video_cover.png" alt="">
+            </div>
+            <div class="video-play">
+                <a href="#">
+                    <img src="@img/icons/play_arrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="message-messageContainer">
+            <div class="message-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <div class="message-autograph">
+                <p>Имя Фамилия Отчество</p>
+                <img src="@img/autograph.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="team">
+    <div class="container team-container">
+        <div class="row team-row">
+            <div class="team-title">
+                <h3>Наша команда</h3>
+                <p>Головной офис</p>
+            </div>
+            <div class="swiper team-slider">
+                <div class="swiper-wrapper team-wrapper">
+                    @@loop('modules/items/team-item.html',[
+                        {
+                            'img' : 'alex.jpeg',
+                            'name' : 'Швалов Александр Михайлович',
+                            'position' : 'Директор по строительству',
+                        },
+                        {
+                            'img' : 'misha.jpeg',
+                            'name' : 'Смирнов Михаил Вячеславович',
+                            'position' : 'Директор по продажам',
+                        },
+                        {
+                            'img' : 'alik.jpeg',
+                            'name' : 'Фаткуллин Алик Радикович',
+                            'position' : 'Директор по развитию',
+                        },
+                        {
+                            'img' : 'arina.jpeg',
+                            'name' : 'Либина Арина Александровна',
+                            'position' : 'Финансовый директор',
+                        },
+                        {
+                            'img' : 'elena.jpeg',
+                            'name' : 'Макан Елена Алексеевна',
+                            'position' : 'Руководитель отдела продаж',
+                        },
+                    ])
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container portfolio-container">
+        <div class="row portfolio-row">
+            <div class="portfolio-title">
+                <h3>Портфолио</h3>
+                <p>Более 300 реализованных проектов</p>
+            </div>
+            <div class="swiper portfolio-slider">
+                <div class="swiper-wrapper portfolio-wrapper">
+                    <div class="swiper-slide portfolio-item"><img src="@img/catalog_item.jpeg"></div>
+                    <div class="swiper-slide portfolio-item"><img src="@img/feedback_item.jpeg"></div>
+                    <div class="swiper-slide portfolio-item"><img src="@img/gates.jpeg"></div>
+                    <div class="swiper-slide portfolio-item"><img src="@img/kitchen.jpeg"></div>
+                </div>
+                <div class="swiper-button-next">
+                    <img src="@img/icons/chevron_right.svg" alt="">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="@img/icons/chevron_left.svg" alt="">
+                </div>
+            </div>
+            <div class="portfolio-btn">
+                <a href="#">Показать больше
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                            <rect width="24" height="24" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_262_13243)">
+                            <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                        </g>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
@@ -30,9 +655,13 @@
             <div class="feedback-title col-12">
                 <h3>Отзывы</h3>
             </div>
-            @@loop('modules/items/feedback-item.html',[
-                {},{},{},{},{},{},
-            ])
+            <div class="swiper feedback-slider">
+                <div class="swiper-wrapper feedback-wrapper">
+                    @@loop('modules/items/feedback-item.html',[
+                        {},{},{},{},{},{},{},{},{},{},{},{},
+                    ])
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -1,0 +1,114 @@
+@import colors
+@import mixins
+
+#firstScreen
+
+.firstScreen
+    &-slide
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        min-height: 700px
+        &_bg
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 1
+            &::after
+                position: absolute
+                height: 100%
+                width: 100%
+                content: ''
+                top: 0
+                left: 0
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.60) 59.9%, rgba(0, 0, 0, 0.00) 100%)
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                user-select: none
+                pointer-events: none
+    &-container
+        position: relative
+        z-index: 2
+    &-row
+        max-width: 1080px
+        @media screen and ( min-width: 768px )
+            padding: 0 80px
+    &-info
+        display: flex
+        flex-direction: column
+        gap: 20px
+        max-width: 600px
+        h2
+            color: #fff
+            font-family: Inter
+            font-size: 28px
+            font-style: normal
+            font-weight: 700
+            line-height: 1.3em
+            text-transform: uppercase
+            text-wrap: balance
+            margin-bottom: 0
+        span
+            &.city,
+            &.sutTitle_opacity
+                font-family: Montserrat
+                font-size: 18px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                color: transparentize(#fff, .4)
+                text-transform: none
+            &.subtitle_green
+                font-size: 28px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                color: #bdfcce
+        p
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            text-wrap: balance
+            color: #fff
+    &-check
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 40px
+        margin-top: 80px
+        @media screen and ( max-width: 768px )
+            margin-top: 20px
+            grid-template-columns: repeat(1, 1fr)
+        &_item
+            display: flex
+            flex-direction: row
+            gap: 8px
+            align-items: center
+            span
+                color: #fff
+                font-size: 18px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                text-wrap: balance
+
+.firstScreen
+    &-slider
+        .swiper
+            &-button
+                &-next
+                    right: 40px
+                &-prev
+                    left: 40px
+                &-next,
+                &-prev
+                    background-color: #fff
+                    border-radius: 50px
+                    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10)
+                    width: 50px
+                    height: 50px
+                    &:after
+                        display: none

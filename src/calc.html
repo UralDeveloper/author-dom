@@ -1,0 +1,63 @@
+@@include('modules/header.html')
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <form action="#">
+                <div class="input">
+                    <label for="#price">Цена недвижимости</label>
+                    <input id="price" type="number" value="2000000">
+                </div>
+                <div class="input">
+                    <label for="#firstPay">Первоначальный взнос</label>
+                    <input id="firstPay" type="number" value="500000">
+                </div>
+                <div class="summCredit">Сумма кредита: <span></span></div>
+                <div class="input">
+                    <label for="#creditTerm">Срок кредита</label>
+                    <input id="creditTerm" type="number" value="10">
+                </div>
+                <div class="input">
+                    <label for="#rate">Ставка, %</label>
+                    <input id="rate" type="number" value="8">
+                </div>
+                <button type="submit">Рассчитать</button>
+            </form>
+        </div>
+        <div class="col-8">
+            <div class="options">
+                <div class="item summ">Сумма кредита: <span></span></div>
+                <div class="item firstPay">Первоначальный взнос: <span></span></div>
+                <div class="item overPay">Переплата по кредиты: <span></span></div>
+                <div class="item totalAmount">Общая сумма выплат: <span></span></div>
+                <div class="item thePercentageOfOverpayment">Процент переплаты: <span></span></div>
+                <div class="item endingOfPayments">Окончание выплат: <span></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="calcChart" width="500" height="500">
+    <div class="calcChart_pay">Ежемесячный платеж:<br><span></span></div>
+    <canvas id="calcChart" width="500" height="500"></canvas>
+</div>
+
+<style>
+    .calcChart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .calcChart_pay {
+        position: absolute;
+        text-align: center;
+    }
+    #calcChart {
+        max-width: 500px;
+        max-height: 500px;
+    }
+</style>
+@@include('modules/footer.html')

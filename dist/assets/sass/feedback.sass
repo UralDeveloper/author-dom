@@ -12,7 +12,7 @@
         gap: 40px 0
     &-title
         h3
-            @extend %title_h3
+            @include title_h3
     &-list
         display: flex
         flex-direction: row
@@ -21,6 +21,7 @@
         display: flex
         flex-direction: column
         gap: 20px
+        padding: 0 15px
         &_poster
             aspect-ratio: 16 / 9
             border-radius: 20px
@@ -43,8 +44,15 @@
                 justify-content: center
                 height: 100%
             img
-                object-fit: cover
-                width: 100%
+                &.poster
+                    object-fit: cover
+                    width: 100%
+                &.play
+                    position: absolute
+                    opacity: 1
+                    transition: bottom .4s, opacity .8s
+                    bottom: 45px
+                    opacity: .7
         &_info
             padding: 0 20px
             .name_date
@@ -90,5 +98,19 @@
                 line-height: normal
             .buttons
                 .btn
-                    @extend %btn
-                    @extend %btn_white
+                    @include btn()
+                    @include btn_white()
+        &:not(:hover)
+            .feedback
+                &-item
+                    &_poster
+                        img
+                            &.play
+                                bottom: -50%
+                                opacity: 0
+.fancybox__content
+    border-radius: 20px
+    overflow: hidden
+    video
+        border-radius: 20px
+        overflow: hidden

@@ -1,18 +1,21 @@
 @import colors
-%btn
+@mixin btn()
     display: flex
     align-items: center
     justify-content: center
     border-radius: 10px
     transition: background-color .3s, color 0.2s
+    text-decoration: none
+    border: none
 
-%btn_white
+@mixin btn_white()
     background-color: #fff
+    color: $mainBlack
     &:hover
         color: #fff
         background-color: $mainBlack
 
-%btn_blue
+@mixin btn_blue()
     background-color: $mainBlue
     box-shadow: 0 0 0 2px $mainBlue
     color: #fff
@@ -21,7 +24,7 @@
         box-shadow: 0 0 0 2px $mainBlue
         color: $mainBlue
 
-%title_h3
+@mixin title_h3()
     color: $mainBlack
     text-align: center
     font-family: Inter

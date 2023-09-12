@@ -1,0 +1,285 @@
+#projects {
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.projects-slider {
+  overflow: visible;
+}
+
+.projects-slider .swiper-button-next {
+  right: -40px;
+}
+
+.projects-slider .swiper-button-prev {
+  left: -40px;
+}
+
+.projects-slider .swiper-button-next,
+.projects-slider .swiper-button-prev {
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+}
+
+.projects-slider .swiper-button-next:after,
+.projects-slider .swiper-button-prev:after {
+  display: none;
+}
+
+.projects-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.projects-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects-information {
+  padding: 40px 48px;
+  background-color: #F7F7F5;
+}
+
+.projects-information_title {
+  margin-bottom: 40px;
+}
+
+.projects-information_title h4 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.projects-information_options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 26px;
+  width: 100%;
+}
+
+.projects-information_options-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-information_options-item .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+
+.projects-information_options-item .option-name {
+  color: #969696;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.projects-information_options-item .option-value {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.projects-information_variable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.projects-information_variable .nav-pills {
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects-information_variable .nav-link {
+  border-radius: 50px;
+  color: #202020;
+}
+
+.projects-information_variable .nav-link.active {
+  color: #202020;
+  background-color: #BDFCCE;
+}
+
+.projects-information_variable .tab {
+  margin-top: 10px;
+}
+
+.projects-information_variable .tab-content {
+  padding: 0 20px;
+}
+
+.projects-information_variable .tab-price .price-container {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.projects-information_variable .tab-includes {
+  margin-top: 10px;
+}
+
+.projects-information_variable .tab-includes ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-gap: 10px;
+}
+
+.projects-information_variable .tab-includes ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.projects-priceBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.projects-priceBlock_btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s, color 0.2s;
+  -o-transition: background-color 0.3s, color 0.2s;
+  transition: background-color 0.3s, color 0.2s;
+  text-decoration: none;
+  border: none;
+  background-color: #599BFE;
+  -webkit-box-shadow: 0 0 0 2px #599BFE;
+          box-shadow: 0 0 0 2px #599BFE;
+  color: #fff;
+  padding: 8px 16px;
+  max-width: none;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.projects-priceBlock_btn button:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 2px #599BFE;
+          box-shadow: 0 0 0 2px #599BFE;
+  color: #599BFE;
+}
+
+.projects-priceBlock_btn button:hover svg {
+  fill: #599BFE;
+}
+
+.projects-priceBlock_btn button svg {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projects-priceBlock_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+
+.projects-priceBlock_price span.mainPrice {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.projects-priceBlock_price span.priceMetr {
+  color: #969696;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@supports (-webkit-appearance:none){
+
+}
