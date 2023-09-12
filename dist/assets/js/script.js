@@ -98,3 +98,82 @@ if(document.getElementById('calcChart')) {
 	// назначение обработчика события submit
 	form.addEventListener("submit", calculate);
 }
+
+const catalog_price_metr = document.querySelectorAll('.price-metr span');
+catalog_price_metr.forEach(function (element) {
+  const amount = parseFloat(element.textContent.replace(/,/g, ""));
+  const options = {
+    style: "currency",
+    currency: "RUB",
+    maximumFractionDigits: 0,
+  };
+  const formattedAmount = amount.toLocaleString("ru-RU", options);
+  element.textContent = formattedAmount;
+});
+
+
+const catalog_price_main = document.querySelectorAll('.price-main');
+catalog_price_main.forEach(function (element) {
+  const amount = parseFloat(element.textContent.replace(/,/g, ""));
+  const options = {
+    style: "currency",
+    currency: "RUB",
+    maximumFractionDigits: 0,
+  };
+  const formattedAmount = amount.toLocaleString("ru-RU", options);
+  element.textContent = formattedAmount;
+});
+
+
+const projects_price_main = document.querySelectorAll('.price-container span');
+projects_price_main.forEach(function (element) {
+  const amount = parseFloat(element.textContent.replace(/,/g, ""));
+  const options = {
+    style: "currency",
+    currency: "RUB",
+    maximumFractionDigits: 0,
+  };
+  const formattedAmount = amount.toLocaleString("ru-RU", options);
+  element.textContent = formattedAmount;
+});
+
+const projects_price_min = document.querySelectorAll('.mainPrice span');
+projects_price_min.forEach(function (element) {
+  const amount = parseFloat(element.textContent.replace(/,/g, ""));
+  const options = {
+    style: "currency",
+    currency: "RUB",
+    maximumFractionDigits: 0,
+  };
+  const formattedAmount = amount.toLocaleString("ru-RU", options);
+  element.textContent = formattedAmount;
+});
+
+const projects_price_metr = document.querySelectorAll('.priceMetr span');
+projects_price_metr.forEach(function (element) {
+  const amount = parseFloat(element.textContent.replace(/,/g, ""));
+  const options = {
+    style: "currency",
+    currency: "RUB",
+    maximumFractionDigits: 0,
+  };
+  const formattedAmount = amount.toLocaleString("ru-RU", options);
+  element.textContent = formattedAmount;
+});
+
+var modal_form = document.getElementById('modal_form')
+modal_form.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  var recipient = button.getAttribute('data-bs-whatever')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  var modalTitle = modal_form.querySelector('.modal-title')
+  var modalBodyInput = modal_form.querySelector('.modal-body input')
+
+  modalTitle.textContent = recipient
+  modalBodyInput.value = recipient
+})

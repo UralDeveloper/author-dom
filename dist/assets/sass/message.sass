@@ -8,6 +8,10 @@
         padding: 0
         display: grid
         grid-template-columns: repeat(2, 1fr)
+        @media screen and ( max-width: 768px )
+            grid-template-columns: repeat(1, 1fr)
+        @media screen and ( max-width: 500px )
+            grid-template-columns: repeat(1, 1fr)
     &-video
         position: relative
         .video
@@ -45,6 +49,10 @@
         align-items: center
         justify-content: center
         padding: 40px 120px
+        @media screen and ( max-width: 768px )
+            padding: 20px 32px
+        @media screen and ( max-width: 500px )
+            padding: 40px 40px
     &-text
         position: relative
         &::before

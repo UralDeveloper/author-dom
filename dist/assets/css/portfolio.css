@@ -122,6 +122,26 @@
 .portfolio-slider .swiper-button-prev:after {
   display: none;
 }
+
+@media screen and (max-width: 500px) {
+  .portfolio-slider {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .portfolio-slider .swiper-button-next,
+  .portfolio-slider .swiper-button-prev {
+    opacity: 0.6;
+  }
+}
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 500px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }

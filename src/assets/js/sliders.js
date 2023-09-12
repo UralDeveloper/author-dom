@@ -32,7 +32,14 @@ const feedback_slider = new Swiper('.feedback-slider', {
     loop: true,
     centeredSlides: false,
     slidesPerView: 3,
-    // spaceBetween: 20,
+    breakpoints: {
+        320: {
+          slidesPerView: 1
+        },
+        480: {
+          slidesPerView: 3
+        }
+    }
 })
 
 // Слайдер портфолио
@@ -47,10 +54,21 @@ const portfolio_slider = new Swiper('.portfolio-slider', {
     },
 })
 
-// Слайдер портфолио
+// Слайдер команда
 const team_slider = new Swiper('.team-slider', {
     spaceBetween: 20,
     loop: false,
     centeredSlides: false,
     slidesPerView: 4,
+    breakpoints: {
+        320: {
+          slidesPerView: 1
+        },
+        480: {
+          slidesPerView: 3
+        },
+        1024: {
+          slidesPerView: 4
+        }
+    }
 })

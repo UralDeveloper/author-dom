@@ -22,6 +22,9 @@
         overflow: visible
         width: 60%
         margin: 0 auto
+        @media screen and ( max-width: 500px )
+            max-width: 100%
+            width: 100%
     &-item
         aspect-ratio: 16 / 9
         img
@@ -58,5 +61,7 @@
                 box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10)
                 width: 50px
                 height: 50px
+                @media screen and ( max-width: 500px )
+                    opacity: .6
                 &:after
                     display: none

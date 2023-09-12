@@ -126,6 +126,44 @@
   width: 120px;
   height: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .message-container {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .message-messageContainer {
+    padding: 20px 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .message-container {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .message-messageContainer {
+    padding: 40px 40px;
+  }
+}
 @supports (-webkit-appearance:none){
 .message-text::before{background-image:url("../img/icons/format_quote.svg")}
+}
+
+ @media screen and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 500px){
+
+@supports (-webkit-appearance:none){
+
+}
+
 }

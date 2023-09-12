@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Название проекта</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="../assets/webfonts/inter/stylesheet.css?_v=20230912155439">
-    <link rel="stylesheet" href="../assets/webfonts/montserrat/stylesheet.css?_v=20230912155439">
-    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css?_v=20230912155439"> -->
-    <link rel="stylesheet" href="assets/css/fancybox.css?_v=20230912155439">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?_v=20230912155439">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css?_v=20230912155439">
-    <link rel="stylesheet" href="assets/css/styles.min.css?_v=20230912155439">
+    <link rel="stylesheet" href="../assets/webfonts/inter/stylesheet.css?_v=20230912235230">
+    <link rel="stylesheet" href="../assets/webfonts/montserrat/stylesheet.css?_v=20230912235230">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css?_v=20230912235230"> -->
+    <link rel="stylesheet" href="assets/css/fancybox.css?_v=20230912235230">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?_v=20230912235230">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?_v=20230912235230">
+    <link rel="stylesheet" href="assets/css/styles.min.css?_v=20230912235230">
 </head>
 
 <body>
@@ -242,7 +242,7 @@
                     </dl>
                 </div>
                 <div class="actions-item_static-btn">
-                    <button>Получить предложение
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal_form" data-bs-whatever="Получить предложение">Получить предложение
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
                             <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                                 <rect width="24" height="24" fill="#D9D9D9" />
@@ -258,7 +258,7 @@
                 <div class="swiper actions-slider">
                     <div class="swiper-wrapper actions-slider_wrapper">
                         <div class="swiper-slide actions-slide">
-    <a href="#">
+    <div>
         <div class="actions-slide_preview">
             <picture><source srcset="assets/img/kitchen.webp" type="image/webp"><img src="assets/img/kitchen.png" alt=""></picture>
         </div>
@@ -266,9 +266,9 @@
             <img src="assets/img/icons/redeem.svg" alt="">
             <p>Кухня с техникой в подарок</p>
         </div>
-    </a>
+    </div>
 </div><div class="swiper-slide actions-slide">
-    <a href="#">
+    <div>
         <div class="actions-slide_preview">
             <picture><source srcset="assets/img/mangal.webp" type="image/webp"><img src="assets/img/mangal.png" alt=""></picture>
         </div>
@@ -276,9 +276,9 @@
             <img src="assets/img/icons/redeem.svg" alt="">
             <p>Обустройство зоны барбекю в подарок</p>
         </div>
-    </a>
+    </div>
 </div><div class="swiper-slide actions-slide">
-    <a href="#">
+    <div>
         <div class="actions-slide_preview">
             <picture><source srcset="assets/img/gates.webp" type="image/webp"><img src="assets/img/gates.png" alt=""></picture>
         </div>
@@ -286,9 +286,9 @@
             <img src="assets/img/icons/redeem.svg" alt="">
             <p>Откатаные ворота с автоматикой в подарок</p>
         </div>
-    </a>
+    </div>
 </div><div class="swiper-slide actions-slide">
-    <a href="#">
+    <div>
         <div class="actions-slide_preview">
             <picture><source srcset="assets/img/wood.webp" type="image/webp"><img src="assets/img/wood.png" alt=""></picture>
         </div>
@@ -296,7 +296,7 @@
             <img src="assets/img/icons/redeem.svg" alt="">
             <p>Тех. Постройка (дровник) в подарок</p>
         </div>
-    </a>
+    </div>
 </div>
                     </div>
                 </div>
@@ -1264,7 +1264,80 @@
     </div>
 </div>
 
-<!-- Блок про ипотеку и кредит -->
+<div id="paymentOptions">
+    <div class="container paymentOptions-container">
+        <div class="row paymentOptions-row">
+            <div class="paymentOptions-title">
+                <h3>Варианты оплаты</h3>
+                <p>Наши специалисты с радостью проконсультируют Вас по всем вопросам и рассчитают предварительный платеж по ипотеке.</p>
+            </div>
+            <div class="paymentOptions-list">
+                <div class="paymentOptions-item">
+                    <div class="paymentOptions-item_icon">
+                        <img src="assets/img/icons/check_blue.svg" alt="">
+                    </div>
+                    <div class="paymentOptions-item_text">
+                        <p class="title">Оплата в 2 этапа</p>
+                        <div class="desc bg_white">
+                            70 сейчас - 30 потом
+                        </div>
+                    </div>
+                </div>
+                <div class="paymentOptions-item">
+                    <div class="paymentOptions-item_icon">
+                        <img src="assets/img/icons/check_blue.svg" alt="">
+                    </div>
+                    <div class="paymentOptions-item_text">
+                        <p class="title">Ипотека</p>
+                        <div class="desc bg_green">
+                            От 3 %
+                        </div>
+                    </div>
+                </div>
+                <div class="paymentOptions-item">
+                    <div class="paymentOptions-item_icon">
+                        <img src="assets/img/icons/check_blue.svg" alt="">
+                    </div>
+                    <div class="paymentOptions-item_text">
+                        <p class="title">Оплата наличными</p>
+                        <div class="desc bg_green">
+                            Скидка -10 %
+                        </div>
+                    </div>
+                </div>
+                <div class="paymentOptions-item">
+                    <div class="paymentOptions-item_icon">
+                        <img src="assets/img/icons/check_blue.svg" alt="">
+                    </div>
+                    <div class="paymentOptions-item_text">
+                        <p class="title">Материнский капитал</p>
+                        <div class="desc bg_white">
+                            Гос. поддержка
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paymentOptions-footer">
+                <div class="paymentOptions-footer_desc">
+                    <p>Группа компаний Автор Дом имеет аккредитации в ведущих банках Российской федерации, по программам Сельская ипотека - Россельхозбанк, Строительство ИЖС: Сбербанк, РосбанкДом.</p>
+                </div>
+                <div class="paymentOptions-footer_buttons">
+                    <button>
+                        Подробнее
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                <rect width="24" height="24" fill="#D9D9D9" />
+                            </mask>
+                            <g mask="url(#mask0_262_13243)">
+                                <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="housesByKey" style="background-image: url(assets/img/housesByKey.jpeg);">
     <div class="housesByKey-container container">
@@ -1968,13 +2041,101 @@
     </div>
 </div>
 
+<div id="pageFooter">
+    <div class="container pageFooter-container">
+        <div class="row pageFooter-row">
+            <div class="pageFooter-about">
+                <div class="pageFooter-about_logo">
+                    <a href="/"><img src="assets/img/logo.svg" alt=""></a>
+                </div>
+                <div class="pageFooter-about_description">
+                    <p class="pageFooter-about_description-text">Компания застройщик . Освоение земельных участков на предмет жилой застройки. Компания ведет активную деятельность на загородном рынке Ленинградской области . Продукт Avtor dom это строительство по настоящему тёплых каркасных домов и домов из газобетона.</p>
+                    <p class="pageFooter-about_description-text_warning">Информация, представленная на сайте, не является публичной офертой.</p>
+                </div>
+            </div>
+            <div class="pageFooter-nav">
+                <div class="pageFooter-nav_container">
+                    <p class="pageFooter-nav_title">Страницы</p>
+                    <ul class="pageFooter-nav_list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Готовые дома</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Ипотека</a></li>
+                    </ul>
+                </div>
+                <div class="pageFooter-nav_container">
+                    <p class="pageFooter-nav_title">Узнать больше</p>
+                    <ul class="pageFooter-nav_list">
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Сертификаты и лицензия</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pageFooter-callback">
+                <div class="pageFooter-contacts">
+                    <div class="pageFooter-contacts_phone">
+                        <div class="pageFooter-contacts_header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <mask id="mask0_281_53998" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                <rect width="30" height="30" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_281_53998)">
+                                <path d="M24.3005 25.6249C21.9447 25.6249 19.5781 25.0773 17.2007 23.9819C14.8234 22.8866 12.6371 21.3413 10.6419 19.3461C8.65471 17.3509 7.11345 15.1666 6.01809 12.7933C4.92274 10.4199 4.37506 8.05528 4.37506 5.69953C4.37506 5.32453 4.50006 5.01003 4.75006 4.75603C5.00006 4.50201 5.31256 4.375 5.68756 4.375H9.76444C10.0801 4.375 10.3586 4.47797 10.5998 4.68391C10.841 4.88984 10.9944 5.14425 11.0601 5.44713L11.7764 9.12497C11.8261 9.46632 11.8157 9.75959 11.7452 10.0048C11.6747 10.25 11.5481 10.4559 11.3654 10.6226L8.47837 13.4327C8.94312 14.2836 9.47398 15.0885 10.0709 15.8473C10.6679 16.6061 11.3141 17.3309 12.0096 18.0216C12.6955 18.7075 13.4247 19.3445 14.1972 19.9327C14.9696 20.5208 15.8037 21.0681 16.6996 21.5745L19.5048 18.7452C19.7004 18.5417 19.9371 18.399 20.2152 18.3173C20.4932 18.2356 20.7821 18.2156 21.0818 18.2572L24.5529 18.9639C24.8686 19.0473 25.1262 19.2083 25.3257 19.4471C25.5252 19.6859 25.625 19.9567 25.625 20.2596V24.3124C25.625 24.6874 25.498 24.9999 25.244 25.2499C24.99 25.4999 24.6755 25.6249 24.3005 25.6249Z" fill="#1C1B1F"/>
+                                </g>
+                            </svg>
+                            <a href="#">+7 921 924 19 76</a>
+                        </div>
+                    </div>
+                    <div class="pageFooter-contacts_address">
+                        <div class="pageFooter-contacts_header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <mask id="mask0_281_54002" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                  <rect width="30" height="30" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_281_54002)">
+                                  <path d="M15 24.3918C17.4455 22.2027 19.3169 20.103 20.6142 18.0925C21.9115 16.0821 22.5601 14.3213 22.5601 12.8101C22.5601 10.5312 21.8361 8.65784 20.3882 7.18988C18.9403 5.72192 17.1442 4.98794 15 4.98794C12.8558 4.98794 11.0597 5.72192 9.61178 7.18988C8.16387 8.65784 7.43991 10.5312 7.43991 12.8101C7.43991 14.3213 8.08855 16.0821 9.38582 18.0925C10.6831 20.103 12.5545 22.2027 15 24.3918ZM15 26.1754C14.7564 26.1754 14.5128 26.1333 14.2693 26.0492C14.0257 25.9651 13.8053 25.8349 13.6082 25.6586C12.4864 24.625 11.4368 23.5605 10.4592 22.4651C9.48163 21.3698 8.63187 20.2748 7.90991 19.1803C7.18795 18.0857 6.61664 17.0008 6.19597 15.9255C5.77528 14.8501 5.56494 13.8117 5.56494 12.8101C5.56494 9.92548 6.49804 7.59016 8.36422 5.80409C10.2304 4.01803 12.4423 3.125 15 3.125C17.5577 3.125 19.7696 4.01803 21.6358 5.80409C23.502 7.59016 24.4351 9.92548 24.4351 12.8101C24.4351 13.8117 24.2247 14.8481 23.804 15.9195C23.3834 16.9908 22.8141 18.0757 22.0961 19.1743C21.3782 20.2728 20.5304 21.3678 19.5528 22.4591C18.5753 23.5505 17.5256 24.6129 16.4038 25.6466C16.2096 25.8229 15.9889 25.9551 15.7417 26.0432C15.4944 26.1313 15.2472 26.1754 15 26.1754ZM15.0021 14.8317C15.6241 14.8317 16.1558 14.6102 16.5973 14.1673C17.0388 13.7244 17.2596 13.1919 17.2596 12.57C17.2596 11.948 17.0381 11.4163 16.5952 10.9748C16.1523 10.5333 15.6199 10.3125 14.9979 10.3125C14.3759 10.3125 13.8442 10.534 13.4027 10.9769C12.9612 11.4198 12.7404 11.9522 12.7404 12.5742C12.7404 13.1962 12.9619 13.7279 13.4048 14.1694C13.8477 14.6109 14.3801 14.8317 15.0021 14.8317Z" fill="#1C1B1F"/>
+                                </g>
+                            </svg>
+                            <span>Отдел продаж</span>
+                        </div>
+                        <div class="pageFooter-contacts_text">
+                            <p>196247, Ленинский проспект д. 153 , офис 910</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal_form" tabindex="-1" aria-labelledby="modal_formLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal_formLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 
-<script src="assets/js/timeline.js?_v=20230912155439"></script>
-<script src="assets/js/chart.js?_v=20230912155439"></script>
-<script src="assets/js/swiper-bundle.min.js?_v=20230912155439"></script>
-<script src="assets/js/bootstrap.min.js?_v=20230912155439"></script>
-<script src="assets/js/fancybox.umd.js?_v=20230912155439"></script>
-<script src="assets/js/sliders.js?_v=20230912155439"></script>
-<script src="assets/js/script.js?_v=20230912155439"></script>
+<script src="assets/js/timeline.js?_v=20230912235230"></script>
+<script src="assets/js/chart.js?_v=20230912235230"></script>
+<script src="assets/js/swiper-bundle.min.js?_v=20230912235230"></script>
+<script src="assets/js/bootstrap.min.js?_v=20230912235230"></script>
+<script src="assets/js/fancybox.umd.js?_v=20230912235230"></script>
+<script src="assets/js/sliders.js?_v=20230912235230"></script>
+<script src="assets/js/script.js?_v=20230912235230"></script>
 </html>

@@ -136,6 +136,8 @@
 .projects-information_variable .nav-link {
   border-radius: 50px;
   color: #202020;
+  font-size: 14px;
+  padding: 10px 12px;
 }
 
 .projects-information_variable .nav-link.active {
@@ -280,6 +282,82 @@
   font-weight: 500;
   line-height: normal;
 }
+
+@media screen and (max-width: 1024px) {
+  .projects-item {
+    -ms-grid-columns: 400px 1fr;
+    grid-template-columns: 400px 1fr;
+  }
+
+  .projects-information {
+    padding: 40px 12px;
+  }
+
+  .projects-information_options {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-item {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects-information_options {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects-slider .swiper-button-next {
+    right: 0px;
+    top: 120px;
+  }
+
+  .projects-slider .swiper-button-prev {
+    left: 0px;
+    top: 120px;
+  }
+
+  .projects-information_options {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-priceBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 500px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }

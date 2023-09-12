@@ -224,6 +224,44 @@
   color: #599BFE;
   border-color: #599BFE;
 }
+
+@media screen and (max-width: 500px) {
+  .timeLine-row_item {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .timeLine-row_item .step_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    visibility: hidden;
+    display: none;
+  }
+
+  .timeLine-row_item .step_img img {
+    max-width: 280px;
+  }
+
+  .timeLine-item_info p.title {
+    font-size: 20px;
+  }
+}
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 500px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }

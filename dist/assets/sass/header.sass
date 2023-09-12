@@ -6,14 +6,22 @@
 .navbar
     padding-left: 60px
     padding-right: 60px
+    @media screen and ( max-width: 500px )
+        padding-left: 12px
+        padding-right: 12px
     .container-fluid
         @media screen and ( min-width: 1921px )
             max-width: 1900px
+        @media screen and ( max-width: 500px )
+            align-items: flex-end
     &-logo
         display: flex
         flex-direction: row
         align-items: center
         gap: 40px
+        @media screen and ( max-width: 500px )
+            flex-direction: column
+            align-items: flex-start
     &-brand
         margin-right: 0
         img
