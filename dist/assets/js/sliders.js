@@ -3,6 +3,8 @@ const firstScreen_slider = new Swiper('.firstScreen-slider', {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 0,
+    autoplay: true,
+    speed: 650,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -25,6 +27,14 @@ const projects_slider = new Swiper('.projects-slider', {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      320: {
+        allowTouchMove: true,
+      },
+      768: {
+        allowTouchMove: false,
+      }
+    },
 })
 
 // Слайдер отзывы
@@ -39,7 +49,11 @@ const feedback_slider = new Swiper('.feedback-slider', {
         480: {
           slidesPerView: 3
         }
-    }
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
 })
 
 // Слайдер портфолио
@@ -51,6 +65,19 @@ const portfolio_slider = new Swiper('.portfolio-slider', {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+})
+
+// Слайдер проекты - фото
+const projectsPhoto_slider = new Swiper('.projects-photo_slider', {
+    spaceBetween: 0,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    autoplay: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
 })
 
@@ -72,3 +99,66 @@ const team_slider = new Swiper('.team-slider', {
         }
     }
 })
+
+// Слайдер этапы работы
+const timeLine_slider = new Swiper(".timeLine-slider", {
+    direction: "vertical",
+    breakpoints: {
+        320: {
+          allowTouchMove: false,
+        },
+        768: {
+          allowTouchMove: true,
+        }
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-custom-next",
+        prevEl: ".swiper-button-custom-prev",
+    },
+});
+
+// Галерея "Single Home"
+const singleHome_thumb = new Swiper(".singleHome-thumbnail", {
+  spaceBetween: 20,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+  rewind: true,
+});
+
+const singleHome_main = new Swiper(".singleHome-mainSlider", {
+  spaceBetween: 10,
+  rewind: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: singleHome_thumb,
+  },
+});
+
+// Галерея "Single Project"
+const singleProject_thumb = new Swiper(".singleProject-thumbnail", {
+  spaceBetween: 20,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+  rewind: true,
+});
+
+const singleProject_main = new Swiper(".singleProject-mainSlider", {
+  spaceBetween: 10,
+  rewind: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: singleProject_thumb,
+  },
+});

@@ -1,0 +1,38 @@
+@@include('modules/header.html')
+
+<div class="singleProject-wrapper">
+    @@include('modules/breadcrumbs.html')
+    <div class="container singleProject-container">
+        <div class="row singleProject-row">
+            <div class="singleProject-firstRow">
+                @@include('modules/single-project/gallery.html')
+                @@include('modules/single-project/meta-info.html')
+            </div>
+        </div>
+        <div class="row singleProject-advantages">
+            <div class="singleProject-advantages_item">
+                <div class="singleProject-advantages_illustration">
+                    <img src="@img/illustrations/redevelopment.svg" alt="">
+                </div>
+                <div class="singleProject-advantages_text">
+                    <p class="title">Перепланировка бесплатно</p>
+                    <p class="description">Перепланировка бесплатно при заключении договора на строительство</p>
+                </div>
+            </div>
+            <div class="singleProject-advantages_item">
+                <div class="singleProject-advantages_illustration">
+                    <img src="@img/illustrations/videoSurveillancence.svg" alt="">
+                </div>
+                <div class="singleProject-advantages_text">
+                    <p class="title">Наблюдайте за процессом онлайн</p>
+                    <p class="description">Строительство ведётся под видеонаблюдением, что позволяет Вам контролировать процесс</p>
+                </div>
+            </div>
+        </div>
+        <div class="row singleProject-equipment">
+            @@include('modules/single-project/equipment.html')
+        </div>
+    </div>
+</div>
+
+@@include('modules/footer.html')

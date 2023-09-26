@@ -1,0 +1,405 @@
+.singleProject-firstRow {
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  padding: 0;
+}
+
+.singleProject-gallery {
+  overflow: hidden;
+}
+
+.singleProject-mainSlider {
+  overflow: hidden;
+}
+
+.singleProject-mainSlider .swiper-button-next {
+  right: 20px;
+}
+
+.singleProject-mainSlider .swiper-button-prev {
+  left: 20px;
+}
+
+.singleProject-mainSlider .swiper-button-next,
+.singleProject-mainSlider .swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+}
+
+.singleProject-mainSlider .swiper-button-next:after,
+.singleProject-mainSlider .swiper-button-prev:after {
+  display: none;
+}
+
+.singleProject-thumbnail {
+  margin-top: 20px;
+}
+
+.singleProject-slide {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.singleProject-slide.swiper-slide-thumb-active,
+.singleProject-slide.swiper-slide-active {
+  opacity: 1;
+}
+
+.singleProject-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 12px;
+}
+
+.singleProject-meta_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.singleProject-meta_title h1 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.singleProject-meta_favorites button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+  border: none;
+}
+
+.singleProject-advantages {
+  padding: 60px 0;
+  gap: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.singleProject-advantages_item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 170px 1fr;
+  grid-template-columns: 170px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 48px;
+}
+
+.singleProject-advantages_illustration {
+  width: 170px;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.singleProject-advantages_illustration img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.singleProject-advantages_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.singleProject-advantages_text p {
+  margin-bottom: 0;
+}
+
+.singleProject-advantages_text p.title {
+  color: #599BFE;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.singleProject-advantages_text p.description {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-wrap: balance;
+}
+
+.singleProject-equipment {
+  padding: 50px 0;
+}
+
+.singleProject-equipment .tab-content {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.singleProject-equipment .nav-pills {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #D9D9D9;
+  border-radius: 20px;
+  padding: 0;
+}
+
+.singleProject-equipment .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 28px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+  border-radius: 20px;
+}
+
+.singleProject-equipment .nav-link .equipment-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #969696;
+}
+
+.singleProject-equipment .nav-link .equipment-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.singleProject-equipment .nav-link .equipment-price .icon svg {
+  fill: #969696;
+}
+
+.singleProject-equipment .nav-link .equipment-price .price {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #969696;
+}
+
+.singleProject-equipment .nav-link.active {
+  background-color: #599BFE;
+}
+
+.singleProject-equipment .nav-link.active .equipment-title {
+  color: #fff;
+}
+
+.singleProject-equipment .nav-link.active .equipment-price .icon svg {
+  fill: #fff;
+}
+
+.singleProject-equipment .nav-link.active .equipment-price .price {
+  color: #fff;
+}
+
+.equipment-accordion .accordion-item {
+  border: 0;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.equipment-accordion .accordion-button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  padding: 20px 60px;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+}
+
+.equipment-accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #202020;
+}
+
+.equipment-accordion .accordion-body {
+  padding: 20px 60px;
+}
+
+.equipment-accordion .accordion-body ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.equipment-accordion .accordion-body ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.equipment-accordion .accordion-body ul li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.equipment-accordion .accordion-body ul li p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.equipment-accordion .accordion-body_content h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.equipment-accordion .accordion-body_content:not(:nth-last-child(1)) {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .singleProject-firstRow {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .singleProject-advantages {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .singleProject-wrapper {
+    padding: 0 16px;
+  }
+
+  .singleProject-mainSlider .swiper-button-next {
+    right: 12px;
+  }
+
+  .singleProject-mainSlider .swiper-button-prev {
+    left: auto;
+    right: 72px;
+  }
+
+  .singleProject-mainSlider .swiper-button-next,
+  .singleProject-mainSlider .swiper-button-prev {
+    top: auto;
+    bottom: 20px;
+  }
+
+  .singleProject-advantages_item {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .singleProject-equipment .nav-item {
+    width: 100%;
+  }
+
+  .singleProject-equipment .nav-link {
+    width: 100%;
+  }
+}
+@supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 500px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}

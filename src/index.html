@@ -122,6 +122,9 @@
 
 <div id="projects">
     <div class="container projects-container">
+        <div class="projects-title">
+            <h3>Проекты строительства</h3>
+        </div>
         <div class="row projects-row">
             <div class="swiper projects-slider">
                 <div class="swiper-wrapper projects-wrapper">
@@ -137,6 +140,18 @@
                 </div>
             </div>
         </div>
+        <div class="projects-btn">
+            <a href="#">Показать больше
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_262_13243)">
+                        <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
     </div>
 </div>
 
@@ -145,11 +160,56 @@
         <div class="catalog-container container">
             <div class="catalog-row_header row">
                 <h3>готовые дома</h3>
+                <p>Старт продаж</p>
+            </div>
+            <div class="filter_container">
+                <a class="btn_filter" data-bs-toggle="collapse" href="#collapse_filter" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Фильтр
+                </a>
+                <!-- <div class="collapse" id="collapse_filter"> -->
+                    <!-- <div class="card card-body"> -->
+                        <form method="POST" id="filter" class="filter_form">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoryfilter" id="categoryfilter_all">
+                                <label class="form-check-label" for="categoryfilter_all">Все</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoryfilter" id="categoryfilter_1">
+                                <label class="form-check-label" for="categoryfilter_1">Дачные</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoryfilter" id="categoryfilter_2">
+                                <label class="form-check-label" for="categoryfilter_2">Коттеджи</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoryfilter" id="categoryfilter_3">
+                                <label class="form-check-label" for="categoryfilter_3">Участки</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoryfilter" id="categoryfilter_4">
+                                <label class="form-check-label" for="categoryfilter_4">Акции</label>
+                            </div>
+                            <input type="hidden" name="action" value="myfilter">
+                        </form>
+                    <!-- </div> -->
+                <!-- </div> -->
             </div>
             <div class="catalog-row">
                 @@loop('modules/items/catalog-item.html',[
                     {},{},{},{},
                 ])
+            </div>
+            <div class="catalog-btn">
+                <a href="#">Показать больше
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                            <rect width="24" height="24" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_262_13243)">
+                            <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                        </g>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
@@ -352,6 +412,241 @@
         </div>
         <div class="housesByKey-buttons">
             <a href="#">Заказать</a>
+        </div>
+    </div>
+</div>
+
+<div id="timeLine-vertical">
+    <div class="container timeLine-container">
+        <div class="timeLine-row_header row">
+            <h3>Этапы работ</h3>
+        </div>
+        <div class="row timeLine-row">
+            <div class="swiper timeLine-slider">
+                <div class="timeLine-line">
+                    <div class="timeLine-line_load"></div>
+                </div>
+                <div class="swiper-wrapper timeLine-col">
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info">
+                            @@loop('modules/items/timeLine-item.html',[
+                                {
+                                    'id' : '1',
+                                    'step_id' : '1',
+                                    'title' : 'Бронирование',
+                                    'description' : 'Первый этап покупки, после которого мы фиксируем цену и закрепляем объект за Вами. Стоимость 5000 ₽',
+                                },
+                                {
+                                    'id' : '2',
+                                    'step_id' : '1',
+                                    'title' : 'Одобрение кредита',
+                                    'description' : 'Разработка проектно-сметной документации',
+                                },
+                            ])
+                        </div>
+                        <div data-step-id="step-1" class="step_img">
+                            <img src="@img/timeLine/step_1-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info">
+                            @@loop('modules/items/timeLine-item.html',[
+                                {
+                                'id' : '3',
+                                'step_id' : '3',
+                                'title' : 'Подбор земельного участка',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                                {
+                                'id' : '4',
+                                'step_id' : '3',
+                                'title' : 'Разработка проектно-сметной документации',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                            ])
+                        </div>
+                        <div data-step-id="step-3" class="step_img">
+                            <img src="@img/timeLine/step_3-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info">
+                        @@loop('modules/items/timeLine-item.html',[
+                        {
+                        'id' : '5',
+                        'step_id' : '5',
+                        'title' : 'Оценка земельного участка',
+                        'description' : 'Разработка проектно-сметной документации',
+                        },
+                        {
+                        'id' : '6',
+                        'step_id' : '5',
+                        'title' : 'Проверка документов по земельному участку',
+                        'description' : 'Разработка проектно-сметной документации',
+                        },
+                        {
+                        'id' : '7',
+                        'step_id' : '5',
+                        'title' : 'Отправка документов на согласование в банк',
+                        'description' : 'Разработка проектно-сметной документации',
+                        },
+                        ])
+                        </div>
+                        <div data-step-id="step-5" class="step_img">
+                            <img src="@img/timeLine/step_5-7.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info">
+                            @@loop('modules/items/timeLine-item.html',[
+                                {
+                                'id' : '8',
+                                'step_id' : '8',
+                                'title' : 'Согласование сделки в банке',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                                {
+                                'id' : '9',
+                                'step_id' : '8',
+                                'title' : 'Сделка',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                            ])
+                        </div>
+                        <div data-step-id="step-8" class="step_img">
+                            <img src="@img/timeLine/step_8-9.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info">
+                            @@loop('modules/items/timeLine-item.html',[
+                                {
+                                'id' : '10',
+                                'step_id' : '10',
+                                'title' : 'Стройка',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                            ])
+                        </div>
+                        <div data-step-id="step-10" class="step_img">
+                            <img src="@img/timeLine/step_10.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info step_info_v2">
+                            @@loop('modules/items/timeLine-item.html',[
+                                {
+                                'id' : '',
+                                'step_id' : '10_1',
+                                'title' : 'Стройка',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                            ])
+                        </div>
+                        <div data-step-id="step-10_1" class="step_img">
+                            <img src="@img/timeLine/step_10_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info step_info_v2">
+                            @@loop('modules/items/timeLine-item.html',[
+                                {
+                                'id' : '',
+                                'step_id' : '10_2',
+                                'title' : 'Стройка',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                            ])
+                        </div>
+                        <div data-step-id="step-10_2" class="step_img">
+                            <img src="@img/timeLine/step_10_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info step_info_v2">
+                            @@loop('modules/items/timeLine-item.html',[
+                                {
+                                'id' : '',
+                                'step_id' : '10_3',
+                                'title' : 'Стройка',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                            ])
+                        </div>
+                        <div data-step-id="step-10_3" class="step_img">
+                            <img src="@img/timeLine/step_10_3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info">
+                            @@loop('modules/items/timeLine-item.html',[
+                                {
+                                'id' : '11',
+                                'step_id' : '11',
+                                'title' : 'Подписание Акта приема передачи объекта (дома)',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                            ])
+                        </div>
+                        <div data-step-id="step-11" class="step_img">
+                            <img src="@img/timeLine/step_11.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info">
+                            @@loop('modules/items/timeLine-item.html',[
+                                {
+                                'id' : '12',
+                                'step_id' : '12',
+                                'title' : 'Оформление собственности',
+                                'description' : 'Разработка проектно-сметной документации',
+                                },
+                            ])
+                        </div>
+                        <div data-step-id="step-12" class="step_img">
+                            <img src="@img/timeLine/step_12.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide timeLine-row_item">
+                        <div class="step_info">
+                        @@loop('modules/items/timeLine-item.html',[
+                        {
+                        'id' : '13',
+                        'step_id' : '13',
+                        'title' : 'Вселение – новоселье!',
+                        'description' : 'Разработка проектно-сметной документации',
+                        },
+                        ])
+                        </div>
+                        <div data-step-id="step-13" class="step_img">
+                            <img src="@img/timeLine/step_13.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-button-custom-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <mask id="mask0_262_13075" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                            <rect width="30" height="30" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_262_13075)">
+                            <path d="M13.0673 15L18.1587 20.0914C18.3318 20.2644 18.4203 20.482 18.4243 20.744C18.4283 21.006 18.3398 21.2275 18.1587 21.4086C17.9776 21.5897 17.7581 21.6803 17.5001 21.6803C17.2421 21.6803 17.0225 21.5897 16.8414 21.4086L11.2236 15.7908C11.1066 15.6739 11.0241 15.5505 10.9761 15.4207C10.928 15.2909 10.9039 15.1506 10.9039 15C10.9039 14.8494 10.928 14.7091 10.9761 14.5793C11.0241 14.4495 11.1066 14.3261 11.2236 14.2092L16.8414 8.59138C17.0145 8.4183 17.232 8.32975 17.4941 8.32575C17.7561 8.32173 17.9776 8.41027 18.1587 8.59138C18.3398 8.77246 18.4303 8.992 18.4303 9.25C18.4303 9.508 18.3398 9.72754 18.1587 9.90863L13.0673 15Z" fill="#353535"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-custom-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <mask id="mask0_262_13060" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                            <rect width="30" height="30" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_262_13060)">
+                            <path d="M16.1828 15L11.0915 9.90864C10.9184 9.73558 10.8299 9.51803 10.8259 9.25601C10.8218 8.99401 10.9104 8.77247 11.0915 8.59139C11.2726 8.41028 11.4921 8.31973 11.7501 8.31973C12.0081 8.31973 12.2276 8.41028 12.4087 8.59139L18.0265 14.2092C18.1435 14.3261 18.226 14.4495 18.2741 14.5794C18.3222 14.7091 18.3462 14.8494 18.3462 15C18.3462 15.1507 18.3222 15.2909 18.2741 15.4207C18.226 15.5505 18.1435 15.6739 18.0265 15.7909L12.4087 21.4086C12.2357 21.5817 12.0181 21.6703 11.7561 21.6743C11.4941 21.6783 11.2726 21.5897 11.0915 21.4086C10.9104 21.2276 10.8198 21.008 10.8198 20.75C10.8198 20.492 10.9104 20.2725 11.0915 20.0914L16.1828 15Z" fill="#1C1B1F"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -622,12 +917,7 @@
     <div class="container-fluid message-container">
         <div class="message-video">
             <div class="video-preview">
-                <img src="@img/video_cover.png" alt="">
-            </div>
-            <div class="video-play">
-                <a href="#">
-                    <img src="@img/icons/play_arrow.svg" alt="">
-                </a>
+                <video src="@img/video/video_message.mp4" muted></video>
             </div>
         </div>
         <div class="message-messageContainer">
@@ -733,6 +1023,12 @@
                     @@loop('modules/items/feedback-item.html',[
                         {},{},{},{},{},{},{},{},{},{},{},{},
                     ])
+                </div>
+                <div class="swiper-button-next">
+                    <img src="@img/icons/chevron_right.svg" alt="">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="@img/icons/chevron_left.svg" alt="">
                 </div>
             </div>
         </div>

@@ -1,63 +1,57 @@
 @@include('modules/header.html')
 
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-            <form action="#">
-                <div class="input">
-                    <label for="#price">Цена недвижимости</label>
-                    <input id="price" type="number" value="2000000">
+<div class="calc-wrapper">
+    <div class="container calc-container">
+        <div class="calc-inputs">
+            <div class="calc_form">
+                <div class="input form-floating">
+                    <input type="number" class="form-control" id="price" value="5000000" placeholder="Цена недвижимости">
+                    <label for="price">Стоимость недвижимости, ₽</label>
+                    <div class="range">
+                        <input type="range" min="0" max="0" step="0" value="0" id="range2" class="range-input" />
+                    </div>
                 </div>
-                <div class="input">
-                    <label for="#firstPay">Первоначальный взнос</label>
-                    <input id="firstPay" type="number" value="500000">
+                <div class="input form-floating">
+                    <input type="number" class="form-control" id="firstPay" value="500000" placeholder="Первоначальный взнос">
+                    <label for="#firstPay">Первоначальный взнос, ₽</label>
+                    <div class="range">
+                        <input type="range" min="0" max="0" step="0" value="0" id="firstPay_range" class="range-input" />
+                    </div>
                 </div>
-                <div class="summCredit">Сумма кредита: <span></span></div>
-                <div class="input">
+                <div class="summCredit col-md-12">Сумма кредита: <span></span></div>
+                <div class="input form-floating">
+                    <input type="number" class="form-control" id="creditTerm" min="1" value="5" placeholder="Срок кредита (лет)">
                     <label for="#creditTerm">Срок кредита</label>
-                    <input id="creditTerm" type="number" value="10">
+                    <div class="range">
+                        <input type="range" min="1" max="30" step="1" value="5" id="creditTerm_range" class="range-input" />
+                    </div>
                 </div>
-                <div class="input">
+                <div class="input form-floating">
+                    <input type="number" class="form-control" id="rate" value="8" placeholder="Ставка, %">
                     <label for="#rate">Ставка, %</label>
-                    <input id="rate" type="number" value="8">
+                    <div class="range">
+                        <input type="range" min="3" max="30" step="0.1" value="8" id="rate_range" class="range-input" />
+                    </div>
                 </div>
                 <button type="submit">Рассчитать</button>
-            </form>
+            </div>
         </div>
-        <div class="col-8">
-            <div class="options">
-                <div class="item summ">Сумма кредита: <span></span></div>
-                <div class="item firstPay">Первоначальный взнос: <span></span></div>
-                <div class="item overPay">Переплата по кредиты: <span></span></div>
-                <div class="item totalAmount">Общая сумма выплат: <span></span></div>
-                <div class="item thePercentageOfOverpayment">Процент переплаты: <span></span></div>
-                <div class="item endingOfPayments">Окончание выплат: <span></span></div>
+        <div class="calc-result">
+            <div class="calc-chart">
+                <div class="calcChart">
+                    <canvas id="calcChart"></canvas>
+                    <div class="calcChart_pay">Ежемесячный платеж:<br><span></span></div>
+                </div>
+            </div>
+            <div class="calc-result_options">
+                <div class="calc-result_item summ">Сумма кредита: <span></span></div>
+                <div class="calc-result_item firstPay">Первоначальный взнос: <span></span></div>
+                <div class="calc-result_item overPay">Переплата по кредиты: <span></span></div>
+                <div class="calc-result_item totalAmount">Общая сумма выплат: <span></span></div>
+                <div class="calc-result_item thePercentageOfOverpayment">Процент переплаты: <span></span></div>
+                <div class="calc-result_item endingOfPayments">Окончание выплат: <span></span></div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="calcChart" width="500" height="500">
-    <div class="calcChart_pay">Ежемесячный платеж:<br><span></span></div>
-    <canvas id="calcChart" width="500" height="500"></canvas>
-</div>
-
-<style>
-    .calcChart {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    .calcChart_pay {
-        position: absolute;
-        text-align: center;
-    }
-    #calcChart {
-        max-width: 500px;
-        max-height: 500px;
-    }
-</style>
 @@include('modules/footer.html')

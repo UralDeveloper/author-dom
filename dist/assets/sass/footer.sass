@@ -17,6 +17,8 @@
         display: grid
         grid-template-columns: 320px 1fr 1fr
         grid-gap: 40px
+        @media screen and ( max-width: 768px )
+            grid-template-columns: repeat(1, 1fr)
         @media screen and ( max-width: 500px )
             grid-template-columns: repeat(1, 1fr)
     &-about
@@ -36,7 +38,7 @@
                 line-height: normal
                 color: $mainBlack
                 &_warning
-                    color: #969696
+                    color: $mainGray
                     font-size: 10px
     &-nav
         display: grid
@@ -65,7 +67,6 @@
                     transition: color .3s
                     &:hover
                         color: $mainBlue
-    &-callback
     &-contacts
         display: flex
         flex-direction: column
@@ -100,3 +101,39 @@
                 font-weight: 500
                 line-height: normal
                 margin-bottom: 0
+
+.subFooter
+    position: relative
+    &-row
+        position: relative
+        width: 100%
+        height: 40px
+        display: flex
+        flex-direction: row
+        gap: 12px 40px
+        justify-content: flex-end
+        align-items: center
+        @media screen and ( max-width: 500px )
+            flex-direction: column
+            height: auto
+            align-items: flex-start
+        .logo_SK
+            width: 150px
+            height: auto
+            right: 0
+            gap: 20px
+            display: flex
+            align-items: center
+            font-size: 12px
+            font-weight: bold
+            padding: 12px
+            color: #848484
+            img
+                width: 40px
+                height: 40px
+                object-fit: cover
+                opacity: .6
+        .logo_Dolinger
+            width: 140px
+            svg
+                width: 140px

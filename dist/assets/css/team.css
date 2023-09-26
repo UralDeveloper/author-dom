@@ -50,6 +50,7 @@
   height: 350px;
   border-radius: 20px;
   overflow: hidden;
+  position: relative;
 }
 
 .team-item_photo img {
@@ -57,6 +58,16 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.team-item_photo img.watermark {
+  width: 90px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .team-item_bio {

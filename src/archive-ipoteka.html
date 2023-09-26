@@ -1,0 +1,22 @@
+@@include('modules/header.html')
+
+<div class="ipotekaArchive-wrapper">
+    @@include('modules/breadcrumbs.html')
+    <div class="container ipotekaArchive-container">
+        <div class="row ipotekaArchive-row">
+            <div class="ipotekaArchive-category">
+                <ul>
+                    <li><a href="#"><img src="@img/banks/sber_logo.svg" alt="">Сбербанк</a></li>
+                    <li><a href="#"><img src="@img/banks/rosbank_logo.png" alt="">Сбербанк</a></li>
+                </ul>
+            </div>
+            <div class="ipotekaArchive-list">
+                @@loop('modules/items/ipotekaArchive-item.html',[
+                    {}, {}, {}
+                ])
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('modules/footer.html')

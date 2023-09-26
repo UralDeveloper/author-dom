@@ -1,0 +1,25 @@
+@@include('modules/header.html')
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <p>г. Санкт-Петербург</p>
+            <p>Лиговский проспект д.80</p>
+            <p>+7 921-924-19-76</p>
+            <p>Пн - Пт c 10.00 - 18.00</p>
+        </div>
+        <div class="col-md-8">
+            <style>
+                #map {
+                    height: 400px;
+                    width: 100%;
+                }
+            </style>
+            <section class="map" data-address="Санкт–Петербург, Лиговский проспект д.80">
+                <div id="map"></div>
+            </section>
+        </div>
+    </div>
+</div>
+
+@@include('modules/footer.html')

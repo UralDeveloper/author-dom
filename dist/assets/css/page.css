@@ -7,9 +7,72 @@
   padding: 60px 0;
 }
 
-.pageDefault-article p {
-  text-wrap: balance;
+.pageDefault-contacts {
+  padding: 60px 0;
+}
+
+.pageDefault-contacts .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 1fr;
+  grid-template-columns: 400px 1fr;
+  grid-gap: 40px;
+}
+
+.pageDefault-contacts .address-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.pageDefault-contacts .address-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.pageDefault-contacts .address-item span {
+  color: rgba(32, 32, 32, 0.2);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pageDefault-contacts .address-item p {
+  font-size: 22px;
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.pageDefault-contacts .address-item p a {
+  color: #1c1b1f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .pageDefault-contacts .row {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }

@@ -1,0 +1,178 @@
+@@include('modules/header.html')
+
+<div id="credit">
+    <div class="container credit-container">
+        <div class="row credit-row">
+            <div class="credit-title">
+                <h1>Ипотека</h1>
+                <p>Наши специалисты с радостью проконсультируют Вас по всем вопросам и рассчитают предварительный платеж по ипотеке, что бы вы спокойно смогли спланировать необходимые финансовые расходы и определиться с видом оплаты и сроком строительства.</p>
+            </div>
+            <div class="credit-info">
+                <div class="credit-info_list">
+                    <div class="credit-info_item">
+                        <img src="@img/icons/check_blue.svg" alt="">
+                        <span>Минимальные требования</span>
+                    </div>
+                    <div class="credit-info_item">
+                        <img src="@img/icons/check_blue.svg" alt="">
+                        <span>Выгодно</span>
+                    </div>
+                    <div class="credit-info_item">
+                        <img src="@img/icons/check_blue.svg" alt="">
+                        <span>Маленькая переплата</span>
+                    </div>
+                </div>
+                <div class="credit-info_image">
+                    <img src="@img/illustrations/credit_img.svg" alt="">
+                </div>
+            </div>
+            <div class="credit-banks">
+                <div class="credit-banks_list">
+                    <div class="credit-banks_item">
+                        <div class="credit-banks_item-logo">
+                            <img src="@img/banks/rsb.png" alt="">
+                        </div>
+                        <div class="credit-banks_info">
+                            <div class="credit-banks_info-item">
+                                <span class="title">Программа</span>
+                                <span class="desc">“Семейная ипотека”</span>
+                            </div>
+                            <div class="credit-banks_info-item">
+                                <span class="title">Ставка</span>
+                                <span class="desc blue">3%</span>
+                            </div>
+                            <div class="credit-banks_info-item">
+                                <span class="title">Срок</span>
+                                <span class="desc">До 25 лет</span>
+                            </div>
+                            <div class="credit-banks_info-item">
+                                <span class="title">Сумма</span>
+                                <span class="desc">До <span class="price_rub summ">12000000</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credit-banks_item">
+                        <div class="credit-banks_item-logo">
+                            <img src="@img/banks/sber.png" alt="">
+                        </div>
+                        <div class="credit-banks_info">
+                            <div class="credit-banks_info-item">
+                                <span class="title">Программа</span>
+                                <span class="desc">“ИЖС”</span>
+                            </div>
+                            <div class="credit-banks_info-item credit-banks_info-item_multiple">
+                                <div class="item_row">
+                                    <span class="title">Семейная ипотека</span>
+                                    <span class="desc blue">от 5,6%</span>
+                                </div>
+                                <div class="item_row">
+                                    <span class="title">Господдержка</span>
+                                    <span class="desc blue">от 7,6%</span>
+                                </div>
+                                <div class="item_row">
+                                    <span class="title">Стандартные условия</span>
+                                    <span class="desc blue">от 13,9%</span>
+                                </div>
+                            </div>
+                            <div class="credit-banks_info-item">
+                                <span class="title">Сумма</span>
+                                <span class="desc">До <span class="price_rub summ">15000000</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credit-banks_item">
+                        <div class="credit-banks_item-logo">
+                            <img src="@img/banks/rosbank.png" alt="">
+                        </div>
+                        <div class="credit-banks_info">
+                            <div class="credit-banks_info-item">
+                                <span class="title">Программа</span>
+                                <span class="desc">“ИЖС”</span>
+                            </div>
+                            <div class="credit-banks_info-item">
+                                <span class="title">Ставка</span>
+                                <span class="desc blue">5,5%</span>
+                            </div>
+                            <div class="credit-banks_info-item">
+                                <span class="title">Срок</span>
+                                <span class="desc">До 35 лет</span>
+                            </div>
+                            <div class="credit-banks_info-item">
+                                <span class="title">Сумма</span>
+                                <span class="desc">До <span class="price_rub summ">30000000</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="calc-wrapper">
+    <div class="container calc-container">
+        <div class="calc-inputs">
+            <div class="calc_form">
+                <div class="input form-floating">
+                    <input type="number" class="form-control" id="price" value="2000000" placeholder="Цена недвижимости">
+                    <label for="price">Стоимость недвижимости, ₽</label>
+                </div>
+                <div class="input form-floating">
+                    <input type="number" class="form-control" id="firstPay" value="500000" placeholder="Первоначальный взнос">
+                    <label for="#firstPay">Первоначальный взнос, ₽</label>
+                </div>
+                <div class="summCredit col-md-12">Сумма кредита: <span></span></div>
+                <div class="input form-floating">
+                    <!-- <input type="number" class="form-control" id="creditTerm" min="5" value="10" placeholder="Срок кредита (лет)"> -->
+                    <select class="form-select" id="creditTerm" aria-label="Срок кредита">
+                        <!-- <option selected></option> -->
+                        <option value="5">5 лет</option>
+                        <option value="10" selected>10 лет</option>
+                        <option value="15">15 лет</option>
+                        <option value="20">20 лет</option>
+                        <option value="25">25 лет</option>
+                        <option value="30">30 лет</option>
+                    </select>
+                    <label for="#creditTerm">Срок кредита (лет)</label>
+
+                </div>
+                <div class="input form-floating">
+                    <input type="number" class="form-control" id="rate" value="8" placeholder="Ставка, %">
+                    <label for="#rate">Ставка, %</label>
+                </div>
+                <button type="submit">Рассчитать</button>
+            </div>
+        </div>
+        <div class="calc-result">
+            <div class="calc-chart">
+                <div class="calcChart">
+                    <canvas id="calcChart"></canvas>
+                    <div class="calcChart_pay">Ежемесячный платеж:<br><span></span></div>
+                </div>
+            </div>
+            <div class="calc-result_options">
+                <div class="calc-result_item summ">Сумма кредита: <span></span></div>
+                <div class="calc-result_item firstPay">Первоначальный взнос: <span></span></div>
+                <div class="calc-result_item overPay">Переплата по кредиты: <span></span></div>
+                <div class="calc-result_item totalAmount">Общая сумма выплат: <span></span></div>
+                <div class="calc-result_item thePercentageOfOverpayment">Процент переплаты: <span></span></div>
+                <div class="calc-result_item endingOfPayments">Окончание выплат: <span></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="floatingForm">
+    <div class="container floatingForm-container">
+        <div class="row floatingForm-row">
+            <div class="floatingForm-title">
+                <p>Отправьте заявку на расчет индивидуальных параметров кредита</p>
+            </div>
+            <div class="floatingForm-form">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('modules/footer.html')

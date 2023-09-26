@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название проекта</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/webfonts/inter/stylesheet.css?_v=20230926143145">
+    <link rel="stylesheet" href="../assets/webfonts/montserrat/stylesheet.css?_v=20230926143145">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css?_v=20230926143145"> -->
+    <link rel="stylesheet" href="assets/css/fancybox.css?_v=20230926143145">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?_v=20230926143145">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?_v=20230926143145">
+    <link rel="stylesheet" href="assets/css/styles.min.css?_v=20230926143145">
+</head>
+
+<body>
+    <div id="header">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="navbar-logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.svg" alt="">
+                    </a>
+                    <div class="navbar-callback">
+                        <div class="navbar-phone">
+                            <img src="assets/img/icons/call.svg" alt="">
+                            <a href="tel:+79219241976">+7 921 924 19 76</a>
+                        </div>
+                        <p>Компания застройщик</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"  fill="#000000">
+                        <g>
+                            <path d="M1 3.75A.75.75 0 011.75 3h12.5a.75.75 0 010 1.5H1.75A.75.75 0 011 3.75zM1 7.75A.75.75 0 011.75 7h12.5a.75.75 0 010 1.5H1.75A.75.75 0 011 7.75zM1.75 11a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H1.75z"/>
+                        </g>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Проекты
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Готовые дома</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ипотека</a></li>
+                    </ul>
+                    <div class="navbar-login">
+                        <a href="#"><img src="assets/img/icons/person.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<div class="singleIpoteka-wrapper">
+    <div class="breadcrumbs">
+    <div class="container breadcrumbs-container">
+        <div class="row breadcrumbs-row">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs-item"><a href="#">Готовые дома</a></li>
+                <li class="breadcrumbs-item"><span>Дом</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="container singleIpoteka-container">
+        <div class="row singleIpoteka-row">
+            <div class="singleIpoteka-info">
+                <div class="singleIpoteka-titlePage">
+                    <div class="bank_logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="131" height="20" viewBox="0 0 131 20" fill="none">
+                            <g clip-path="url(#clip0_649_123713)">
+                                <path
+                                    d="M31.3821 8.98618C29.9935 8.6636 28.79 8.3871 28.79 7.37328C28.79 6.08296 30.41 5.94471 31.1043 5.94471C31.8912 5.89862 32.6318 6.08296 33.3261 6.40554L35.2701 4.97696C34.0204 4.23964 32.5855 3.82489 31.1506 3.77881C27.494 3.77881 26.198 5.71429 26.198 7.51153C26.198 10.0922 28.466 10.6452 30.4563 11.106C31.8449 11.4286 33.0484 11.7512 33.0484 12.7189C33.0484 13.2258 32.7706 14.1014 30.734 14.1014C29.3455 14.1014 28.0032 13.6406 26.846 12.8571L25.9666 14.8848C27.0311 15.7143 28.8826 16.2673 30.734 16.2673C33.7427 16.2673 35.6867 14.7926 35.6867 12.5807C35.6404 10 33.3724 9.44701 31.3821 8.98618Z"
+                                    fill="#21A038" />
+                                <path
+                                    d="M46.7029 9.86163L46.564 9.81554L46.7029 9.76946C47.6749 9.26255 48.2766 8.24872 48.2303 7.14273C48.2303 5.20725 46.564 4.05518 43.7869 4.05518H38.0474V16.0828H44.1109C47.1195 16.0828 48.7858 14.9308 48.7858 12.8109C48.8321 11.3824 48.0452 10.3225 46.7029 9.86163ZM40.6857 6.03674H43.4629C45.2217 6.03674 45.592 6.86624 45.592 7.5114C45.592 8.47914 44.8514 8.98605 43.4629 8.98605H40.6857V6.03674ZM43.4629 8.98605H40.6857H43.4629ZM43.9257 14.0552H40.6857V10.9676H43.9257C45.4069 10.9676 46.1475 11.4745 46.1475 12.4884C46.1938 13.5483 45.4532 14.0552 43.9257 14.0552Z"
+                                    fill="#21A038" />
+                                <path
+                                    d="M57.6727 6.03644L60.4036 4.00879H51.2389V16.0825H60.4036V14.0549H53.8772V10.9673H59.4316V8.98575H53.8772V6.03644H57.6727Z"
+                                    fill="#21A038" />
+                                <path
+                                    d="M73.1324 16.0825L70.4941 12.1655C72.0678 11.4742 72.9472 10.1378 72.9472 8.34059C72.9472 5.66778 70.9569 4.00879 67.8095 4.00879H62.8105V16.0364H65.4026V12.6263H67.9946L70.3089 16.0364L73.1324 16.0825ZM65.4489 6.03644H67.7632C69.4295 6.03644 70.3552 6.86593 70.3552 8.34059C70.3552 9.81524 69.4295 10.6447 67.7632 10.6447H65.4489V6.03644Z"
+                                    fill="#21A038" />
+                                <path
+                                    d="M100.441 16.0825H103.172L98.0807 4.00879H95.3961L90.1658 16.0825H92.8041L93.8687 13.6401H99.423L100.441 16.0825ZM94.6555 11.6125L96.6921 6.77377L98.5899 11.6125H94.6555ZM121.455 11.1977H123.075L127.056 16.0364H130.435L125.066 9.81524L129.741 4.00879H126.778L122.89 9.17008H121.455V4.00879H118.863V16.0364H121.455V11.1977ZM86.972 9.81524L87.1109 9.76916C88.0829 9.26225 88.6846 8.24842 88.6383 7.14243C88.6383 5.20695 86.972 4.05487 84.1948 4.05487H78.4553V16.0825H84.5651C87.5737 16.0825 89.24 14.9304 89.24 12.8106C89.24 11.3821 88.4532 10.3222 87.1109 9.86132L86.972 9.81524ZM83.8708 6.03644C85.6297 6.03644 86 6.86593 86 7.51109C86 8.47883 85.2594 8.98575 83.8708 8.98575H81.0936V6.03644H83.8708ZM81.0936 14.0549V10.9673H84.3337C85.8148 10.9673 86.5554 11.4742 86.5554 12.4881C86.5554 13.5019 85.8148 14.0088 84.3337 14.0088H81.0936V14.0549ZM113.355 4.00879V11.9351L107.292 4.00879H104.839V16.0364H107.338V8.15625L113.355 16.0364H115.808V4.00879H113.355Z"
+                                    fill="#21A038" />
+                                <path
+                                    d="M18.0054 3.91699C18.4683 4.51607 18.8848 5.20731 19.2088 5.89856L10.0442 12.6267L6.20239 10.2304V7.37321L10.0442 9.76953L18.0054 3.91699Z"
+                                    fill="#21A038" />
+                                <path
+                                    d="M2.31431 10.0457C2.31431 9.90742 2.31431 9.76917 2.31431 9.63092L0 9.49268C0 9.63092 0 9.81526 0 9.99959C0 12.7646 1.11087 15.253 2.96232 17.0964L4.62863 15.4374C3.19375 14.0549 2.31431 12.1655 2.31431 10.0457Z"
+                                    fill="url(#paint0_linear_649_123713)" />
+                                <path
+                                    d="M10.0441 2.35005C10.1829 2.35005 10.3218 2.35005 10.4607 2.35005L10.5995 0.0458984C10.4607 0.0458984 10.2755 0.0458984 10.0904 0.0458984C7.31319 0.0458984 4.81373 1.15189 2.96228 2.99521L4.62859 4.65419C5.97089 3.22562 7.91492 2.35005 10.0441 2.35005Z"
+                                    fill="url(#paint1_linear_649_123713)" />
+                                <path
+                                    d="M10.0441 17.7416C9.90522 17.7416 9.76636 17.7416 9.6275 17.7416L9.48865 20.0458C9.62751 20.0458 9.81265 20.0458 9.99779 20.0458C12.775 20.0458 15.2744 18.9398 17.1259 17.0965L15.4596 15.4375C14.1173 16.8661 12.1733 17.7416 10.0441 17.7416Z"
+                                    fill="url(#paint2_linear_649_123713)" />
+                                <path
+                                    d="M14.395 3.68645L16.339 2.25788C14.6264 0.875391 12.4047 0.0458984 10.0441 0.0458984V2.35005C11.6641 2.35005 13.1452 2.81087 14.395 3.68645Z"
+                                    fill="url(#paint3_linear_649_123713)" />
+                                <path
+                                    d="M20.0882 10.0458C20.0882 9.44669 20.0419 8.84761 19.9494 8.24854L17.7739 9.86144C17.7739 9.90752 17.7739 9.99969 17.7739 10.0458C17.7739 12.3038 16.8019 14.3315 15.2281 15.7601L16.8019 17.4651C18.7922 15.6218 20.0882 12.949 20.0882 10.0458Z"
+                                    fill="#21A038" />
+                                <path
+                                    d="M10.0441 17.7416C7.77611 17.7416 5.73951 16.7739 4.30463 15.207L2.59204 16.7738C4.44349 18.8015 7.08181 20.0457 10.0441 20.0457V17.7416Z"
+                                    fill="url(#paint4_linear_649_123713)" />
+                                <path
+                                    d="M4.86006 4.33153L3.28632 2.62646C1.24973 4.46978 0 7.09651 0 10.0458H2.31431C2.31431 7.78775 3.28633 5.71402 4.86006 4.33153Z"
+                                    fill="url(#paint5_linear_649_123713)" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_649_123713" x1="2.76981" y1="16.7973" x2="0.423123" y2="9.98517"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.1444" stop-color="#F2E913" />
+                                    <stop offset="0.3037" stop-color="#E7E518" />
+                                    <stop offset="0.5823" stop-color="#CADB26" />
+                                    <stop offset="0.891" stop-color="#A3CD39" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_649_123713" x1="3.63045" y1="2.7845" x2="9.63206" y2="0.487281"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.0592" stop-color="#0FA8E0" />
+                                    <stop offset="0.5385" stop-color="#0099F9" />
+                                    <stop offset="0.9234" stop-color="#0291EB" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_649_123713" x1="9.37966" y1="18.0338" x2="16.5379" y2="16.4087"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.1226" stop-color="#A3CD39" />
+                                    <stop offset="0.2846" stop-color="#86C339" />
+                                    <stop offset="0.8693" stop-color="#21A038" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_649_123713" x1="9.54249" y1="1.54252" x2="15.4932" y2="3.38684"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.0566" stop-color="#0291EB" />
+                                    <stop offset="0.79" stop-color="#0C8ACB" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_649_123713" x1="3.20246" y1="17.0328" x2="9.59064" y2="19.4303"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.1324" stop-color="#F2E913" />
+                                    <stop offset="0.2977" stop-color="#EBE716" />
+                                    <stop offset="0.5306" stop-color="#D9E01F" />
+                                    <stop offset="0.8023" stop-color="#BBD62D" />
+                                    <stop offset="0.9829" stop-color="#A3CD39" />
+                                </linearGradient>
+                                <linearGradient id="paint5_linear_649_123713" x1="1.84115" y1="10.3446" x2="4.37893" y2="3.71397"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.0698" stop-color="#A3CD39" />
+                                    <stop offset="0.2599" stop-color="#81C55F" />
+                                    <stop offset="0.9216" stop-color="#0FA8E0" />
+                                </linearGradient>
+                                <clipPath id="clip0_649_123713">
+                                    <rect width="130.435" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h1>Ипотека с господдержкой в 2023 году в Санкт-Петербурге <span>от 8%</span></h1>
+                    <p>Купите квартиру в новостройке, дом или постройте свой с нуля — всё доступно по низкой ставке</p>
+                </div>
+                <div class="singleIpoteka-preview">
+                    <img src="assets/img/illustrations/Господдержка.svg" alt="">
+                </div>
+            </div>
+            <div class="singleIpoteka-mortgageParameters">
+                <div class="singleIpoteka-mortgageParameters_row">
+                    <div class="singleIpoteka-mortgageParameters-list">
+                        <div class="singleIpoteka-mortgageParameters-item">
+                            <span>Первоначальный взнос</span>
+                            <p>От 20,1%</p>
+                        </div>
+                        <div class="singleIpoteka-mortgageParameters-item">
+                            <span>Срок кредита</span>
+                            <p>До 30 лет</p>
+                        </div>
+                        <div class="singleIpoteka-mortgageParameters-item">
+                            <span>Мин. сумма кредита</span>
+                            <p>300 тыс. ₽</p>
+                        </div>
+                        <div class="singleIpoteka-mortgageParameters-item">
+                            <span>Макс. сумма кредита</span>
+                            <p>312 млн. ₽</p>
+                        </div>
+                    </div>
+                    <div class="singleIpoteka-mortgageParameters-btns">
+                        <button>
+                            Хочу ипотеку
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g mask="url(#mask0_659_83724)">
+                                    <path d="M16.6116 12.7501H5.25C5.03718 12.7501 4.85898 12.6783 4.7154 12.5347C4.5718 12.3911 4.5 12.2129 4.5 12.0001C4.5 11.7873 4.5718 11.6091 4.7154 11.4655C4.85898 11.3219 5.03718 11.2501 5.25 11.2501H16.6116L13.3192 7.95778C13.1705 7.80906 13.0971 7.63503 13.099 7.43568C13.1009 7.23633 13.1743 7.05908 13.3192 6.90395C13.4743 6.74883 13.6525 6.66871 13.8538 6.66358C14.0551 6.65844 14.2333 6.73344 14.3884 6.88858L18.8672 11.3674C18.9608 11.461 19.0269 11.5597 19.0653 11.6636C19.1038 11.7674 19.123 11.8796 19.123 12.0001C19.123 12.1206 19.1038 12.2328 19.0653 12.3366C19.0269 12.4405 18.9608 12.5392 18.8672 12.6328L14.3884 17.1116C14.2397 17.2603 14.0631 17.3337 13.8586 17.3318C13.6541 17.3299 13.4743 17.2514 13.3192 17.0963C13.1743 16.9411 13.0993 16.7655 13.0942 16.5693C13.0891 16.3732 13.1641 16.1975 13.3192 16.0424L16.6116 12.7501Z" />
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Калькулятор -->
+            <div class="calc-wrapper">
+                <div class="container calc-container">
+                    <div class="calc-inputs">
+                        <div class="calc_form">
+                            <div class="input form-floating">
+                                <input type="number" class="form-control" id="price" value="5000000" placeholder="Цена недвижимости">
+                                <label for="price">Стоимость недвижимости, ₽</label>
+                                <div class="range">
+                                    <input type="range" min="0" max="0" step="0" value="0" id="range2" class="range-input" />
+                                </div>
+                            </div>
+                            <div class="input form-floating">
+                                <input type="number" class="form-control" id="firstPay" value="500000" placeholder="Первоначальный взнос">
+                                <label for="#firstPay">Первоначальный взнос, ₽</label>
+                                <div class="range">
+                                    <input type="range" min="0" max="0" step="0" value="0" id="firstPay_range" class="range-input" />
+                                </div>
+                            </div>
+                            <div class="summCredit col-md-12">Сумма кредита: <span></span></div>
+                            <div class="input form-floating">
+                                <input type="number" class="form-control" id="creditTerm" min="1" value="5" placeholder="Срок кредита (лет)">
+                                <label for="#creditTerm">Срок кредита</label>
+                                <div class="range">
+                                    <input type="range" min="1" max="30" step="1" value="5" id="creditTerm_range" class="range-input" />
+                                </div>
+                                <!-- <select class="form-select" id="creditTerm" aria-label="Срок кредита"> -->
+                                    <!-- <option selected></option> -->
+                                    <!-- <option value="5">5 лет</option>
+                                    <option value="10" selected>10 лет</option>
+                                    <option value="15">15 лет</option>
+                                    <option value="20">20 лет</option>
+                                    <option value="25">25 лет</option>
+                                    <option value="30">30 лет</option>
+                                </select>
+                                <label for="#creditTerm">Срок кредита (лет)</label> -->
+            
+                            </div>
+                            <div class="input form-floating">
+                                <input type="number" class="form-control" id="rate" value="8" placeholder="Ставка, %">
+                                <label for="#rate">Ставка, %</label>
+                                <div class="range">
+                                    <input type="range" min="3" max="30" step="0.1" value="8" id="rate_range" class="range-input" />
+                                </div>
+                            </div>
+                            <button type="submit">Рассчитать</button>
+                        </div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="calc-chart">
+                            <div class="calcChart">
+                                <canvas id="calcChart"></canvas>
+                                <div class="calcChart_pay">Ежемесячный платеж:<br><span></span></div>
+                            </div>
+                        </div>
+                        <div class="calc-result_options">
+                            <div class="calc-result_item summ">Сумма кредита: <span></span></div>
+                            <div class="calc-result_item firstPay">Первоначальный взнос: <span></span></div>
+                            <div class="calc-result_item overPay">Переплата по кредиты: <span></span></div>
+                            <div class="calc-result_item totalAmount">Общая сумма выплат: <span></span></div>
+                            <div class="calc-result_item thePercentageOfOverpayment">Процент переплаты: <span></span></div>
+                            <div class="calc-result_item endingOfPayments">Окончание выплат: <span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pageFooter">
+    <div class="container pageFooter-container">
+        <div class="row pageFooter-row">
+            <div class="pageFooter-about">
+                <div class="pageFooter-about_logo">
+                    <a href="/"><img src="assets/img/logo.svg" alt=""></a>
+                </div>
+                <div class="pageFooter-about_description">
+                    <p class="pageFooter-about_description-text">Компания застройщик . Освоение земельных участков на предмет жилой застройки. Компания ведет активную деятельность на загородном рынке Ленинградской области . Продукт Avtor dom это строительство по настоящему тёплых каркасных домов и домов из газобетона.</p>
+                    <p class="pageFooter-about_description-text_warning">Информация, представленная на сайте, не является публичной офертой.</p>
+                </div>
+            </div>
+            <div class="pageFooter-nav">
+                <div class="pageFooter-nav_container">
+                    <p class="pageFooter-nav_title">Страницы</p>
+                    <ul class="pageFooter-nav_list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Готовые дома</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Ипотека</a></li>
+                    </ul>
+                </div>
+                <div class="pageFooter-nav_container">
+                    <p class="pageFooter-nav_title">Узнать больше</p>
+                    <ul class="pageFooter-nav_list">
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Сертификаты и лицензия</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pageFooter-callback">
+                <div class="pageFooter-contacts">
+                    <div class="pageFooter-contacts_phone">
+                        <div class="pageFooter-contacts_header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <mask id="mask0_281_53998" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                <rect width="30" height="30" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_281_53998)">
+                                <path d="M24.3005 25.6249C21.9447 25.6249 19.5781 25.0773 17.2007 23.9819C14.8234 22.8866 12.6371 21.3413 10.6419 19.3461C8.65471 17.3509 7.11345 15.1666 6.01809 12.7933C4.92274 10.4199 4.37506 8.05528 4.37506 5.69953C4.37506 5.32453 4.50006 5.01003 4.75006 4.75603C5.00006 4.50201 5.31256 4.375 5.68756 4.375H9.76444C10.0801 4.375 10.3586 4.47797 10.5998 4.68391C10.841 4.88984 10.9944 5.14425 11.0601 5.44713L11.7764 9.12497C11.8261 9.46632 11.8157 9.75959 11.7452 10.0048C11.6747 10.25 11.5481 10.4559 11.3654 10.6226L8.47837 13.4327C8.94312 14.2836 9.47398 15.0885 10.0709 15.8473C10.6679 16.6061 11.3141 17.3309 12.0096 18.0216C12.6955 18.7075 13.4247 19.3445 14.1972 19.9327C14.9696 20.5208 15.8037 21.0681 16.6996 21.5745L19.5048 18.7452C19.7004 18.5417 19.9371 18.399 20.2152 18.3173C20.4932 18.2356 20.7821 18.2156 21.0818 18.2572L24.5529 18.9639C24.8686 19.0473 25.1262 19.2083 25.3257 19.4471C25.5252 19.6859 25.625 19.9567 25.625 20.2596V24.3124C25.625 24.6874 25.498 24.9999 25.244 25.2499C24.99 25.4999 24.6755 25.6249 24.3005 25.6249Z" fill="#1C1B1F"/>
+                                </g>
+                            </svg>
+                            <a href="#">+7 921 924 19 76</a>
+                        </div>
+                    </div>
+                    <div class="pageFooter-contacts_address">
+                        <div class="pageFooter-contacts_header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <mask id="mask0_281_54002" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                  <rect width="30" height="30" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_281_54002)">
+                                  <path d="M15 24.3918C17.4455 22.2027 19.3169 20.103 20.6142 18.0925C21.9115 16.0821 22.5601 14.3213 22.5601 12.8101C22.5601 10.5312 21.8361 8.65784 20.3882 7.18988C18.9403 5.72192 17.1442 4.98794 15 4.98794C12.8558 4.98794 11.0597 5.72192 9.61178 7.18988C8.16387 8.65784 7.43991 10.5312 7.43991 12.8101C7.43991 14.3213 8.08855 16.0821 9.38582 18.0925C10.6831 20.103 12.5545 22.2027 15 24.3918ZM15 26.1754C14.7564 26.1754 14.5128 26.1333 14.2693 26.0492C14.0257 25.9651 13.8053 25.8349 13.6082 25.6586C12.4864 24.625 11.4368 23.5605 10.4592 22.4651C9.48163 21.3698 8.63187 20.2748 7.90991 19.1803C7.18795 18.0857 6.61664 17.0008 6.19597 15.9255C5.77528 14.8501 5.56494 13.8117 5.56494 12.8101C5.56494 9.92548 6.49804 7.59016 8.36422 5.80409C10.2304 4.01803 12.4423 3.125 15 3.125C17.5577 3.125 19.7696 4.01803 21.6358 5.80409C23.502 7.59016 24.4351 9.92548 24.4351 12.8101C24.4351 13.8117 24.2247 14.8481 23.804 15.9195C23.3834 16.9908 22.8141 18.0757 22.0961 19.1743C21.3782 20.2728 20.5304 21.3678 19.5528 22.4591C18.5753 23.5505 17.5256 24.6129 16.4038 25.6466C16.2096 25.8229 15.9889 25.9551 15.7417 26.0432C15.4944 26.1313 15.2472 26.1754 15 26.1754ZM15.0021 14.8317C15.6241 14.8317 16.1558 14.6102 16.5973 14.1673C17.0388 13.7244 17.2596 13.1919 17.2596 12.57C17.2596 11.948 17.0381 11.4163 16.5952 10.9748C16.1523 10.5333 15.6199 10.3125 14.9979 10.3125C14.3759 10.3125 13.8442 10.534 13.4027 10.9769C12.9612 11.4198 12.7404 11.9522 12.7404 12.5742C12.7404 13.1962 12.9619 13.7279 13.4048 14.1694C13.8477 14.6109 14.3801 14.8317 15.0021 14.8317Z" fill="#1C1B1F"/>
+                                </g>
+                            </svg>
+                            <span>Отдел продаж</span>
+                        </div>
+                        <div class="pageFooter-contacts_text">
+                            <p>196247, Ленинский проспект д. 153 , офис 910</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal_form" tabindex="-1" aria-labelledby="modal_formLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal_formLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20230926143145"></script>
+<script src="assets/js/imask.js?_v=20230926143145"></script>
+<script src="assets/js/timeline.js?_v=20230926143145"></script>
+<script src="assets/js/chart.js?_v=20230926143145"></script>
+<script src="assets/js/swiper-bundle.min.js?_v=20230926143145"></script>
+<script src="assets/js/bootstrap.min.js?_v=20230926143145"></script>
+<script src="assets/js/fancybox.umd.js?_v=20230926143145"></script>
+<script src="assets/js/sliders.js?_v=20230926143145"></script>
+<script src="assets/js/script.js?_v=20230926143145"></script>
+</html>

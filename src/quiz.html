@@ -1,0 +1,268 @@
+@@include('modules/header.html')
+
+<div class="container">
+    <button class="quiz_btn" data-bs-toggle="modal" data-bs-target="#quizModal">Открыть квиз</button>
+</div>
+
+
+<div class="modal fade quizModal" id="quizModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div data-step="0" class="quizModal-step quizModal-step_welcome active">
+                    <div class="quizModal-step_welcome-textCol">
+                        <div class="quizModal-step_welcome-titleBlock">
+                            <p class="quizModal-step_welcome-title">Вам подарок!</p>
+                            <p>Хотите въездные ворота на пульте радиоуправления при покупке дома в подарок?</p>
+                        </div>
+                        <div class="quizModal-step_welcome-textBlock">
+                            <p>Оставьте заявку. Это займет не более минуты.</p>
+                            <button data-next-step="1">
+                                Далее
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g mask="url(#mask0_659_83724)">
+                                        <path d="M16.6116 12.7501H5.25C5.03718 12.7501 4.85898 12.6783 4.7154 12.5347C4.5718 12.3911 4.5 12.2129 4.5 12.0001C4.5 11.7873 4.5718 11.6091 4.7154 11.4655C4.85898 11.3219 5.03718 11.2501 5.25 11.2501H16.6116L13.3192 7.95778C13.1705 7.80906 13.0971 7.63503 13.099 7.43568C13.1009 7.23633 13.1743 7.05908 13.3192 6.90395C13.4743 6.74883 13.6525 6.66871 13.8538 6.66358C14.0551 6.65844 14.2333 6.73344 14.3884 6.88858L18.8672 11.3674C18.9608 11.461 19.0269 11.5597 19.0653 11.6636C19.1038 11.7674 19.123 11.8796 19.123 12.0001C19.123 12.1206 19.1038 12.2328 19.0653 12.3366C19.0269 12.4405 18.9608 12.5392 18.8672 12.6328L14.3884 17.1116C14.2397 17.2603 14.0631 17.3337 13.8586 17.3318C13.6541 17.3299 13.4743 17.2514 13.3192 17.0963C13.1743 16.9411 13.0993 16.7655 13.0942 16.5693C13.0891 16.3732 13.1641 16.1975 13.3192 16.0424L16.6116 12.7501Z" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quizModal-step_welcome-image">
+                        <img src="@img/illustrations/quiz_step_0.svg" alt="">
+                    </div>
+                </div>
+                <div data-step="1" class="quizModal-step quizModal-step_form">
+                    <div class="quizModal-step_form-title">
+                        <p>Оставьте заявку, чтобы забрать подарок</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="quizModal-step_form-form">
+                        <div class="quizModal-step_form-step_title">
+                            <span>Вопрос 1: Выберите вариант ответа</span>
+                        </div>
+                        <div class="quizModal-step_form-step_form">
+                            <p>У Вас уже есть земельный участок?</p>
+                            <div class="quizModal-step_form-step_form-inputs">
+                                <input type="radio" name="thePresenceOfALandPlot" value="Да" class="btn-check" id="btn-check-1" autocomplete="off">
+                                <label class="btn" for="btn-check-1">Да</label>
+                                <input type="radio" name="thePresenceOfALandPlot" value="Нет" class="btn-check" id="btn-check-2" autocomplete="off">
+                                <label class="btn" for="btn-check-2">Нет</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quizModal-step_form-footer">
+                        <div class="quizModal-step_form-progress">
+                            <div class="step_count">Шаг 1 / 4</div>
+                            <div class="step_progressBar">
+                                <div style="width: 25%;" class="step_progressBar-load"></div>
+                            </div>
+                        </div>
+                        <div class="quizModal-step_form-btns">
+                            <button class="btn_prev" data-next-step="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g mask="url(#mask0_659_48044)">
+                                    <path d="M7.18605 12.7499L10.4784 16.0423C10.6271 16.191 10.7005 16.365 10.6986 16.5644C10.6966 16.7637 10.6232 16.941 10.4784 17.0961C10.3233 17.2512 10.1451 17.3314 9.94378 17.3365C9.74251 17.3416 9.56431 17.2666 9.40918 17.1115L4.93033 12.6326C4.74956 12.4519 4.65918 12.241 4.65918 12C4.65918 11.759 4.74956 11.5481 4.93033 11.3673L9.40918 6.88845C9.5579 6.73973 9.7345 6.66633 9.93898 6.66825C10.1435 6.67018 10.3233 6.74871 10.4784 6.90382C10.6232 7.05896 10.6982 7.2346 10.7034 7.43075C10.7085 7.6269 10.6335 7.80253 10.4784 7.95765L7.18605 11.25H18.9515C19.1643 11.25 19.3425 11.3218 19.4861 11.4654C19.6297 11.609 19.7015 11.7872 19.7015 12C19.7015 12.2128 19.6297 12.391 19.4861 12.5346C19.3425 12.6782 19.1643 12.7499 18.9515 12.7499H7.18605Z"/>
+                                </g>
+                                </svg>
+                            </button>
+                            <button class="btn_next" data-next-step="2" disabled>
+                                Далее
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g mask="url(#mask0_659_83617)">
+                                      <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div data-step="2" class="quizModal-step quizModal-step_form">
+                    <div class="quizModal-step_form-title">
+                        <p>Оставьте заявку, чтобы забрать подарок</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="quizModal-step_form-form">
+                        <div class="quizModal-step_form-step_title">
+                            <span>Вопрос 2: Выберите вариант ответа</span>
+                        </div>
+                        <div class="quizModal-step_form-step_form">
+                            <p>Из какого материала Вы хотите дом?</p>
+                            <div class="quizModal-step_form-step_form-inputs">
+                                <div class="form-check">
+                                    <input class="form-check-input" name="typeMaterial" type="checkbox" value="Каркасный дом" id="typeMaterial_1">
+                                    <label class="form-check-label" for="typeMaterial_1">Каркасный дом</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" name="typeMaterial" type="checkbox" value="Газобетон" id="typeMaterial_2">
+                                    <label class="form-check-label" for="typeMaterial_2">Газобетон</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" name="typeMaterial" type="checkbox" value="Дом из бруса" id="typeMaterial_3">
+                                    <label class="form-check-label" for="typeMaterial_3">Дом из бруса</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quizModal-step_form-footer">
+                        <div class="quizModal-step_form-progress">
+                            <div class="step_count">Шаг 2 / 4</div>
+                            <div class="step_progressBar">
+                                <div style="width: 50%;" class="step_progressBar-load"></div>
+                            </div>
+                        </div>
+                        <div class="quizModal-step_form-btns">
+                            <button class="btn_prev" data-next-step="1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g mask="url(#mask0_659_48044)">
+                                        <path d="M7.18605 12.7499L10.4784 16.0423C10.6271 16.191 10.7005 16.365 10.6986 16.5644C10.6966 16.7637 10.6232 16.941 10.4784 17.0961C10.3233 17.2512 10.1451 17.3314 9.94378 17.3365C9.74251 17.3416 9.56431 17.2666 9.40918 17.1115L4.93033 12.6326C4.74956 12.4519 4.65918 12.241 4.65918 12C4.65918 11.759 4.74956 11.5481 4.93033 11.3673L9.40918 6.88845C9.5579 6.73973 9.7345 6.66633 9.93898 6.66825C10.1435 6.67018 10.3233 6.74871 10.4784 6.90382C10.6232 7.05896 10.6982 7.2346 10.7034 7.43075C10.7085 7.6269 10.6335 7.80253 10.4784 7.95765L7.18605 11.25H18.9515C19.1643 11.25 19.3425 11.3218 19.4861 11.4654C19.6297 11.609 19.7015 11.7872 19.7015 12C19.7015 12.2128 19.6297 12.391 19.4861 12.5346C19.3425 12.6782 19.1643 12.7499 18.9515 12.7499H7.18605Z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                            <button class="btn_next" data-next-step="3" disabled>
+                                Далее
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g mask="url(#mask0_659_83617)">
+                                      <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div data-step="3" class="quizModal-step quizModal-step_form">
+                    <div class="quizModal-step_form-title">
+                        <p>Оставьте заявку, чтобы забрать подарок</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="quizModal-step_form-form">
+                        <div class="quizModal-step_form-step_title">
+                            <span>Вопрос 3: Выберите вариант ответа</span>
+                        </div>
+                        <div class="quizModal-step_form-step_form">
+                            <p>Выберите площадь будущего дома</p>
+                            <div class="quizModal-step_form-step_form-inputs">
+                                <div class="form-check">
+                                    <input class="form-check-input" name="home_size" type="checkbox" value="50-100" id="size_1">
+                                    <label class="form-check-label" for="size_1">50 - 100 м<sup>2</sup></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" name="home_size" type="checkbox" value="100-150" id="size_2">
+                                    <label class="form-check-label" for="size_2">100 - 150 м<sup>2</sup></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" name="home_size" type="checkbox" value="150+" id="size_3">
+                                    <label class="form-check-label" for="size_3">150 м<sup>2</sup> и более</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quizModal-step_form-footer">
+                        <div class="quizModal-step_form-progress">
+                            <div class="step_count">Шаг 3 / 4</div>
+                            <div class="step_progressBar">
+                                <div style="width: 75%;" class="step_progressBar-load"></div>
+                            </div>
+                        </div>
+                        <div class="quizModal-step_form-btns">
+                            <button class="btn_prev" data-next-step="2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g mask="url(#mask0_659_48044)">
+                                        <path d="M7.18605 12.7499L10.4784 16.0423C10.6271 16.191 10.7005 16.365 10.6986 16.5644C10.6966 16.7637 10.6232 16.941 10.4784 17.0961C10.3233 17.2512 10.1451 17.3314 9.94378 17.3365C9.74251 17.3416 9.56431 17.2666 9.40918 17.1115L4.93033 12.6326C4.74956 12.4519 4.65918 12.241 4.65918 12C4.65918 11.759 4.74956 11.5481 4.93033 11.3673L9.40918 6.88845C9.5579 6.73973 9.7345 6.66633 9.93898 6.66825C10.1435 6.67018 10.3233 6.74871 10.4784 6.90382C10.6232 7.05896 10.6982 7.2346 10.7034 7.43075C10.7085 7.6269 10.6335 7.80253 10.4784 7.95765L7.18605 11.25H18.9515C19.1643 11.25 19.3425 11.3218 19.4861 11.4654C19.6297 11.609 19.7015 11.7872 19.7015 12C19.7015 12.2128 19.6297 12.391 19.4861 12.5346C19.3425 12.6782 19.1643 12.7499 18.9515 12.7499H7.18605Z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                            <button class="btn_next" data-next-step="4" disabled>
+                                Далее
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g mask="url(#mask0_659_83617)">
+                                      <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div data-step="4" class="quizModal-step quizModal-step_form">
+                    <div class="quizModal-step_form-title">
+                        <p>Оставьте заявку, чтобы забрать подарок</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="quizModal-step_form-form">
+                        <div class="quizModal-step_form-step_title">
+                            <span>Вопрос 3: Выберите вариант ответа</span>
+                        </div>
+                        <div class="quizModal-step_form-step_form">
+                            <p>Выберите площадь будущего дома</p>
+                            <div class="quizModal-step_form-step_form-form">
+                                <form action="">
+                                    <input type="hidden" name="earth">
+                                    <input type="hidden" name="material">
+                                    <input type="hidden" name="square">
+                                    <input type="hidden" name="telfone">
+                                    <div class="mb-3">
+                                        <input type="tel" class="form-control" id="inputTel" placeholder="+7(___)___-__-__">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quizModal-step_form-footer">
+                        <div class="quizModal-step_form-progress">
+                            <div class="step_count">Шаг 4 / 4</div>
+                            <div class="step_progressBar">
+                                <div style="width: 100%;" class="step_progressBar-load"></div>
+                            </div>
+                        </div>
+                        <div class="quizModal-step_form-btns">
+                            <button class="btn_prev" data-next-step="3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g mask="url(#mask0_659_48044)">
+                                        <path d="M7.18605 12.7499L10.4784 16.0423C10.6271 16.191 10.7005 16.365 10.6986 16.5644C10.6966 16.7637 10.6232 16.941 10.4784 17.0961C10.3233 17.2512 10.1451 17.3314 9.94378 17.3365C9.74251 17.3416 9.56431 17.2666 9.40918 17.1115L4.93033 12.6326C4.74956 12.4519 4.65918 12.241 4.65918 12C4.65918 11.759 4.74956 11.5481 4.93033 11.3673L9.40918 6.88845C9.5579 6.73973 9.7345 6.66633 9.93898 6.66825C10.1435 6.67018 10.3233 6.74871 10.4784 6.90382C10.6232 7.05896 10.6982 7.2346 10.7034 7.43075C10.7085 7.6269 10.6335 7.80253 10.4784 7.95765L7.18605 11.25H18.9515C19.1643 11.25 19.3425 11.3218 19.4861 11.4654C19.6297 11.609 19.7015 11.7872 19.7015 12C19.7015 12.2128 19.6297 12.391 19.4861 12.5346C19.3425 12.6782 19.1643 12.7499 18.9515 12.7499H7.18605Z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                            <button class="btn_next btn_send" data-next-step="5" disabled>
+                                Отправить
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g mask="url(#mask0_659_83617)">
+                                      <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div data-step="5" class="quizModal-step quizModal-step_finish">
+                    <div class="quizModal-step_finish-textCol">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="quizModal-step_finish-titleBlock">
+                            <p class="quizModal-step_finish-title">готово!</p>
+                            <p>Вы отставили заявку! Через 30 секунд с Вами свяжется менеджер для уточнения деталей</p>
+                        </div>
+                        <div class="quizModal-step_finish-panel">
+                            <div class="quizModal-step_finish-panel_content">
+                                <div class="title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <mask id="mask0_551_85783" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                                            <rect width="40" height="40" fill="#D9D9D9"/>
+                                        </mask>
+                                        <g mask="url(#mask0_551_85783)">
+                                            <path d="M6.66695 27.9807V31.1538C6.66695 31.282 6.72037 31.3995 6.8272 31.5064C6.93406 31.6132 7.0516 31.6666 7.17983 31.6666H32.8207C32.949 31.6666 33.0665 31.6132 33.1734 31.5064C33.2802 31.3995 33.3336 31.282 33.3336 31.1538V27.9807H6.66695ZM7.17983 10.8654H11.7921C11.6532 10.6154 11.5495 10.3515 11.4812 10.0738C11.4128 9.79598 11.3786 9.50432 11.3786 9.19876C11.3786 8.03423 11.7819 7.04866 12.5885 6.24205C13.3951 5.43544 14.3807 5.03214 15.5452 5.03214C16.2439 5.03214 16.8902 5.21368 17.4841 5.57676C18.078 5.93985 18.5962 6.39077 19.0387 6.92955L19.9682 8.17314L20.8977 6.92955C21.3229 6.36972 21.8377 5.91352 22.4421 5.56097C23.0465 5.20841 23.6973 5.03214 24.3947 5.03214C25.5569 5.03214 26.5413 5.43544 27.348 6.24205C28.1546 7.04866 28.5579 8.03423 28.5579 9.19876C28.5579 9.50432 28.5264 9.79598 28.4633 10.0738C28.4003 10.3515 28.294 10.6154 28.1444 10.8654H32.8207C33.6626 10.8654 34.3752 11.1571 34.9586 11.7404C35.5419 12.3237 35.8336 13.0363 35.8336 13.8782V31.1538C35.8336 31.9956 35.5419 32.7083 34.9586 33.2916C34.3752 33.8749 33.6626 34.1666 32.8207 34.1666H7.17983C6.33794 34.1666 5.62533 33.8749 5.04199 33.2916C4.45866 32.7083 4.16699 31.9956 4.16699 31.1538V13.8782C4.16699 13.0363 4.45866 12.3237 5.04199 11.7404C5.62533 11.1571 6.33794 10.8654 7.17983 10.8654ZM6.66695 23.6859H33.3336V13.8782C33.3336 13.75 33.2802 13.6325 33.1734 13.5256C33.0665 13.4188 32.949 13.3653 32.8207 13.3653H23.7117L27.1156 18.0192L25.122 19.4551L19.9682 12.4615L14.8144 19.4551L12.8209 18.0192L16.1735 13.3653H7.17983C7.0516 13.3653 6.93406 13.4188 6.8272 13.5256C6.72037 13.6325 6.66695 13.75 6.66695 13.8782V23.6859ZM15.5452 10.8654C16.0174 10.8654 16.4133 10.7057 16.7327 10.3863C17.0521 10.0668 17.2119 9.67098 17.2119 9.19876C17.2119 8.72654 17.0521 8.33071 16.7327 8.01126C16.4133 7.69182 16.0174 7.53209 15.5452 7.53209C15.073 7.53209 14.6771 7.69182 14.3577 8.01126C14.0383 8.33071 13.8785 8.72654 13.8785 9.19876C13.8785 9.67098 14.0383 10.0668 14.3577 10.3863C14.6771 10.7057 15.073 10.8654 15.5452 10.8654ZM24.3913 10.8654C24.8635 10.8654 25.2593 10.7057 25.5788 10.3863C25.8982 10.0668 26.058 9.67098 26.058 9.19876C26.058 8.72654 25.8982 8.33071 25.5788 8.01126C25.2593 7.69182 24.8635 7.53209 24.3913 7.53209C23.9191 7.53209 23.5232 7.69182 23.2038 8.01126C22.8843 8.33071 22.7246 8.72654 22.7246 9.19876C22.7246 9.67098 22.8843 10.0668 23.2038 10.3863C23.5232 10.7057 23.9191 10.8654 24.3913 10.8654Z" fill="#599BFE"/>
+                                        </g>
+                                    </svg>
+                                    Ваш подарок!
+                                </div>
+                                <p>Въездные ворота на пульте радиоуправления при покупке дома в подарок!</p>
+                                <button data-bs-dismiss="modal">Закрыть</button>
+                            </div>
+                            <div class="quizModal-step_finish-panel_image">
+                                <img src="@img/gates.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('modules/footer.html')

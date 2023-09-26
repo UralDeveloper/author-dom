@@ -1,0 +1,10 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon/garage_home">
+<mask id="mask0_386_42074" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+<rect id="Bounding box" width="20" height="20" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_386_42074)">
+<path id="garage_home" d="M3.75 17.0833V7.70838L9.99998 3.00488L16.25 7.70838V17.0833H15V8.33336L9.99998 4.56734L4.99998 8.33336V17.0833H3.75ZM7.29163 15.8253H12.7083V13.742H7.29163V15.8253ZM7.29163 12.492H12.7083V10.4087H7.29163V12.492ZM6.04167 17.0753V9.15867H13.9583V17.0753H6.04167Z" fill="#969696"/>
+</g>
+</g>
+</svg>
