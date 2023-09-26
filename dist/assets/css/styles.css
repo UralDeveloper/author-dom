@@ -4887,6 +4887,178 @@ body {
   color: #969696;
 }
 
+.ipotekaSlider {
+  padding: 40px 0;
+  background-color: #F7F7F5;
+  border-radius: 40px;
+  padding: 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 36px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ipotekaSlider-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+.ipotekaSlider-header h2 {
+  margin-bottom: 0;
+  color: #202020;
+  text-align: center;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.ipotekaSlider-header a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  color: #202020;
+}
+
+.ipotekaSlider .swiper-button-next {
+  right: 20px;
+}
+
+.ipotekaSlider .swiper-button-prev {
+  left: 20px;
+}
+
+.ipotekaSlider .swiper-button-next,
+.ipotekaSlider .swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+}
+
+.ipotekaSlider .swiper-button-next:after,
+.ipotekaSlider .swiper-button-prev:after {
+  display: none;
+}
+
+.ipotekaSlider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 295px;
+  height: auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.ipotekaSlider-item_header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 24px;
+  grid-template-columns: 1fr 24px;
+  grid-gap: 16px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.ipotekaSlider-item_header h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.ipotekaSlider-item_header h4 a {
+  text-decoration: none;
+  color: #202020;
+}
+
+.ipotekaSlider-item_rate {
+  padding: 5px 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #BDFCCE;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ipotekaSlider-item_preview {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4/3;
+  margin-top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ipotekaSlider-item_preview img {
+  width: 100%;
+  height: 100%;
+  max-height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .singleHome-wrapper {
   background-color: #F7F7F5;
   padding-bottom: 60px;
@@ -6534,6 +6706,21 @@ form input[type=submit] svg {
         grid-template-areas: "ipoteka_preview" "ipoteka_info";
     -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ipotekaSlider .swiper-button-next {
+    right: 12px;
+  }
+
+  .ipotekaSlider .swiper-button-prev {
+    left: auto;
+    right: 72px;
+  }
+
+  .ipotekaSlider .swiper-button-next,
+  .ipotekaSlider .swiper-button-prev {
+    top: auto;
+    bottom: 20px;
   }
 
   .singleHome-mainSlider .swiper-button-next {

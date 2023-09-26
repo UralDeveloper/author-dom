@@ -162,3 +162,15 @@ const singleProject_main = new Swiper(".singleProject-mainSlider", {
     swiper: singleProject_thumb,
   },
 });
+
+const ipotekaSlider_slider = new Swiper('.ipotekaSlider', {
+  spaceBetween: 20,
+  loop: true,
+  centeredSlides: false,
+  freeMode: true,
+  slidesPerView: 'auto',
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+})

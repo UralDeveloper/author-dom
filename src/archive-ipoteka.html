@@ -11,10 +11,23 @@
                 </ul>
             </div>
             <div class="ipotekaArchive-list">
-                @@loop('modules/items/ipotekaArchive-item.html',[
-                    {}, {}, {}
+                @@loop('modules/items/ipotekaArchive-item.html',[{}])
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="swiper ipotekaSlider">
+            <div class="ipotekaSlider-header">
+                <h2>Ипотека</h2>
+                <a href="#">Все программы</a>
+            </div>
+            <div class="swiper-wrapper ipotekaSlider-wrapper">
+                @@loop('modules/items/ipotekaSlider-item.html',[
+                    {}, {}, {}, {}, {}, {}, {}, {}, 
                 ])
             </div>
+            <div class="swiper-button-next ipotekaSlider-button-next"><img src="@img/icons/chevron_right.svg"></div>
+            <div class="swiper-button-prev ipotekaSlider-button-prev"><img src="@img/icons/chevron_left.svg"></div>
         </div>
     </div>
 </div>

@@ -494,19 +494,19 @@ step_3.forEach((element) => {
   });
 });
 
-const phoneInput = document.getElementById('inputTel');
-let btn_step_4 = document.querySelector('.btn_next.btn_send[data-next-step="5"]');
-const step_4_answer = document.querySelector('.quizModal-step form input[name="telfone"]');
-const maskOptions = {
-	mask: '+{7}(000)000-00-00'
-};
-const mask = IMask(phoneInput, maskOptions);
+// const phoneInput = document.getElementById('inputTel');
+// let btn_step_4 = document.querySelector('.btn_next.btn_send[data-next-step="5"]');
+// const step_4_answer = document.querySelector('.quizModal-step form input[name="telfone"]');
+// const maskOptions = {
+// 	mask: '+{7}(000)000-00-00'
+// };
+// const mask = IMask(phoneInput, maskOptions);
 
-phoneInput.addEventListener('input', function(){
-	if(phoneInput.value.length == 16) {
-		btn_step_4.removeAttribute('disabled')
-		step_4_answer.value = phoneInput.value
-	} else {
-		btn_step_4.setAttribute('disabled', true)
-	}
-})
+// phoneInput.addEventListener('input', function(){
+// 	if(phoneInput.value.length == 16) {
+// 		btn_step_4.removeAttribute('disabled')
+// 		step_4_answer.value = phoneInput.value
+// 	} else {
+// 		btn_step_4.setAttribute('disabled', true)
+// 	}
+// })
