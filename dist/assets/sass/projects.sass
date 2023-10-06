@@ -47,6 +47,21 @@
             grid-template-columns: repeat(1, 1fr)
     &-photo
         overflow: hidden
+        &_btn
+            &-next,
+            &-prev
+                bottom: 30px
+                top: auto
+                position: absolute
+                background-color: transparentize(#fff, .4) !important
+                img
+                    width: 36px !important
+                    height: 36px !important
+            &-next
+                right: 10px !important
+            &-prev
+                left: auto !important
+                right: 72px !important
         &_slider
             display: flex
             align-items: center
@@ -206,9 +221,9 @@
             a
                 @include btn()
                 @include btn_white_border()
-                padding: 8px 16px
+                padding: 12px 24px
                 max-width: none
-                font-size: 12px
+                font-size: 16px
                 font-style: normal
                 font-weight: 500
                 line-height: normal
@@ -224,11 +239,11 @@
             button
                 @include btn()
                 @include btn_blue()
-                padding: 8px 16px
+                padding: 12px 24px
                 max-width: none
-                font-size: 12px
+                font-size: 16px
                 font-style: normal
-                font-weight: 500
+                font-weight: 400
                 line-height: normal
                 letter-spacing: -0.36px
                 @media screen and ( max-width: 500px )

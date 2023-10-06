@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Название проекта</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="../assets/webfonts/inter/stylesheet.css?_v=20230927025430">
-    <link rel="stylesheet" href="../assets/webfonts/montserrat/stylesheet.css?_v=20230927025430">
-    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css?_v=20230927025430"> -->
-    <link rel="stylesheet" href="assets/css/fancybox.css?_v=20230927025430">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?_v=20230927025430">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css?_v=20230927025430">
-    <link rel="stylesheet" href="assets/css/styles.min.css?_v=20230927025430">
+    <link rel="stylesheet" href="../assets/webfonts/inter/stylesheet.css?_v=20231003230755">
+    <link rel="stylesheet" href="../assets/webfonts/montserrat/stylesheet.css?_v=20231003230755">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css?_v=20231003230755"> -->
+    <link rel="stylesheet" href="assets/css/fancybox.css?_v=20231003230755">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?_v=20231003230755">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?_v=20231003230755">
+    <link rel="stylesheet" href="assets/css/styles.min.css?_v=20231003230755">
 </head>
 
 <body>
@@ -77,6 +77,7 @@
 <!-- Доделать -->
 <div id="firstScreen">
     <div class="swiper firstScreen-slider">
+        <div class="firstScreen-label_age"><picture><source srcset="assets/img/icons/old_19.webp" type="image/webp"><img src="assets/img/icons/old_19.png" alt=""></picture></div>
         <div class="swiper-wrapper firstScreen-wrapper">
             <div class="swiper-slide firstScreen-slide">
     <div class="firstScreen-slide_bg">
@@ -145,7 +146,7 @@
                 </div>
             </div>
             <div class="firstScreen-btn">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#modal_form" data-bs-whatever="Получить предложение">Получить предложение
+                <button type="button" class="pulse" data-bs-toggle="modal" data-bs-target="#modal_form" data-bs-whatever="Получить предложение">Получить предложение
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
                         <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                             <rect width="24" height="24" fill="#D9D9D9" />
@@ -377,136 +378,11 @@
                     <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
                 </div>
             </div>
-            <div class="swiper-pagination projects-photo_pagination"></div>
-        </div>
-    </div>
-    <div class="projects-information">
-        <div class="projects-information_title">
-            <h4>Фано</h4>
-        </div>
-        <div class="projects-information_options">
-            
-            <div class="projects-information_options-item">
-                <div class="icon">
-                    <img src="assets/img/icons/square.svg" alt="">
-                </div>
-                <div class="option">
-                    <span class="option-name">Площадь</span>
-                    <span class="option-value">512 м<sup>2</sup></span>
-                </div>
+            <div class="swiper-button-next projects-photo_btn-next">
+                <img src="assets/img/icons/chevron_right.svg" alt="">
             </div>
-
-            <div class="projects-information_options-item">
-                <div class="icon">
-                    <img src="assets/img/icons/levels.svg" alt="">
-                </div>
-                <div class="option">
-                    <span class="option-name">Этажи</span>
-                    <span class="option-value">2</span>
-                </div>
-            </div>
-
-            <div class="projects-information_options-item">
-                <div class="icon">
-                    <img src="assets/img/icons/shower.svg" alt="">
-                </div>
-                <div class="option">
-                    <span class="option-name">Санузел</span>
-                    <span class="option-value">2</span>
-                </div>
-            </div>
-
-            <div class="projects-information_options-item">
-                <div class="icon">
-                    <img src="assets/img/icons/bedroom.svg" alt="">
-                </div>
-                <div class="option">
-                    <span class="option-name">Спальни</span>
-                    <span class="option-value">4</span>
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="projects-information_variable">
-            <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Базовый</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Оптимальный</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Оптимальный +</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-prem-tab" data-bs-toggle="pill" data-bs-target="#pills-prem"
-                        type="button" role="tab" aria-controls="pills-prem" aria-selected="false">Премиум</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="tab-price">
-                        <img src="assets/img/icons/toll.svg">
-                        <span class="price-container">от <span class="price_rub">8200000</span></span>
-                    </div>
-                    <div class="tab-includes">
-                        <ul>
-                            <li>Теплый контур</li>
-                            <li>Чистовая отделка</li>
-                            <li>Pазводка электрики</li>
-                            <li>Коммуникации</li>
-                            <li>+</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-            </div>
-        </div>
-
-        <div class="projects-priceBlock">
-            <div class="projects-priceBlock_btn">
-                <button>Оставить заявку
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
-                        <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                            <rect width="24" height="24" fill="#D9D9D9" />
-                        </mask>
-                        <g mask="url(#mask0_262_13243)">
-                            <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
-                        </g>
-                    </svg>
-                </button>
-            </div>
-            <div class="projects-priceBlock_price">
-                <span class="mainPrice">от <span class="price_rub">7100000</span></span>
-                <span class="priceMetr"><span class="price_rub">218000</span> за м<sup>2</sup></span>
-            </div>
-        </div>
-
-    </div>
-</div><div class="swiper-slide projects-item">
-    <div class="projects-photo">
-        <div class="swiper projects-photo_slider">
-            <div class="swiper-wrapper projects-photo_wrapper">
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
+            <div class="swiper-button-prev projects-photo_btn-prev">
+                <img src="assets/img/icons/chevron_left.svg" alt="">
             </div>
             <div class="swiper-pagination projects-photo_pagination"></div>
         </div>
@@ -639,136 +515,11 @@
                     <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
                 </div>
             </div>
-            <div class="swiper-pagination projects-photo_pagination"></div>
-        </div>
-    </div>
-    <div class="projects-information">
-        <div class="projects-information_title">
-            <h4>Фано</h4>
-        </div>
-        <div class="projects-information_options">
-            
-            <div class="projects-information_options-item">
-                <div class="icon">
-                    <img src="assets/img/icons/square.svg" alt="">
-                </div>
-                <div class="option">
-                    <span class="option-name">Площадь</span>
-                    <span class="option-value">512 м<sup>2</sup></span>
-                </div>
+            <div class="swiper-button-next projects-photo_btn-next">
+                <img src="assets/img/icons/chevron_right.svg" alt="">
             </div>
-
-            <div class="projects-information_options-item">
-                <div class="icon">
-                    <img src="assets/img/icons/levels.svg" alt="">
-                </div>
-                <div class="option">
-                    <span class="option-name">Этажи</span>
-                    <span class="option-value">2</span>
-                </div>
-            </div>
-
-            <div class="projects-information_options-item">
-                <div class="icon">
-                    <img src="assets/img/icons/shower.svg" alt="">
-                </div>
-                <div class="option">
-                    <span class="option-name">Санузел</span>
-                    <span class="option-value">2</span>
-                </div>
-            </div>
-
-            <div class="projects-information_options-item">
-                <div class="icon">
-                    <img src="assets/img/icons/bedroom.svg" alt="">
-                </div>
-                <div class="option">
-                    <span class="option-name">Спальни</span>
-                    <span class="option-value">4</span>
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="projects-information_variable">
-            <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Базовый</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Оптимальный</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Оптимальный +</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-prem-tab" data-bs-toggle="pill" data-bs-target="#pills-prem"
-                        type="button" role="tab" aria-controls="pills-prem" aria-selected="false">Премиум</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="tab-price">
-                        <img src="assets/img/icons/toll.svg">
-                        <span class="price-container">от <span class="price_rub">8200000</span></span>
-                    </div>
-                    <div class="tab-includes">
-                        <ul>
-                            <li>Теплый контур</li>
-                            <li>Чистовая отделка</li>
-                            <li>Pазводка электрики</li>
-                            <li>Коммуникации</li>
-                            <li>+</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-            </div>
-        </div>
-
-        <div class="projects-priceBlock">
-            <div class="projects-priceBlock_btn">
-                <button>Оставить заявку
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
-                        <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                            <rect width="24" height="24" fill="#D9D9D9" />
-                        </mask>
-                        <g mask="url(#mask0_262_13243)">
-                            <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
-                        </g>
-                    </svg>
-                </button>
-            </div>
-            <div class="projects-priceBlock_price">
-                <span class="mainPrice">от <span class="price_rub">7100000</span></span>
-                <span class="priceMetr"><span class="price_rub">218000</span> за м<sup>2</sup></span>
-            </div>
-        </div>
-
-    </div>
-</div><div class="swiper-slide projects-item">
-    <div class="projects-photo">
-        <div class="swiper projects-photo_slider">
-            <div class="swiper-wrapper projects-photo_wrapper">
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
-                <div class="swiper-slide projects-photo_slide">
-                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
-                </div>
+            <div class="swiper-button-prev projects-photo_btn-prev">
+                <img src="assets/img/icons/chevron_left.svg" alt="">
             </div>
             <div class="swiper-pagination projects-photo_pagination"></div>
         </div>
@@ -900,6 +651,286 @@
                 <div class="swiper-slide projects-photo_slide">
                     <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
                 </div>
+            </div>
+            <div class="swiper-button-next projects-photo_btn-next">
+                <img src="assets/img/icons/chevron_right.svg" alt="">
+            </div>
+            <div class="swiper-button-prev projects-photo_btn-prev">
+                <img src="assets/img/icons/chevron_left.svg" alt="">
+            </div>
+            <div class="swiper-pagination projects-photo_pagination"></div>
+        </div>
+    </div>
+    <div class="projects-information">
+        <div class="projects-information_title">
+            <h4>Фано</h4>
+        </div>
+        <div class="projects-information_options">
+            
+            <div class="projects-information_options-item">
+                <div class="icon">
+                    <img src="assets/img/icons/square.svg" alt="">
+                </div>
+                <div class="option">
+                    <span class="option-name">Площадь</span>
+                    <span class="option-value">512 м<sup>2</sup></span>
+                </div>
+            </div>
+
+            <div class="projects-information_options-item">
+                <div class="icon">
+                    <img src="assets/img/icons/levels.svg" alt="">
+                </div>
+                <div class="option">
+                    <span class="option-name">Этажи</span>
+                    <span class="option-value">2</span>
+                </div>
+            </div>
+
+            <div class="projects-information_options-item">
+                <div class="icon">
+                    <img src="assets/img/icons/shower.svg" alt="">
+                </div>
+                <div class="option">
+                    <span class="option-name">Санузел</span>
+                    <span class="option-value">2</span>
+                </div>
+            </div>
+
+            <div class="projects-information_options-item">
+                <div class="icon">
+                    <img src="assets/img/icons/bedroom.svg" alt="">
+                </div>
+                <div class="option">
+                    <span class="option-name">Спальни</span>
+                    <span class="option-value">4</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="projects-information_variable">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Базовый</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Оптимальный</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Оптимальный +</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-prem-tab" data-bs-toggle="pill" data-bs-target="#pills-prem"
+                        type="button" role="tab" aria-controls="pills-prem" aria-selected="false">Премиум</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-price">
+                        <img src="assets/img/icons/toll.svg">
+                        <span class="price-container">от <span class="price_rub">8200000</span></span>
+                    </div>
+                    <div class="tab-includes">
+                        <ul>
+                            <li>Теплый контур</li>
+                            <li>Чистовая отделка</li>
+                            <li>Pазводка электрики</li>
+                            <li>Коммуникации</li>
+                            <li>+</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            </div>
+        </div>
+
+        <div class="projects-priceBlock">
+            <div class="projects-priceBlock_btn">
+                <button>Оставить заявку
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                            <rect width="24" height="24" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_262_13243)">
+                            <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="projects-priceBlock_price">
+                <span class="mainPrice">от <span class="price_rub">7100000</span></span>
+                <span class="priceMetr"><span class="price_rub">218000</span> за м<sup>2</sup></span>
+            </div>
+        </div>
+
+    </div>
+</div><div class="swiper-slide projects-item">
+    <div class="projects-photo">
+        <div class="swiper projects-photo_slider">
+            <div class="swiper-wrapper projects-photo_wrapper">
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+            </div>
+            <div class="swiper-button-next projects-photo_btn-next">
+                <img src="assets/img/icons/chevron_right.svg" alt="">
+            </div>
+            <div class="swiper-button-prev projects-photo_btn-prev">
+                <img src="assets/img/icons/chevron_left.svg" alt="">
+            </div>
+            <div class="swiper-pagination projects-photo_pagination"></div>
+        </div>
+    </div>
+    <div class="projects-information">
+        <div class="projects-information_title">
+            <h4>Фано</h4>
+        </div>
+        <div class="projects-information_options">
+            
+            <div class="projects-information_options-item">
+                <div class="icon">
+                    <img src="assets/img/icons/square.svg" alt="">
+                </div>
+                <div class="option">
+                    <span class="option-name">Площадь</span>
+                    <span class="option-value">512 м<sup>2</sup></span>
+                </div>
+            </div>
+
+            <div class="projects-information_options-item">
+                <div class="icon">
+                    <img src="assets/img/icons/levels.svg" alt="">
+                </div>
+                <div class="option">
+                    <span class="option-name">Этажи</span>
+                    <span class="option-value">2</span>
+                </div>
+            </div>
+
+            <div class="projects-information_options-item">
+                <div class="icon">
+                    <img src="assets/img/icons/shower.svg" alt="">
+                </div>
+                <div class="option">
+                    <span class="option-name">Санузел</span>
+                    <span class="option-value">2</span>
+                </div>
+            </div>
+
+            <div class="projects-information_options-item">
+                <div class="icon">
+                    <img src="assets/img/icons/bedroom.svg" alt="">
+                </div>
+                <div class="option">
+                    <span class="option-name">Спальни</span>
+                    <span class="option-value">4</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="projects-information_variable">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Базовый</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Оптимальный</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Оптимальный +</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-prem-tab" data-bs-toggle="pill" data-bs-target="#pills-prem"
+                        type="button" role="tab" aria-controls="pills-prem" aria-selected="false">Премиум</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-price">
+                        <img src="assets/img/icons/toll.svg">
+                        <span class="price-container">от <span class="price_rub">8200000</span></span>
+                    </div>
+                    <div class="tab-includes">
+                        <ul>
+                            <li>Теплый контур</li>
+                            <li>Чистовая отделка</li>
+                            <li>Pазводка электрики</li>
+                            <li>Коммуникации</li>
+                            <li>+</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            </div>
+        </div>
+
+        <div class="projects-priceBlock">
+            <div class="projects-priceBlock_btn">
+                <button>Оставить заявку
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <mask id="mask0_262_13243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                            <rect width="24" height="24" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_262_13243)">
+                            <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95765C13.1705 7.80894 13.0971 7.6349 13.099 7.43555C13.1009 7.2362 13.1743 7.05896 13.3192 6.90383C13.4743 6.74871 13.6525 6.66859 13.8538 6.66345C14.0551 6.65832 14.2333 6.73332 14.3884 6.88845L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2602 14.0631 17.3336 13.8586 17.3317C13.6541 17.3298 13.4743 17.2512 13.3192 17.0961C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1974 13.3192 16.0423L16.6116 12.75Z"/>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="projects-priceBlock_price">
+                <span class="mainPrice">от <span class="price_rub">7100000</span></span>
+                <span class="priceMetr"><span class="price_rub">218000</span> за м<sup>2</sup></span>
+            </div>
+        </div>
+
+    </div>
+</div><div class="swiper-slide projects-item">
+    <div class="projects-photo">
+        <div class="swiper projects-photo_slider">
+            <div class="swiper-wrapper projects-photo_wrapper">
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+                <div class="swiper-slide projects-photo_slide">
+                    <picture><source srcset="assets/img/project_item.webp" type="image/webp"><img data-fancybox src="assets/img/project_item.png" alt=""></picture>
+                </div>
+            </div>
+            <div class="swiper-button-next projects-photo_btn-next">
+                <img src="assets/img/icons/chevron_right.svg" alt="">
+            </div>
+            <div class="swiper-button-prev projects-photo_btn-prev">
+                <img src="assets/img/icons/chevron_left.svg" alt="">
             </div>
             <div class="swiper-pagination projects-photo_pagination"></div>
         </div>
@@ -1014,10 +1045,10 @@
     </div>
 </div>
                 </div>
-                <div class="swiper-button-next">
+                <div class="swiper-button-next projects-next">
                     <img src="assets/img/icons/chevron_right.svg" alt="">
                 </div>
-                <div class="swiper-button-prev">
+                <div class="swiper-button-prev projects-prev">
                     <img src="assets/img/icons/chevron_left.svg" alt="">
                 </div>
             </div>
@@ -2561,13 +2592,13 @@
 </body>
 
 
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20230927025430"></script>
-<script src="assets/js/imask.js?_v=20230927025430"></script>
-<script src="assets/js/timeline.js?_v=20230927025430"></script>
-<script src="assets/js/chart.js?_v=20230927025430"></script>
-<script src="assets/js/swiper-bundle.min.js?_v=20230927025430"></script>
-<script src="assets/js/bootstrap.min.js?_v=20230927025430"></script>
-<script src="assets/js/fancybox.umd.js?_v=20230927025430"></script>
-<script src="assets/js/sliders.js?_v=20230927025430"></script>
-<script src="assets/js/script.js?_v=20230927025430"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20231003230755"></script>
+<script src="assets/js/imask.js?_v=20231003230755"></script>
+<script src="assets/js/timeline.js?_v=20231003230755"></script>
+<script src="assets/js/chart.js?_v=20231003230755"></script>
+<script src="assets/js/swiper-bundle.min.js?_v=20231003230755"></script>
+<script src="assets/js/bootstrap.min.js?_v=20231003230755"></script>
+<script src="assets/js/fancybox.umd.js?_v=20231003230755"></script>
+<script src="assets/js/sliders.js?_v=20231003230755"></script>
+<script src="assets/js/script.js?_v=20231003230755"></script>
 </html>

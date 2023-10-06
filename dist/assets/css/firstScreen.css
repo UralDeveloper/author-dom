@@ -1,3 +1,55 @@
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+.firstScreen-label_age {
+  position: absolute;
+  z-index: 2;
+  right: 140px;
+  width: 90px;
+  height: auto;
+  top: 0;
+}
+
+.firstScreen-label_age img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .firstScreen-slide {
   position: relative;
   display: -webkit-box;
@@ -146,7 +198,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .firstScreen-btn button,
@@ -166,6 +218,7 @@
   transition: background-color 0.3s, color 0.2s;
   text-decoration: none;
   border: none;
+  font-size: 16px;
   background-color: #599BFE;
   -webkit-box-shadow: inset 0 0 0 2px #599BFE;
           box-shadow: inset 0 0 0 2px #599BFE;
@@ -195,8 +248,53 @@
   transition: 0.3s;
 }
 
-.firstScreen-slider .swiper-slide:not(.swiper-slide-active) {
-  visibility: hidden;
+.firstScreen-btn button.pulse,
+.firstScreen-btn a.pulse {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.firstScreen-btn button.pulse::after,
+.firstScreen-btn button.pulse::before,
+.firstScreen-btn a.pulse::after,
+.firstScreen-btn a.pulse::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  -webkit-animation: pulse 2.5s linear infinite;
+          animation: pulse 2.5s linear infinite;
+  border-radius: 12px;
+  z-index: -2;
+  -webkit-transition: opacity 0.5;
+  -o-transition: opacity 0.5;
+  transition: opacity 0.5;
+}
+
+.firstScreen-btn button.pulse::before,
+.firstScreen-btn a.pulse::before {
+  background-color: rgba(89, 155, 254, 0.4);
+}
+
+.firstScreen-btn button.pulse::after,
+.firstScreen-btn a.pulse::after {
+  background-color: rgba(89, 155, 254, 0.2);
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.firstScreen-slider .swiper-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .firstScreen-slider .swiper-button-next {
@@ -237,6 +335,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  .firstScreen-label_age {
+    display: none;
+  }
+
   .firstScreen-check {
     grid-gap: 24px;
   }
