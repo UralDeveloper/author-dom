@@ -158,7 +158,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  border: 1px solid #599BFE;
+  border: 1px solid #4a92fe;
   border-radius: 55px;
   padding: 5px 21px;
   -webkit-box-pack: center;
@@ -168,7 +168,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  color: #599BFE;
+  color: #4a92fe;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -195,9 +195,9 @@
   text-decoration: none;
   border: none;
   font-size: 16px;
-  background-color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   color: #fff;
   padding: 12px 36px;
   width: 100% !important;
@@ -206,13 +206,13 @@
 
 .actions-item_static-btn button:hover {
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
 }
 
 .actions-item_static-btn button:hover svg {
-  fill: #599BFE;
+  fill: #4a92fe;
 }
 
 .actions-item_static-btn button svg {

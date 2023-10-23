@@ -354,9 +354,9 @@
   text-decoration: none;
   border: none;
   font-size: 16px;
-  background-color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   color: #fff;
   padding: 12px 36px;
   max-width: none;
@@ -364,13 +364,13 @@
 
 .projects-btn a:hover {
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
 }
 
 .projects-btn a:hover svg {
-  fill: #599BFE;
+  fill: #4a92fe;
 }
 
 .projects-btn a svg {
@@ -420,9 +420,9 @@
   border: none;
   font-size: 16px;
   background-color: #fff;
-  color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   padding: 12px 24px;
   max-width: none;
   font-size: 16px;
@@ -434,9 +434,9 @@
 
 .projects-priceBlock_btn a:hover {
   color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  background-color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  background-color: #4a92fe;
 }
 
 .projects-priceBlock_btn a:hover svg {
@@ -447,7 +447,7 @@
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  fill: #599BFE;
+  fill: #4a92fe;
 }
 
 .projects-priceBlock_btn button {
@@ -467,9 +467,9 @@
   text-decoration: none;
   border: none;
   font-size: 16px;
-  background-color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   color: #fff;
   padding: 12px 24px;
   max-width: none;
@@ -482,13 +482,13 @@
 
 .projects-priceBlock_btn button:hover {
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
 }
 
 .projects-priceBlock_btn button:hover svg {
-  fill: #599BFE;
+  fill: #4a92fe;
 }
 
 .projects-priceBlock_btn button svg {
@@ -558,14 +558,33 @@
 }
 
 @media screen and (max-width: 500px) {
+  .projects-slider {
+    margin-top: 40px;
+  }
+
   .projects-slider .swiper-button-next {
-    right: 0px;
-    top: 120px;
+    right: 20px;
+    top: -50px;
   }
 
   .projects-slider .swiper-button-prev {
-    left: 0px;
-    top: 120px;
+    left: 20px;
+    top: -50px;
+  }
+
+  .projects-photo_btn-next,
+  .projects-photo_btn-prev {
+    display: none !important;
+  }
+
+  .projects-photo_btn-next {
+    top: auto !important;
+    bottom: 10px !important;
+  }
+
+  .projects-photo_btn-prev {
+    top: auto !important;
+    bottom: 10px !important;
   }
 
   .projects-information_options {
@@ -587,6 +606,14 @@
   }
 
   .projects-priceBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 32px;
+  }
+
+  .projects-priceBlock_btn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

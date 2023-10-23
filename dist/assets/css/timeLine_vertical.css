@@ -116,7 +116,7 @@
 #timeLine-vertical .timeLine-row_item:nth-last-child(1) .step_info .timeLine-item.active .timeLine-item_id,
 #timeLine-vertical .timeLine-row_item:nth-last-child(1) .step_info .timeLine-item.active-before .timeLine-item_id {
   color: #fff;
-  background-color: #599BFE;
+  background-color: #4a92fe;
 }
 
 #timeLine-vertical .timeLine-row_item.swiper-slide-active .step_img {
@@ -195,7 +195,7 @@
 #timeLine-vertical .timeLine-line_load {
   width: 100%;
   height: 100%;
-  background-color: #599BFE;
+  background-color: #4a92fe;
   position: absolute;
   top: 0;
   left: 0;
@@ -224,7 +224,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 #timeLine-vertical .timeLine-item_info p.title {
@@ -249,7 +249,7 @@
   background-color: #fff;
   width: 60px;
   height: 60px;
-  border: 2px solid #599BFE;
+  border: 2px solid #4a92fe;
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,7 +266,7 @@
   font-weight: 700;
   line-height: 1.3em;
   text-transform: uppercase;
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 #timeLine-vertical .timeLine-item_id-v2 {
@@ -362,7 +362,7 @@
           transform: rotateZ(90deg);
   top: 0;
   bottom: 0;
-  background-color: #599BFE;
+  background-color: #4a92fe;
   color: #fff;
   border-radius: 50px;
   outline: none;

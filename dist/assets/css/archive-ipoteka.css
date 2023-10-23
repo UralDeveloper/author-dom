@@ -252,17 +252,17 @@
   border: none;
   font-size: 16px;
   background-color: #fff;
-  color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   padding: 12px 36px;
 }
 
 .ipotekaArchive-item_wrapper-footer a:hover {
   color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  background-color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  background-color: #4a92fe;
 }
 
 .ipotekaArchive-item_wrapper-footer button {
@@ -282,18 +282,18 @@
   text-decoration: none;
   border: none;
   font-size: 16px;
-  background-color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   color: #fff;
   padding: 12px 36px;
 }
 
 .ipotekaArchive-item_wrapper-footer button:hover {
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
 }
 
 .ipotekaArchive-item_title {
@@ -524,9 +524,9 @@
   text-decoration: none;
   border: none;
   font-size: 16px;
-  background-color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   color: #fff;
   width: 100%;
   padding: 6px 12px;
@@ -534,9 +534,9 @@
 
 .ipotekaSlider-item_preview a:hover {
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
 }
 
 @media screen and (max-width: 500px) {
@@ -560,6 +560,7 @@
   .ipotekaSlider .swiper-button-prev {
     top: auto;
     bottom: 20px;
+    display: none !important;
   }
   .ipotekaArchive-item_info {
     -ms-grid-row: 3;

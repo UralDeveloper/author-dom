@@ -435,17 +435,17 @@
 }
 
 .singleHome-sidebar_btns .btn_buy {
-  background-color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   color: #fff;
 }
 
 .singleHome-sidebar_btns .btn_buy:hover {
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
 }
 
 .singleHome-sidebar_btns .btn_buy svg {
@@ -453,7 +453,7 @@
 }
 
 .singleHome-sidebar_btns .btn_buy:hover svg {
-  fill: #599BFE;
+  fill: #4a92fe;
   -webkit-transition: fill 0.3s;
   -o-transition: fill 0.3s;
   transition: fill 0.3s;
@@ -461,20 +461,20 @@
 
 .singleHome-sidebar_btns .btn_to_calc {
   background-color: #fff;
-  color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
 }
 
 .singleHome-sidebar_btns .btn_to_calc:hover {
   color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  background-color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  background-color: #4a92fe;
 }
 
 .singleHome-sidebar_btns .btn_to_calc svg {
-  fill: #599BFE;
+  fill: #4a92fe;
   -webkit-transition: fill 0.3s;
   -o-transition: fill 0.3s;
   transition: fill 0.3s;

@@ -18,37 +18,87 @@
     </div>
 </div>
 
+<div class="lk_block">
+    <div class="container">
+        <div class="lk_block-info">
+            <div class="lk_block-info-title">
+                <h3>Будь всегда в курсе!</h3>
+            </div>
+            <div class="lk_block-info-text">
+                <p class="title">Личный кабинет Автор Дом</p>
+                <ul>
+                    <li>
+                        <img src="@img/icons/schedule.svg" alt="">
+                        <span>Этапы работ и статусы выполнения</span>
+                    </li>
+                    <li>
+                        <img src="@img/icons/art_track.svg" alt="">
+                        <span>Фотоотчет о ходе строительства</span>
+                    </li>
+                    <li>
+                        <img src="@img/icons/description.svg" alt="">
+                        <span>Документооборот</span>
+                    </li>
+                    <li>
+                        <img src="@img/icons/real_estate_agent.svg" alt="">
+                        <span>Подбор ипотечных предложений</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="lk_block-info-btn">
+                <a href="#">
+                    Зарегистрироваться
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+                        <mask id="mask0_973_462" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
+                            <rect y="0.5" width="24" height="24"/>
+                        </mask>
+                        <g mask="url(#mask0_973_462)">
+                            <path d="M16.6116 13.2498H5.25003C5.03721 13.2498 4.85901 13.178 4.71543 13.0345C4.57183 12.8909 4.50003 12.7127 4.50003 12.4999C4.50003 12.287 4.57183 12.1088 4.71543 11.9653C4.85901 11.8217 5.03721 11.7499 5.25003 11.7499H16.6116L13.3192 8.45753C13.1705 8.30882 13.0971 8.13478 13.0991 7.93543C13.101 7.73608 13.1744 7.55884 13.3192 7.40371C13.4744 7.24859 13.6526 7.16847 13.8538 7.16333C14.0551 7.1582 14.2333 7.2332 14.3884 7.38833L18.8673 11.8672C18.9609 11.9608 19.0269 12.0595 19.0654 12.1633C19.1038 12.2672 19.1231 12.3793 19.1231 12.4999C19.1231 12.6204 19.1038 12.7325 19.0654 12.8364C19.0269 12.9402 18.9609 13.0389 18.8673 13.1325L14.3884 17.6114C14.2397 17.7601 14.0631 17.8335 13.8587 17.8316C13.6542 17.8296 13.4744 17.7511 13.3192 17.596C13.1744 17.4409 13.0994 17.2652 13.0942 17.0691C13.0891 16.8729 13.1641 16.6973 13.3192 16.5422L16.6116 13.2498Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="lk_block-image">
+            <img src="@img/illustrations/lk_block.svg" alt="">
+        </div>
+    </div>
+</div>
 
 <div id="advantages">
     <div class="advantages-container container">
         <div class="advantages-row row">
-            @@loop('modules/items/advantages-item.html',[
-                {
-                    'img_name' : 'personal_manager.svg',
-                    'title' : 'Личный менеджер',
-                    'text' : 'Персональный менеджер на всех этапах работ',
-                },
-                {
-                    'img_name' : 'payment_in_installments.svg',
-                    'title' : 'Оплата частями',
-                    'text' : 'Возможность оплачивать услуги частями',
-                },
-                {
-                    'img_name' : 'mortgage.svg',
-                    'title' : 'Ипотека и субсидии',
-                    'text' : 'Работаем с любым видом ипотеки и субсидий',
-                },
-                {
-                    'img_name' : 'quality.svg',
-                    'title' : 'Качество',
-                    'text' : 'Собственный отдел закупок и контроля качества',
-                },
-                {
-                    'img_name' : 'fix_price.svg',
-                    'title' : 'Фиксированная цена',
-                    'text' : 'Исключено удорожание цены по договору',
-                },
-            ])
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    @@loop('modules/items/advantages-item.html',[
+                        {
+                            'img_name' : 'personal_manager.svg',
+                            'title' : 'Личный менеджер',
+                            'text' : 'Персональный менеджер на всех этапах работ',
+                        },
+                        {
+                            'img_name' : 'payment_in_installments.svg',
+                            'title' : 'Оплата частями',
+                            'text' : 'Возможность оплачивать услуги частями',
+                        },
+                        {
+                            'img_name' : 'mortgage.svg',
+                            'title' : 'Ипотека и субсидии',
+                            'text' : 'Работаем с любым видом ипотеки и субсидий',
+                        },
+                        {
+                            'img_name' : 'quality.svg',
+                            'title' : 'Качество',
+                            'text' : 'Собственный отдел закупок и контроля качества',
+                        },
+                        {
+                            'img_name' : 'fix_price.svg',
+                            'title' : 'Фиксированная цена',
+                            'text' : 'Исключено удорожание цены по договору',
+                        },
+                    ])
+                </div>
+            </div>
         </div>
     </div>
 </div>

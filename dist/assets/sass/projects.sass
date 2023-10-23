@@ -12,18 +12,20 @@
             @include title_h3()
     &-slider
         overflow: visible
+        @media screen and ( max-width: 500px )
+            margin-top: 40px
         .swiper
             &-button
                 &-next
                     right: -40px
                     @media screen and ( max-width: 500px )
-                        right: 0px
-                        top: 120px
+                        right: 20px
+                        top: -50px
                 &-prev
                     left: -40px
                     @media screen and ( max-width: 500px )
-                        left: 0px
-                        top: 120px
+                        left: 20px
+                        top: -50px
                 &-next,
                 &-prev
                     background-color: #fff
@@ -54,14 +56,22 @@
                 top: auto
                 position: absolute
                 background-color: transparentize(#fff, .4) !important
+                @media screen and ( max-width: 500px )
+                    display: none !important
                 img
                     width: 36px !important
                     height: 36px !important
             &-next
                 right: 10px !important
+                @media screen and ( max-width: 500px )
+                    top: auto !important
+                    bottom: 10px !important
             &-prev
                 left: auto !important
                 right: 72px !important
+                @media screen and ( max-width: 500px )
+                    top: auto !important
+                    bottom: 10px !important
         &_slider
             display: flex
             align-items: center
@@ -213,11 +223,14 @@
         gap: 20px
         margin-top: 60px
         @media screen and ( max-width: 500px )
-            flex-direction: column
+            flex-direction: column-reverse
+            margin-top: 32px
         &_btn
             display: flex
             flex-direction: row
             gap: 20px
+            @media screen and ( max-width: 500px )
+                flex-direction: column
             a
                 @include btn()
                 @include btn_white_border()

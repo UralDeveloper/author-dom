@@ -53,8 +53,48 @@
   gap: 40px;
 }
 
+.navbar-logo_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 132px 20px 1fr;
+  grid-template-columns: 132px 1fr;
+  -ms-grid-rows: auto 0 auto;
+      grid-template-areas: "logo phone" "logo title";
+  grid-gap: 0 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.navbar-title {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  max-width: 280px;
+}
+
+.navbar-title p {
+  margin-bottom: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #6d6d6d;
+}
+
 .navbar-brand {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
   margin-right: 0;
+  grid-area: logo;
 }
 
 .navbar-brand img {
@@ -62,16 +102,9 @@
   height: auto;
 }
 
-.navbar-callback p {
-  margin-bottom: 0;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  color: #6d6d6d;
-}
-
 .navbar-phone {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,6 +116,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 16px;
+  grid-area: phone;
 }
 
 .navbar-phone a {
@@ -92,6 +126,10 @@
   line-height: normal;
   color: #202020;
   text-decoration: none;
+}
+
+.navbar-toggler {
+  grid-area: toggle;
 }
 
 .navbar-collapse {
@@ -135,6 +173,10 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .navbar-logo {
@@ -145,6 +187,53 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar-logo_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 0 -webkit-max-content;
+    -ms-grid-rows: 1fr 0 max-content;
+    grid-template-rows: 1fr -webkit-max-content;
+    grid-template-rows: 1fr max-content;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "logo title title" "phone phone toggle";
+  }
+
+  .navbar-title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .navbar-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+  }
+
+  .navbar-brand {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+
+  .navbar-phone {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .navbar-toggler {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
   }
 }
 

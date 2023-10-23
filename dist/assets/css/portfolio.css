@@ -112,9 +112,9 @@
   text-decoration: none;
   border: none;
   font-size: 16px;
-  background-color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   color: #fff;
   padding: 12px 36px;
   max-width: none;
@@ -122,13 +122,13 @@
 
 .portfolio-btn a:hover {
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
 }
 
 .portfolio-btn a:hover svg {
-  fill: #599BFE;
+  fill: #4a92fe;
 }
 
 .portfolio-btn a svg {
@@ -138,11 +138,11 @@
 }
 
 .portfolio-slider .swiper-button-next {
-  right: 40px;
+  right: -16px;
 }
 
 .portfolio-slider .swiper-button-prev {
-  left: 40px;
+  left: -16px;
 }
 
 .portfolio-slider .swiper-button-next,

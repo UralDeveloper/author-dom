@@ -220,7 +220,7 @@
                         display: none
                     @media screen and ( max-width: 500px )
                         top: auto
-                        bottom: 20px
+                        bottom: 68px
     &_item
         &-slider
             position: relative
@@ -237,8 +237,103 @@
             img
                 width: 36px !important
                 height: 36px !important
-        &-next
-            // right: 10px !important
-        &-prev
-            // left: auto !important
-            // right: 72px !important
+
+.catalogShort
+    display: flex
+    flex-direction: column
+    gap: 20px
+    &-item
+        display: grid
+        grid-template-columns: max-content 2fr 3fr 1fr 1fr
+        gap: 12px 20px
+        background-color: #fff
+        border-radius: 20px
+        padding: 8px 12px
+        grid-template-areas: "preview title title title title" "preview prices meta status btn"
+        @media screen and ( max-width: 1024px )
+            grid-template-columns: max-content 1fr
+            gap: 20px
+            grid-template-areas: "preview title" "preview prices" "meta meta" "status status" "btn btn"
+        @media screen and ( max-width: 500px )
+            grid-template-columns: 1fr
+            grid-template-areas: "preview" "title" "prices" "meta" "status" "btn"
+        &-preview
+            width: 100%
+            height: 100%
+            aspect-ratio: 1 / 1
+            max-width: 100px
+            border-radius: 12px
+            grid-area: preview
+            display: flex
+            align-items: center
+            justify-content: center
+            @media screen and ( max-width: 500px )
+                max-width: 100%
+            img
+                width: 100%
+                height: auto
+        &-title
+            grid-area: title
+            p
+                margin-bottom: 0
+                a
+                    font-size: 20px
+                    line-height: 24px
+                    letter-spacing: -0.02em
+                    font-weight: 500
+                    color: rgb(20, 20, 20)
+                    text-decoration: none
+                &.address
+                    font-size: 10px
+                    font-style: normal
+                    font-weight: 500
+                    line-height: normal
+                    color: transparentize($mainBlack, .6)
+        &-prices
+            grid-area: prices
+            display: flex
+            flex-direction: column
+            justify-content: center
+            border-right: 1px solid transparentize($mainBlack, .8)
+            @media screen and ( max-width: 1024px )
+                border-right: none
+            &-item
+                width: 100%
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+            span
+                margin-bottom: 0
+                width: 100%
+                font-size: 14px
+                &.price_rub
+                    font-weight: 500
+        &-meta
+            grid-area: meta
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            gap: 4px
+            @media screen and ( max-width: 500px )
+                grid-template-columns: repeat(2, 1fr)
+            &-item
+                display: grid
+                grid-template-columns: 28px 1fr
+                gap: 12px
+                .icon
+                    img
+                        width: 100%
+                        height: auto
+                .desc
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    font-size: 12px
+                    span
+                        font-weight: 500
+        &-status
+            grid-area: status
+        &-btn
+            grid-area: btn
+            a
+                @include btn()
+                @include btn_blue()

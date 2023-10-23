@@ -180,7 +180,7 @@
 }
 
 .credit-banks_info-item span.desc.blue {
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 .credit-banks_info-item_multiple {
@@ -217,7 +217,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 @media screen and (max-width: 420px) {

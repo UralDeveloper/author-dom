@@ -104,6 +104,40 @@
   text-wrap: balance;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .advantages-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .advantages-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    max-width: none;
+  }
+}
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 500px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }

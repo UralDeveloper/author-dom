@@ -106,7 +106,7 @@
   font-weight: 700;
   line-height: 1.3em;
   text-transform: uppercase;
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 .quizModal-step_welcome-textBlock p {
@@ -133,11 +133,11 @@
       -ms-grid-row-align: stretch;
       align-self: stretch;
   border-radius: 10px;
-  background-color: #599BFE;
+  background-color: #4a92fe;
   border: none;
   color: #fff;
-  -webkit-box-shadow: 0 0 0 2px #599BFE;
-          box-shadow: 0 0 0 2px #599BFE;
+  -webkit-box-shadow: 0 0 0 2px #4a92fe;
+          box-shadow: 0 0 0 2px #4a92fe;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -154,13 +154,13 @@
 .quizModal-step_welcome-textBlock button:active,
 .quizModal-step_welcome-textBlock button:focus {
   background-color: #fff;
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 .quizModal-step_welcome-textBlock button:hover svg,
 .quizModal-step_welcome-textBlock button:active svg,
 .quizModal-step_welcome-textBlock button:focus svg {
-  fill: #599BFE;
+  fill: #4a92fe;
 }
 
 .quizModal-step_welcome-image img {
@@ -201,7 +201,7 @@
   font-weight: 700;
   line-height: 1.3em;
   text-transform: uppercase;
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 .quizModal-step_finish-panel {
@@ -239,7 +239,7 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 .quizModal-step_finish-panel_content p {
@@ -267,9 +267,9 @@
   text-decoration: none;
   border: none;
   font-size: 16px;
-  background-color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   color: #fff;
   padding: 12px 36px;
   justify-content: center;
@@ -279,9 +279,9 @@
 
 .quizModal-step_finish-panel_content button:hover {
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
 }
 
 .quizModal-step_finish-panel_image img {
@@ -398,9 +398,9 @@
   border: none;
   font-size: 16px;
   background-color: #fff;
-  color: #599BFE;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
+  color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -410,13 +410,13 @@
 
 .quizModal-step_form-step_form input[type=radio].btn-check + .btn:hover {
   color: #fff;
-  -webkit-box-shadow: inset 0 0 0 2px #599BFE;
-          box-shadow: inset 0 0 0 2px #599BFE;
-  background-color: #599BFE;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  background-color: #4a92fe;
 }
 
 .quizModal-step_form-step_form input[type=radio].btn-check:checked + .btn {
-  background-color: #599BFE;
+  background-color: #4a92fe;
   color: #fff;
 }
 
@@ -463,7 +463,7 @@
 }
 
 .quizModal-step_form-btns .btn_prev svg {
-  fill: #599BFE;
+  fill: #4a92fe;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -472,7 +472,7 @@
 .quizModal-step_form-btns .btn_prev:hover,
 .quizModal-step_form-btns .btn_prev:active,
 .quizModal-step_form-btns .btn_prev:focus {
-  background-color: #599BFE;
+  background-color: #4a92fe;
 }
 
 .quizModal-step_form-btns .btn_prev:hover svg,
@@ -494,7 +494,7 @@
           align-items: center;
   gap: 10px;
   border-radius: 10px;
-  background-color: #599BFE;
+  background-color: #4a92fe;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -513,13 +513,13 @@
 .quizModal-step_form-btns .btn_next:active,
 .quizModal-step_form-btns .btn_next:focus {
   background-color: #F7F7F5;
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 .quizModal-step_form-btns .btn_next:hover svg,
 .quizModal-step_form-btns .btn_next:active svg,
 .quizModal-step_form-btns .btn_next:focus svg {
-  fill: #599BFE;
+  fill: #4a92fe;
 }
 
 .quizModal-step_form-btns .btn_next:disabled {
@@ -540,7 +540,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #599BFE;
+  background-color: #4a92fe;
   border-radius: 8px;
 }
 

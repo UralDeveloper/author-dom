@@ -174,3 +174,27 @@ const ipotekaSlider_slider = new Swiper('.ipotekaSlider', {
       prevEl: ".swiper-button-prev",
   },
 })
+
+const advantages = new Swiper(".advantages-row .swiper", {
+  spaceBetween: 10,
+  rewind: true,
+  // freeMode: true,
+  slidesPerView: 5,
+  // centeredSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      allowTouchMove: true,
+      autoplay: true
+    },
+    768: {
+      slidesPerView: 3,
+      allowTouchMove: true,
+    },
+    1200: {
+      slidesPerView: 5,
+      allowTouchMove: false,
+      autoplay: false
+    }
+},
+});

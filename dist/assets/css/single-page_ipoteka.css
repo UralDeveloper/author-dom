@@ -175,11 +175,11 @@
       -ms-grid-row-align: stretch;
       align-self: stretch;
   border-radius: 10px;
-  background-color: #599BFE;
+  background-color: #4a92fe;
   border: none;
   color: #fff;
-  -webkit-box-shadow: 0 0 0 2px #599BFE;
-          box-shadow: 0 0 0 2px #599BFE;
+  -webkit-box-shadow: 0 0 0 2px #4a92fe;
+          box-shadow: 0 0 0 2px #4a92fe;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -197,13 +197,13 @@
 .singleIpoteka-mortgageParameters-btns button:active,
 .singleIpoteka-mortgageParameters-btns button:focus {
   background-color: #fff;
-  color: #599BFE;
+  color: #4a92fe;
 }
 
 .singleIpoteka-mortgageParameters-btns button:hover svg,
 .singleIpoteka-mortgageParameters-btns button:active svg,
 .singleIpoteka-mortgageParameters-btns button:focus svg {
-  fill: #599BFE;
+  fill: #4a92fe;
 }
 
 @media screen and (max-width: 768px) {
