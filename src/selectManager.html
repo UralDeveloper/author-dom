@@ -1,0 +1,34 @@
+@@include('modules/header.html')
+@@include('modules/breadcrumbs.html')
+<div class="selectManager">
+    <div class="container">
+        @@loop('modules/items/team-item-v2.html',[
+            {
+                'img' : 'alex.jpeg',
+                'name' : 'Швалов Александр Михайлович',
+                'position' : 'Директор по строительству',
+            },
+            {
+                'img' : 'misha.jpeg',
+                'name' : 'Смирнов Михаил Вячеславович',
+                'position' : 'Директор по продажам',
+            },
+            {
+                'img' : 'alik.jpeg',
+                'name' : 'Фаткуллин Алик Радикович',
+                'position' : 'Директор по развитию',
+            },
+            {
+                'img' : 'arina.jpeg',
+                'name' : 'Либина Арина Александровна',
+                'position' : 'Финансовый директор',
+            },
+            {
+                'img' : 'elena.jpeg',
+                'name' : 'Макан Елена Алексеевна',
+                'position' : 'Руководитель отдела продаж',
+            },
+        ])
+    </div>
+</div>
+@@include('modules/footer.html')

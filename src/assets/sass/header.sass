@@ -18,6 +18,8 @@
         flex-direction: row
         align-items: center
         gap: 40px
+        @media screen and ( max-width: 1024px )
+            width: 100%
         @media screen and ( max-width: 500px )
             flex-direction: column
             align-items: flex-start
@@ -28,6 +30,9 @@
             grid-template-areas: 'logo phone' 'logo title'
             grid-gap: 0 20px
             align-items: flex-end
+            @media screen and ( max-width: 1024px )
+                width: 100%
+                grid-template-areas: 'logo phone toggle' 'logo title toggle'
             @media screen and ( max-width: 500px )
                 display: grid
                 grid-template-rows: 1fr max-content

@@ -61,3 +61,75 @@
                 font-weight: 500
                 line-height: normal
                 margin-bottom: 0
+
+.selectManager
+    .container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 40px 20px
+        @media screen and ( max-width: 500px )
+            grid-template-columns: repeat(1, 1fr)
+    .team
+        &-item
+            &-v2
+                width: 100%
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 20px
+                align-items: center
+                @media screen and ( max-width: 1024px )
+                    grid-template-columns: repeat(1, 1fr)
+                &_photo
+                    max-height: 372px
+                    height: 100%
+                    position: relative
+                    @media screen and ( max-width: 1024px )
+                        max-height: 520px
+                    img
+                        &.portrait
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+                            object-position: center
+                            border-radius: 20px
+                        &.watermark
+                            position: absolute
+                            bottom: 20px
+                            left: 20px
+                &_bio
+                    p
+                        &.name
+                            font-size: 18px
+                            font-style: normal
+                            font-weight: 700
+                            line-height: normal
+                        &.position
+                            font-size: 14px
+                            font-style: normal
+                            font-weight: 500
+                            line-height: normal
+                            color: $mainGray
+                    .message
+                        padding: 10px
+                        border-radius: 20px
+                        background-color: #F7F7F5
+                        p
+                            font-size: 14px
+                            font-style: normal
+                            font-weight: 400
+                            line-height: normal
+                            margin-bottom: 0
+                &_btn
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-start
+                    margin-top: 40px
+                    a.btn
+                        @include btn()
+                        @include btn_blue()
+                        padding: 12px 36px
+                        svg
+                            fill: #fff
+                        &:hover
+                            svg
+                                fill: $mainBlue

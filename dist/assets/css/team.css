@@ -135,6 +135,164 @@
   line-height: normal;
   margin-bottom: 0;
 }
+
+.selectManager .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px 20px;
+}
+
+.selectManager .team-item-v2 {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selectManager .team-item-v2_photo {
+  max-height: 372px;
+  height: 100%;
+  position: relative;
+}
+
+.selectManager .team-item-v2_photo img.portrait {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+}
+
+.selectManager .team-item-v2_photo img.watermark {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.selectManager .team-item-v2_bio p.name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.selectManager .team-item-v2_bio p.position {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #969696;
+}
+
+.selectManager .team-item-v2_bio .message {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #F7F7F5;
+}
+
+.selectManager .team-item-v2_bio .message p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.selectManager .team-item-v2_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.selectManager .team-item-v2_btn a.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s, color 0.2s;
+  -o-transition: background-color 0.3s, color 0.2s;
+  transition: background-color 0.3s, color 0.2s;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #fff;
+  padding: 12px 36px;
+}
+
+.selectManager .team-item-v2_btn a.btn:hover {
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
+}
+
+.selectManager .team-item-v2_btn a.btn svg {
+  fill: #fff;
+}
+
+.selectManager .team-item-v2_btn a.btn:hover svg {
+  fill: #4a92fe;
+}
+
+@media screen and (max-width: 1024px) {
+  .selectManager .team-item-v2 {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .selectManager .team-item-v2_photo {
+    max-height: 520px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .selectManager .container {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 500px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }

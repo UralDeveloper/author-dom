@@ -163,6 +163,39 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar-logo {
+    width: 100%;
+  }
+
+  .navbar-logo_container {
+    width: 100%;
+        grid-template-areas: "logo phone toggle" "logo title toggle";
+  }
+
+  .navbar-title {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .navbar-brand {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+
+  .navbar-phone {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .navbar-toggler {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 5;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .navbar {
     padding-left: 12px;
@@ -233,6 +266,7 @@
 
   .navbar-toggler {
     -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     -ms-grid-column: 5;
   }
 }
@@ -247,6 +281,14 @@
 }
 
  @media screen and (min-width: 1921px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 1024px){
 
 @supports (-webkit-appearance:none){
 

@@ -14,12 +14,12 @@ export const img = () => {
         .pipe(app.gulp.dest(app.path.build.img))
         .pipe(app.gulp.src(app.path.src.img))
         .pipe(app.plugins.newer(app.path.build.img))
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            interlaced: true,
-            optimizationLevel: 3
-        }))
+        // .pipe(imagemin({
+        //     progressive: true,
+        //     svgoPlugins: [{removeViewBox: false}],
+        //     interlaced: true,
+        //     optimizationLevel: 1
+        // }))
         .pipe(app.gulp.dest(app.path.build.img))
         .pipe(app.plugins.browsersync.stream())
 }
