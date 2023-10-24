@@ -1,0 +1,43 @@
+@import colors
+@import mixins
+
+.headerBuildings
+    padding: 40px 0
+    h1
+        font-size: clamp(32px, 2.5vw, 48px)
+        font-style: normal
+        font-weight: 600
+        line-height: normal
+        text-align: center
+        text-wrap: balance
+        margin-bottom: 40px
+        span
+            color: $mainBlue
+    &-types
+    &-type
+        border-radius: 20px
+        background-color: #F6FAFF
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        padding: 20px
+    &-title
+        display: flex
+        flex-direction: column
+        gap: 32px
+        h3
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+        .btn
+            @include btn()
+            @include btn_blue()
+            svg
+                fill: #fff
+            &:hover
+                svg
+                    fill: $mainBlue
+    &-image
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end

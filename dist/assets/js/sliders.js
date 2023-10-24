@@ -198,3 +198,31 @@ const advantages = new Swiper(".advantages-row .swiper", {
     }
 },
 });
+
+const headerBuildings = new Swiper(".headerBuildings-types.swiper", {
+  spaceBetween: 10,
+  rewind: true,
+  // freeMode: true,
+  slidesPerView: 4,
+  // centeredSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      allowTouchMove: true,
+      autoplay: true
+    },
+    768: {
+      slidesPerView: 3,
+      allowTouchMove: true,
+    },
+    1200: {
+      slidesPerView: 4,
+      allowTouchMove: false,
+      autoplay: false
+    }
+  },
+  navigation: {
+    nextEl: ".headerBuildings-types-next",
+    prevEl: ".headerBuildings-types-prev",
+  },
+});
