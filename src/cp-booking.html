@@ -1,0 +1,113 @@
+@@include('modules/header.html')
+<div class="personalArea">
+    <div class="container">
+        <div class="personalArea-sidebar">
+            <div class="collapse show" id="collapseSidebar">
+                <a href="#">Мои объекты</a>
+                <a href="#">Бронирование</a>
+                <a href="#">Баланс</a>
+                <a href="#">Избранное</a>
+                <a href="#">Личная информация</a>
+                <a href="#">Выход</a>
+            </div>
+        </div>
+        <div class="personalArea-wrapper personalArea-booking">
+            <div class="personalArea-booking-header">
+                <div class="personalArea-booking-balance">
+                    <div class="personalArea-booking-balance-title">
+                        <h3>Ваш счет</h3>
+                        <p>Здесь отображаются средства, которые Вы внесли для оплаты бронирования</p>
+                    </div>
+                    <div class="personalArea-booking-balance-footer">
+                        <div class="personalArea-booking-balance-footer-balance">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <mask id="mask0_786_105221" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                                  <rect width="40" height="40" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_786_105221)">
+                                  <path d="M25.0025 32.4999C21.5136 32.4999 18.5576 31.2892 16.1346 28.8678C13.7115 26.4465 12.5 23.4914 12.5 20.0025C12.5 16.5136 13.7107 13.5577 16.132 11.1346C18.5534 8.71154 21.5085 7.5 24.9974 7.5C28.4862 7.5 31.4422 8.7107 33.8653 11.1321C36.2883 13.5534 37.4999 16.5086 37.4999 19.9974C37.4999 23.4863 36.2892 26.4422 33.8678 28.8653C31.4464 31.2884 28.4913 32.4999 25.0025 32.4999ZM9.93588 31.4422C7.66663 30.4871 5.86 28.9743 4.516 26.9038C3.172 24.8333 2.5 22.532 2.5 20C2.5 17.4679 3.172 15.1666 4.516 13.0961C5.86 11.0256 7.66663 9.51282 9.93588 8.55771C10.3803 8.35471 10.7798 8.3744 11.1345 8.61679C11.4892 8.85918 11.6666 9.25439 11.6666 9.80242C11.6666 10.0132 11.5974 10.2167 11.4592 10.4129C11.3209 10.6091 11.1454 10.7588 10.9326 10.8621C9.11852 11.6356 7.67621 12.8482 6.60571 14.5C5.53518 16.1517 4.99992 17.985 4.99992 20C4.99992 22.0149 5.53518 23.8483 6.60571 25.5C7.67621 27.1517 9.11852 28.3643 10.9326 29.1378C11.1454 29.2437 11.3209 29.3919 11.4592 29.5825C11.5974 29.7732 11.6666 29.9849 11.6666 30.2179C11.6666 30.7307 11.4892 31.1137 11.1345 31.3669C10.7798 31.6201 10.3803 31.6452 9.93588 31.4422ZM24.9999 30C27.7777 30 30.1388 29.0277 32.0833 27.0833C34.0277 25.1388 34.9999 22.7777 34.9999 20C34.9999 17.2222 34.0277 14.8611 32.0833 12.9166C30.1388 10.9722 27.7777 9.99996 24.9999 9.99996C22.2221 9.99996 19.861 10.9722 17.9166 12.9166C15.9721 14.8611 14.9999 17.2222 14.9999 20C14.9999 22.7777 15.9721 25.1388 17.9166 27.0833C19.861 29.0277 22.2221 30 24.9999 30Z" fill="#5AE4A7"/>
+                                </g>
+                            </svg>
+                            <span class="price_rub">5000</span>
+                        </div>
+                        <div class="personalArea-booking-balance-footer-button">
+                            <a href="#">Пополнить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="personalArea-booking-building">
+                    <div class="personalArea-booking-building-header">
+                        <h3>Услуга строительства дома</h3>
+                        <p>Постройте дом мечты с Avtor Dom</p>
+                    </div>
+                    <div class="personalArea-booking-building-price">
+                        <p>Сумма залога <span class="price_rub">5000</span></p>
+                    </div>
+                    <div class="personalArea-booking-building-button">
+                        <a href="#">
+                            Забронировать
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <mask id="mask0_1113_79283" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                  <rect width="24" height="24" />
+                                </mask>
+                                <g mask="url(#mask0_1113_79283)">
+                                  <path d="M16.6116 12.7498H5.25C5.03718 12.7498 4.85898 12.678 4.7154 12.5345C4.5718 12.3909 4.5 12.2127 4.5 11.9999C4.5 11.787 4.5718 11.6088 4.7154 11.4653C4.85898 11.3217 5.03718 11.2499 5.25 11.2499H16.6116L13.3192 7.95753C13.1705 7.80882 13.0971 7.63478 13.099 7.43543C13.1009 7.23608 13.1743 7.05884 13.3192 6.90371C13.4743 6.74859 13.6525 6.66847 13.8538 6.66333C14.0551 6.6582 14.2333 6.7332 14.3884 6.88833L18.8672 11.3672C18.9608 11.4608 19.0269 11.5595 19.0653 11.6633C19.1038 11.7672 19.123 11.8793 19.123 11.9999C19.123 12.1204 19.1038 12.2325 19.0653 12.3364C19.0269 12.4402 18.9608 12.5389 18.8672 12.6325L14.3884 17.1114C14.2397 17.2601 14.0631 17.3335 13.8586 17.3316C13.6541 17.3296 13.4743 17.2511 13.3192 17.096C13.1743 16.9409 13.0993 16.7652 13.0942 16.5691C13.0891 16.3729 13.1641 16.1973 13.3192 16.0422L16.6116 12.7498Z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="personalArea-booking-title">
+                <h3>Бронирования</h3>
+            </div>
+            <div class="personalArea-booking-list">
+                <div class="personalArea-booking-item personalArea-booking-item-main">
+                    <div class="personalArea-booking-item-header">
+                        <span class="booking-number">Бронь № 28392</span>
+                        <span class="booking-status"><img src="@img/icons/expectation.svg" alt=""> Ожидает оплаты бронирования</span>
+                        <span class="booking-status"><img src="@img/icons/status_done.svg" alt="">Оплачена</span>
+                        <span class="booking-status"><img src="@img/icons/status_divestable.svg" alt="">Отклонена</span>
+                    </div>
+                    <div class="personalArea-booking-item-content">
+                        <div class="personalArea-booking-item-content-main">
+                            <h4>Объект №1</h4>
+                            <p class="address">Ленинградская область, Всеволожский, КП Софийские сады</p>
+                        </div>
+                        <div class="personalArea-booking-item-content-more">
+                            <a href="#">
+                                Подробнее
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <mask id="mask0_1113_91812" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+                                      <rect width="18" height="18" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_1113_91812)">
+                                      <path d="M12.4587 9.56262H3.9375C3.77789 9.56262 3.64424 9.50877 3.53655 9.40109C3.42885 9.2934 3.375 9.15975 3.375 9.00014C3.375 8.84053 3.42885 8.70687 3.53655 8.59919C3.64424 8.4915 3.77789 8.43766 3.9375 8.43766H12.4587L9.9894 5.96839C9.87786 5.85686 9.82282 5.72633 9.82427 5.57682C9.82571 5.42731 9.88075 5.29437 9.9894 5.17802C10.1057 5.06169 10.2394 5.00159 10.3903 4.99774C10.5413 4.99389 10.675 5.05014 10.7913 5.16649L14.1504 8.52563C14.2206 8.59582 14.2701 8.66986 14.299 8.74774C14.3278 8.82562 14.3423 8.90975 14.3423 9.00014C14.3423 9.09053 14.3278 9.17466 14.299 9.25253C14.2701 9.33042 14.2206 9.40446 14.1504 9.47464L10.7913 12.8338C10.6798 12.9453 10.5473 13.0004 10.394 12.9989C10.2406 12.9975 10.1057 12.9386 9.9894 12.8222C9.88075 12.7059 9.8245 12.5742 9.82065 12.4271C9.81681 12.2799 9.87306 12.1482 9.9894 12.0319L12.4587 9.56262Z" fill="#1C1B1F"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="personalArea-booking-item-footer">
+                        <a href="#">Забронировать</a>
+                    </div>
+                </div>
+                <div class="personalArea-booking-item personalArea-booking-item-noObject">
+                    <div class="personalArea-booking-item-header">
+                        <span class="booking-number">Бронь № 28392</span>
+                        <span class="booking-status"><img src="@img/icons/status_done.svg" alt="">Оплачена</span>
+                    </div>
+                    <div class="personalArea-booking-item-content">
+                        <div class="personalArea-booking-item-content-message">
+                            <p>Вы оплатили бронь, но не выбрали объект. Выберите из проект дома или свяжитесь с менеджером для уточнения деталей</p>
+                        </div>
+                    </div>
+                    <div class="personalArea-booking-item-footer">
+                        <a href="#">Выбрать объект</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('modules/footer.html')

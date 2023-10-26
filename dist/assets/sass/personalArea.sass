@@ -9,6 +9,8 @@
         display: grid
         grid-template-columns: 295px 1fr
         grid-gap: 20px
+        @media screen and ( max-width: 768px )
+            grid-template-columns: repeat(1, 1fr)
     &-navObjects
         gap: 20px
         margin-bottom: 20px

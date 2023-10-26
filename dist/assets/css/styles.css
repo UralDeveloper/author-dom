@@ -4711,6 +4711,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1032px;
+  padding-top: 20px;
 }
 
 .buildings-info-wrapper {
@@ -6608,6 +6609,478 @@ body {
 
 .personalArea-content .cpStepBuilding-item img {
   width: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+.personalArea-booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.personalArea-booking-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.personalArea-booking-balance {
+  width: 100%;
+  padding: 28px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 24px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.personalArea-booking-balance-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 12px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.personalArea-booking-balance-title h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.personalArea-booking-balance-title p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #969696;
+}
+
+.personalArea-booking-balance-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.personalArea-booking-balance-footer-balance {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.personalArea-booking-balance-footer-button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s, color 0.2s;
+  -o-transition: background-color 0.3s, color 0.2s;
+  transition: background-color 0.3s, color 0.2s;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #fff;
+  padding: 12px 36px;
+  font-weight: 600;
+}
+
+.personalArea-booking-balance-footer-button a:hover {
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
+}
+
+.personalArea-booking-building {
+  padding: 28px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 20px;
+  background-image: url("../img/banner_reservation.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.personalArea-booking-building-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 12px;
+}
+
+.personalArea-booking-building-header h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+}
+
+.personalArea-booking-building-header p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+}
+
+.personalArea-booking-building-price p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.personalArea-booking-building-price span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+}
+
+.personalArea-booking-building-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.personalArea-booking-building-button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s, color 0.2s;
+  -o-transition: background-color 0.3s, color 0.2s;
+  transition: background-color 0.3s, color 0.2s;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  background-color: #fff;
+  color: #202020;
+  padding: 12px 36px;
+  color: #4a92fe;
+  font-weight: 600;
+  gap: 12px;
+}
+
+.personalArea-booking-building-button a:hover {
+  color: #fff;
+  background-color: #202020;
+}
+
+.personalArea-booking-building-button a svg {
+  fill: #4a92fe;
+}
+
+.personalArea-booking-building-button a:hover {
+  background-color: #4a92fe;
+}
+
+.personalArea-booking-building-button a:hover svg {
+  fill: #fff;
+}
+
+.personalArea-booking-title h3 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.personalArea-booking-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.personalArea-booking-item {
+  background-color: #fff;
+  padding: 28px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.personalArea-booking-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.personalArea-booking-item-header .booking-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #f7f7f5;
+  color: #202020;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.personalArea-booking-item-header .booking-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.personalArea-booking-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 28px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  border-radius: 20px;
+  background-color: #F6FAFF;
+}
+
+.personalArea-booking-item-content-main h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.personalArea-booking-item-content-main p {
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #969696;
+}
+
+.personalArea-booking-item-content-more a {
+  color: #202020;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+
+.personalArea-booking-item-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.personalArea-booking-item-footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s, color 0.2s;
+  -o-transition: background-color 0.3s, color 0.2s;
+  transition: background-color 0.3s, color 0.2s;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  background-color: #4a92fe;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #fff;
+  padding: 12px 36px;
+  font-weight: 600;
+}
+
+.personalArea-booking-item-footer a:hover {
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 2px #4a92fe;
+          box-shadow: inset 0 0 0 2px #4a92fe;
+  color: #4a92fe;
+}
+
+.personalArea-booking-item-noObject .personalArea-booking-item-content {
+  background: none;
+  padding: 0;
+}
+
+.personalArea-booking-item-noObject .personalArea-booking-item-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #969696;
+  text-wrap: balance;
 }
 
 @keyframes pulse {
@@ -8758,6 +9231,11 @@ form input[type=submit] svg {
     max-height: 520px;
   }
 
+  .personalArea-booking-header {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .singleHome-description_options {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -8906,6 +9384,11 @@ form input[type=submit] svg {
   }
 
   .pageDefault-contacts .row {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .personalArea .container {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
   }
@@ -9425,6 +9908,42 @@ form input[type=submit] svg {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .personalArea-booking-balance {
+    padding: 24px 20px;
+  }
+
+  .personalArea-booking-balance-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .personalArea-booking-building {
+    padding: 24px 20px;
+  }
+
+  .personalArea-booking-item {
+    padding: 24px 20px;
+  }
+
+  .personalArea-booking-item-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .personalArea-booking-item-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .personalAccount {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -9792,6 +10311,7 @@ form input[type=submit] svg {
 .paymentOptions-footer_desc p::before{background-image:url(../img/leaves.svg)}
 .message-text::before{background-image:url("../img/icons/format_quote.svg")}
 .floatingForm-title::before{background-image:url(../img/floatingForm_bg.svg)}
+.personalArea-booking-building{background-image:url("../img/banner_reservation.png")}
 }
 
  @media screen and (min-width: 768px){

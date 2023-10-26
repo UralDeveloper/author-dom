@@ -738,6 +738,21 @@
 .personalArea-content .cpStepBuilding-item img {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .personalArea .container {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }
