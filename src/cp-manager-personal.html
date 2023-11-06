@@ -1,0 +1,215 @@
+@@include('modules/header.html')
+<div class="personalArea">
+    <div class="container">
+        <div class="personalArea-sidebar">
+            <div class="collapse show" id="collapseSidebar">
+                <a href="/cp-manager-client.html">Клиенты</a>
+                <a href="/cp-manager-testing.html">Тестирования</a>
+                <a href="/cp-manager-personal.html">Личная информация</a>
+                <a href="#">Выход</a>
+            </div>
+        </div>
+        <div class="personalArea-personalInfo">
+            <div class="personalArea-personalInfo-profile">
+                <section class="personalArea-personalInfo-profile_avatar">
+                    <img src="@img/avatar.png" alt="">
+                </section>
+                <section class="personalArea-personalInfo-profile_bio">
+                    <div class="personalArea-personalInfo-profile_header">
+                        <h3>Иванов Иван Петрович</h3>
+                        <a href="#">Выйти</a>
+                    </div>
+                    <div class="personalArea-personalInfo-profile_fields">
+                        <div class="form-floating">
+                            <input type="tel" class="form-control" id="floatingInputValue_phone" placeholder="+7 999 888 8888" value="">
+                            <label for="floatingInputValue_phone">Телефон</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputValue_manager" placeholder="Менеджер" value="">
+                            <label for="floatingInputValue_manager">Должность</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputValue_email" placeholder="E-mail" value="">
+                            <label for="floatingInputValue_email">E-mail</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputValue_department" placeholder="Строительство" value="">
+                            <label for="floatingInputValue_department">Отдел</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="floatingInputValue_date" placeholder="01.01.0001" value="">
+                            <label for="floatingInputValue_date">Дата рождения</label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="personalArea-profile_summary">
+                <div class="personalArea-profile_summary-item income">
+                    <span class="name">Заработал с компанией</span>
+                    <span class="value price_rub">13234000000</span>
+                </div>
+                <div class="personalArea-profile_summary-item rating">
+                    <span class="name">Pейтинг сотрудника</span>
+                    <span class="value">4.79</span>
+                </div>
+                <div class="personalArea-profile_summary-item deals">
+                    <span class="name">Сделки в работе</span>
+                    <span class="value">200</span>
+                </div>
+                <div class="personalArea-profile_summary-item experience">
+                    <span class="name">Стаж работы</span>
+                    <span class="value">23 <span>года</span> 11 <span>мес</span></span>
+                </div>
+            </div>
+            <div class="personalArea-personalInfo-income">
+                <div class="personalArea-personalInfo-income-header">
+                    <h3>Доходы</h3>
+                </div>
+                <div class="personalArea-personalInfo-income-chart">
+                    <!-- Последние 7 месяцев -->
+                    <div class="personalArea-personalInfo-income-chart-titles">Янв (2023),Фев (2023),Март (2023),Апр (2023),Май (2023),Июн (2023),Июл (2023),Авг (2023),Сен (2023),Окт (2023),Ноя (2023),Дек (2023)</div>
+                    <div class="personalArea-personalInfo-income-chart-values">120000,220000,320000,420000,520000,620000,720000,820000,320000,420000,1120000,1220000</div>
+                    <canvas id="incomeChart"></canvas>
+                </div>
+                <div class="personalArea-personalInfo-income-total">
+                    <button class="btn income_btn" type="button" data-bs-toggle="collapse" data-bs-target="#income_collapse" aria-expanded="false" aria-controls="collapseExample">
+                        Отчет по месяцам
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19">
+                            <mask id="mask0_1207_75669" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="19">
+                                <rect y="0.504883" width="18" height="18" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_1207_75669)">
+                                <path d="M9.00072 11.501C8.91034 11.501 8.8262 11.4865 8.74833 11.4577C8.67044 11.4288 8.5964 11.3793 8.52622 11.3091L5.15555 7.93845C5.0517 7.83461 4.99857 7.70409 4.99617 7.54688C4.99376 7.38966 5.04688 7.25673 5.15555 7.14808C5.2642 7.03943 5.39592 6.98511 5.55072 6.98511C5.70552 6.98511 5.83725 7.03943 5.9459 7.14808L9.00072 10.2029L12.0555 7.14808C12.1594 7.04424 12.2899 6.99112 12.4471 6.98871C12.6043 6.98631 12.7372 7.03943 12.8459 7.14808C12.9546 7.25673 13.0089 7.38846 13.0089 7.54328C13.0089 7.69808 12.9546 7.8298 12.8459 7.93845L9.47523 11.3091C9.40504 11.3793 9.331 11.4288 9.25312 11.4577C9.17524 11.4865 9.09111 11.501 9.00072 11.501Z"/>
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="collapse" id="income_collapse">
+                        <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-2023-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2023" type="button" role="tab" aria-controls="v-pills-2023" aria-selected="false">2023 год</button>
+                                <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="true">2022 год</button>
+                            </div>
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade" id="v-pills-2022" role="tabpanel" aria-labelledby="v-pills-2022-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade show active" id="v-pills-2023" role="tabpanel" aria-labelledby="v-pills-2023-tab" tabindex="0">
+                                    <div class="income_list">
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Январь</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Февраль</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Март</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Апрель</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Май</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Июнь</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Июль</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Август</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Сентябрь</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Октябрь</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Ноябрь</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                        <div class="income_list-item">
+                                            <div class="income_list-item_name">Декабрь</div>
+                                            <div class="income_list-item_amountOfDeals">12 сделок</div>
+                                            <div class="income_list-item_value price_rub">120000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personalArea-personalInfo-achievements">
+                <div class="personalArea-personalInfo-achievements-header">
+                    <h3>Достижения</h3>
+                </div>
+                <div class="personalArea-personalInfo-achievements-list">
+                    <div class="personalArea-personalInfo-achievements-item">
+                        <div class="personalArea-personalInfo-achievements-item_icon">
+                            <img src="@img/icons/achievements_icon.png" alt="">
+                        </div>
+                        <div class="personalArea-personalInfo-achievements-item_title">
+                            <p class="title">Работник месяца</p>
+                        </div>
+                        <div class="personalArea-personalInfo-achievements-item_description">
+                            <p>Здесь будет описание достижения</p>
+                        </div>
+                        <div class="personalArea-personalInfo-achievements-item_date">
+                            <p>12.01.2023</p>
+                        </div>
+                    </div>
+                    <div class="personalArea-personalInfo-achievements-item">
+                        <div class="personalArea-personalInfo-achievements-item_icon">
+                            <img src="@img/icons/achievements_icon.png" alt="">
+                        </div>
+                        <div class="personalArea-personalInfo-achievements-item_title">
+                            <p class="title">Работник месяца</p>
+                        </div>
+                        <div class="personalArea-personalInfo-achievements-item_description">
+                            <p>Здесь будет описание достижения</p>
+                        </div>
+                        <div class="personalArea-personalInfo-achievements-item_date">
+                            <p>12.01.2023</p>
+                        </div>
+                    </div>
+                    <div class="personalArea-personalInfo-achievements-item">
+                        <div class="personalArea-personalInfo-achievements-item_icon">
+                            <img src="@img/icons/achievements_icon.png" alt="">
+                        </div>
+                        <div class="personalArea-personalInfo-achievements-item_title">
+                            <p class="title">Работник месяца</p>
+                        </div>
+                        <div class="personalArea-personalInfo-achievements-item_description">
+                            <p>Здесь будет описание достижения</p>
+                        </div>
+                        <div class="personalArea-personalInfo-achievements-item_date">
+                            <p>12.01.2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('modules/footer.html')

@@ -1,0 +1,74 @@
+@import colors
+@import mixins
+
+#howBuy
+    padding: 40px 0 0
+
+.howBuy
+    &-title
+        h3
+            @include title_h3()
+            margin-bottom: 40px
+    &-container
+        padding: 0
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        @media screen and ( max-width: 768px )
+            grid-template-columns: repeat(1, 1fr)
+        @media screen and ( max-width: 500px )
+            grid-template-columns: repeat(1, 1fr)
+    &-video
+        position: relative
+        .video
+            &-preview
+                position: relative
+                z-index: 1
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            &-play
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                display: flex
+                align-items: center
+                justify-content: center
+                a
+                    position: relative
+                    top: 100px
+                    opacity: 0
+                    transition: top .4s, opacity .5s
+                &:hover
+                    a
+                        top: 0
+                        opacity: 1
+    &-messageContainer
+        position: relative
+        min-height: 400px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        padding: 40px 120px
+        @media screen and ( max-width: 768px )
+            padding: 20px 32px
+        @media screen and ( max-width: 500px )
+            padding: 40px 40px
+    &-text
+        position: relative
+        display: flex
+        flex-direction: column
+        gap: 20px
+        p
+            position: relative
+            z-index: 1
+            text-wrap: balance
+    &-item
+        display: grid
+        grid-template-columns: 50px 1fr
+        grid-gap: 20px
+        align-items: center

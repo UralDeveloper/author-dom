@@ -1,0 +1,98 @@
+@import colors
+@import mixins
+
+.navbar
+    padding-left: 60px
+    padding-right: 60px
+    @media screen and ( max-width: 500px )
+        padding-left: 12px
+        padding-right: 12px
+    .container-fluid
+        @media screen and ( min-width: 1921px )
+            max-width: 1900px
+        @media screen and ( max-width: 500px )
+            align-items: flex-end
+            flex-direction: column
+    &-logo
+        display: flex
+        flex-direction: row
+        align-items: center
+        gap: 40px
+        @media screen and ( max-width: 1024px )
+            width: 100%
+        @media screen and ( max-width: 500px )
+            flex-direction: column
+            align-items: flex-start
+            width: 100%
+        &_container
+            display: grid
+            grid-template-columns: 132px 1fr
+            grid-template-areas: 'logo phone' 'logo title'
+            grid-gap: 0 20px
+            align-items: flex-end
+            @media screen and ( max-width: 1024px )
+                width: 100%
+                grid-template-areas: 'logo phone toggle' 'logo title toggle'
+            @media screen and ( max-width: 500px )
+                display: grid
+                grid-template-rows: 1fr max-content
+                grid-template-columns: repeat(3, 1fr)
+                grid-template-areas: 'logo title title' 'phone phone toggle'
+    &-title
+        grid-area: title
+        display: flex
+        align-items: flex-start
+        height: 100%
+        max-width: 280px
+        @media screen and ( max-width: 500px )
+            align-items: center
+        p
+            margin-bottom: 0
+            font-size: 12px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            color: #6d6d6d
+    &-brand
+        margin-right: 0
+        grid-area: logo
+        img
+            width: 124px
+            height: auto
+    &-phone
+        display: flex
+        flex-direction: row
+        align-items: center
+        gap: 16px
+        grid-area: phone
+        a
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            color: $mainBlack
+            text-decoration: none
+    &-toggler
+        grid-area: toggle
+    &-collapse
+        flex-grow: 0
+        @media screen and ( max-width: 500px )
+            width: 100%
+            padding-top: 20px
+    &-nav
+        gap: 4px
+        .nav
+            &-link
+                color: $mainBlack
+                text-transform: uppercase
+                font-size: 14px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                @media screen and ( max-width: 1300px ) and (min-width: 1200px)
+                    font-size: 12px
+                    
+    &-login
+        padding-left: 20px
+        margin-left: 20px
+        border-left: 1px solid #D9D9D9

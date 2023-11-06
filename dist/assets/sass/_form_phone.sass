@@ -1,0 +1,67 @@
+@import mixins
+@import colors
+
+
+.floatingForm
+    padding: 40px 0
+    margin-top: 40px
+    &-row
+        display: grid
+        grid-template-columns: max-content 1fr
+        grid-gap: 80px
+        max-width: 1080px
+        margin: 0 auto
+    &-title
+        display: flex
+        align-items: flex-start
+        position: relative
+        max-width: 500px
+        &::before
+            position: absolute
+            z-index: -1
+            content: ''
+            right: 0
+            top: -40px
+            width: 250px
+            height: 160px
+            background-image: url(../img/floatingForm_bg.svg)
+            background-repeat: no-repeat
+            background-position: center right
+            background-size: 250px
+            transform: scale(1.2)
+        p
+            border: 1px solid $mainBlack
+            font-size: 28px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            margin-bottom: 0
+            position: relative
+            z-index: 2
+            padding: 12px
+            text-wrap: balance
+    &-form
+        .wpcf7-spinner
+            display: none
+        .wpcf7-form
+            display: grid
+            grid-template-columns: 1fr max-content
+            grid-template-areas: 'phone submit' 'message message'
+            grid-gap: 20px
+        .form-floating
+            grid-area: phone
+        .wpcf7-submit
+            grid-area: submit
+        .wpcf7-response-output
+            grid-area: message
+        p.text_privacy_policy
+            margin-bottom: 0
+            margin-top: 16px
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            color: $mainGray
+            a
+                color: $mainBlue
+                text-decoration: none

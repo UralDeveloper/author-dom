@@ -1,0 +1,343 @@
+@import colors
+@import mixins
+
+.singleHome
+    &-wrapper
+        background-color: #F7F7F5
+        padding-bottom: 60px
+    &-row
+        display: grid
+        grid-template-columns: 1fr 400px
+        grid-gap: 20px
+        @media screen and ( max-width: 768px )
+            grid-template-columns: 1fr
+    &-info
+        padding: 0
+        overflow: hidden
+        display: flex
+        flex-direction: column
+        gap: 20px
+    &-mainSlider
+        max-height: 760px
+        .swiper
+            &-wrapper
+                min-height: 500px
+                border-radius: 20px
+                // overflow: hidden
+        .singleHome
+            &-slide
+                img
+                    width: 100%
+                    height: 100%
+                    max-height: 760px
+                    object-fit: scale-down
+        .swiper
+            &-button
+                &-next
+                    right: 20px
+                    @media screen and ( max-width: 500px )
+                        right: 12px
+                &-prev
+                    left: 20px
+                    @media screen and ( max-width: 500px )
+                        left: auto
+                        right: 72px
+                &-next,
+                &-prev
+                    background-color: rgba(255, 255, 255, 0.7)
+                    border-radius: 50px
+                    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10)
+                    width: 50px
+                    height: 50px
+                    &:after
+                        display: none
+                    @media screen and ( max-width: 500px )
+                        top: auto
+                        bottom: 20px
+    &-thumbnail
+        margin-top: 20px
+        max-height: 130px
+        .singleHome
+            &-slide
+                width: 100%
+                height: 100%
+                max-width: 130px
+                max-height: 130px
+                img
+                    width: 100%
+                    height: 100%
+                    max-width: 130px
+                    max-height: 130px
+                    object-fit: cover
+                    object-position: center
+    &-slide
+        opacity: .6
+        transition: opacity .6s
+        &.swiper-slide-thumb-active,
+        &.swiper-slide-active
+            opacity: 1
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center
+            border-radius: 20px
+    &-infoblock
+        display: flex
+        padding: 40px
+        flex-direction: column
+        align-items: flex-start
+        gap: 20px
+        border-radius: 20px
+        background: #FFF
+        @media screen and ( max-width: 500px )
+            padding: 28px 20px
+    &-titleBlock
+        font-size: 18px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        text-transform: uppercase
+    &-description
+        &_content
+            p
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+        &_address
+            display: flex
+            flex-direction: row
+            gap: 8px
+            p
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                margin-bottom: 0
+                color: #969696
+        &_options
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 16px 40px
+            justify-content: space-between
+            width: 100%
+            @media screen and ( max-width: 1024px )
+                grid-template-columns: repeat(1, 1fr)
+            &-item
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                position: relative
+                &::after
+                    content: ''
+                    width: 100%
+                    height: 0
+                    border-bottom: 1px dashed $mainGray
+                    position: absolute
+                    bottom: 2px
+                    z-index: 1
+                .title
+                    display: flex
+                    flex-direction: row
+                    align-items: flex-end
+                    gap: 4px
+                    background-color: #fff
+                    position: relative
+                    z-index: 2
+                    padding-right: 8px
+                    // line-height: 1em
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 400
+                    color: $mainGray
+                .value
+                    background-color: #fff
+                    position: relative
+                    z-index: 2
+                    padding-left: 8px
+                    // line-height: 1em
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 500
+                    color: $mainBlack
+    &-map
+        width: 100%
+        height: 400px
+        min-width: 200px
+        #map
+            width: 100%
+            height: 100%
+    &-calc
+        .calc
+            &-wrapper
+                width: 100%
+                padding: 0
+            &-container
+                grid-template-columns: 2fr 1fr
+                @media screen and ( max-width: 500px )
+                    grid-template-columns: repeat(1, 1fr)
+    &-documentation
+        &_list
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 20px
+            width: 100%
+            @media screen and ( max-width: 500px )
+                grid-template-columns: 1fr
+        &_item
+            display: grid
+            grid-template-columns: 48px 1fr
+            grid-gap: 12px
+            &-icon
+                a
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: fill
+            &-info
+                display: flex
+                flex-direction: column
+                gap: 4px
+            &-title
+                color: $mainBlack
+                font-size: 24px
+                font-weight: 600
+                text-decoration: none
+            span
+                color: $mainGray
+                font-size: 12px
+                font-weight: 600
+    &-sidebar
+        @media screen and ( max-width: 768px )
+            position: fixed
+            bottom: 0
+            left: 0
+            padding: 0 24px
+            z-index: 3
+            @media screen and ( max-width: 500px )
+                padding: 0 12px
+                box-shadow: 0 0 12px -6px $mainBlack
+        &_wrapper
+            position: sticky
+            top: 20px
+        &_container
+            display: flex
+            width: 100%
+            padding: 40px
+            flex-direction: column
+            align-items: flex-start
+            gap: 10px
+            border-radius: 20px
+            background-color: #fff
+            @media screen and ( max-width: 768px )
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-template-areas: 'title title' 'price btn_buy'
+                align-items: center
+            @media screen and ( max-width: 500px )
+                grid-template-columns: repeat(1, 1fr)
+                grid-template-areas: 'title' 'price' 'btn_buy'
+                padding: 12px
+            hr
+                border: 1px solid $mainGray
+                width: 100%
+                @media screen and ( max-width: 768px )
+                    display: none
+        &_title
+            @media screen and ( max-width: 768px )
+                grid-area: title
+            h1
+                font-size: 18px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+            &-address
+                display: flex
+                flex-direction: row
+                gap: 8px
+                @media screen and ( max-width: 768px )
+                    display: none
+                p
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                    margin-bottom: 0
+                    color: $mainGray
+        &_price
+            display: flex
+            flex-direction: column
+            gap: 8px
+            @media screen and ( max-width: 768px )
+                grid-area: price
+            .mainPrice
+                font-size: 28px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                @media screen and ( max-width: 500px )
+                    font-size: 18px
+            .priceMetr
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                color: $mainGray
+        &_btns
+            display: flex
+            flex-direction: column
+            gap: 10px
+            width: 100%
+            @media screen and ( max-width: 768px )
+                grid-area: btn_buy
+            .btn
+                padding: 12px 24px
+                font-size: 16px
+                border-radius: 12px
+                font-weight: 600
+                &_buy
+                    @include btn_blue()
+                    svg
+                        fill: #fff
+                    &:hover
+                        svg
+                            fill: $mainBlue
+                            transition: fill .3s
+                &_to_calc
+                    @include btn_white_border()
+                    @media screen and ( max-width: 768px )
+                        display: none
+                    svg
+                        fill: $mainBlue
+                        transition: fill .3s
+                    &:hover
+                        svg
+                            fill: #fff
+        &_credit
+            background-color: #F7F7F5
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            width: 100%
+            padding: 8px 30px
+            display: flex
+            flex-direction: row
+            align-items: center
+            gap: 4px
+            border-radius: 8px
+            @media screen and ( max-width: 768px )
+                display: none
+            span
+                &:not(.price_rub)
+                    font-family: Montserrat
+                    font-size: 12px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+                &.price_rub
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal

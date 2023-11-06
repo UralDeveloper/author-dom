@@ -1,0 +1,215 @@
+@@include('modules/header.html')
+<div class="personalArea">
+    <div class="container">
+        <div class="personalArea-sidebar">
+            <div class="collapse show" id="collapseSidebar">
+                <a href="/cp-manager-client.html">Клиенты</a>
+                <a href="/cp-manager-testing.html">Тестирования</a>
+                <a href="/cp-manager-personal.html">Личная информация</a>
+                <a href="#">Выход</a>
+            </div>
+        </div>
+        <div class="personalArea_manager-wrapper">
+            <div class="personalArea-clientPage">
+                <div class="personalArea-clientPage-clientInfo">
+                    <div class="personalArea-clientPage-header">
+                        <div class="personalArea-clientPage-header_name">
+                            <h1>Иванов Иван Петрович</h1>
+                        </div>
+                        <div class="personalArea-clientPage-header_phone">
+                            <a href="tel:+79998887777">+7 999 888 7777</a>
+                        </div>
+                    </div>
+                    <div class="personalArea-clientPage-tab">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-info-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-info"
+                                    aria-selected="true">Информация о клиенте</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-object-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-object" type="button" role="tab" aria-controls="pills-object"
+                                    aria-selected="false">Объект</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="personalArea-content personalArea-clientPage-tab-content">
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab" tabindex="0">
+                            
+                        </div>
+                        <div class="cpObject-content_pane tab-pane fade show active" id="pills-object" role="tabpanel" aria-labelledby="pills-object-tab" tabindex="0">
+                            <section class="personalArea-clientPage-title">
+                                <div class="title">Объект №1</div>
+                                <div class="address">Ленинградская область, Всеволожский, КП Софийские сады</div>
+                            </section>
+                            <section class="cpObject-mainInfo">
+                                <div class="cpObject-gallery swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="@img/catalog_item.jpeg">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="@img/catalog_item.jpeg">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="@img/catalog_item.jpeg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cpObject-options">
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Land_area.svg" alt="Площадь участка">
+                                            </div>
+                                            Площадь участка
+                                        </div>
+                                        <div class="value">7.35 сот.</div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/The_area_of_the_house.svg" alt="Площадь участка">
+                                            </div>
+                                            Площадь дома
+                                        </div>
+                                        <div class="value">106 м<sup>2</sup></div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/The_number_of_rooms.svg" alt="Площадь участка">
+                                            </div>
+                                            Количество комнат
+                                        </div>
+                                        <div class="value">3 </div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Number_of_floors.svg" alt="Площадь участка">
+                                            </div>
+                                            Количество этажей
+                                        </div>
+                                        <div class="value">1 </div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Bathrooms.svg" alt="Площадь участка">
+                                            </div>
+                                            Санузлы
+                                        </div>
+                                        <div class="value">1 </div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Terrace_Veranda.svg" alt="Площадь участка">
+                                            </div>
+                                            Терраса / веранда
+                                        </div>
+                                        <div class="value">Есть </div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Communications.svg" alt="Площадь участка">
+                                            </div>
+                                            Коммуникации
+                                        </div>
+                                        <div class="value">Есть </div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Parking.svg" alt="Площадь участка">
+                                            </div>
+                                            Парковка
+                                        </div>
+                                        <div class="value">Есть </div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Category.svg" alt="Площадь участка">
+                                            </div>
+                                            Категория
+                                        </div>
+                                        <div class="value">ДНП </div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Wall_material.svg" alt="Площадь участка">
+                                            </div>
+                                            Материал стен
+                                        </div>
+                                        <div class="value">Газоблок </div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Type_of_ceilings.svg" alt="Площадь участка">
+                                            </div>
+                                            Тип перекрытий
+                                        </div>
+                                        <div class="value">Деревянные </div>
+                                    </div>
+                                    <div class="singleHome-description_options-item">
+                                        <div class="title">
+                                            <div class="icon">
+                                                <img src="@img/icons/single_home/Year_of_construction.svg" alt="Площадь участка">
+                                            </div>
+                                            Год постройки
+                                        </div>
+                                        <div class="value">2023 </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="singleHome-infoblock cpObject-comments">
+                                <div class="singleHome-titleBlock">Комментарий</div>
+                                <textarea name="#" id="" cols="30" rows="6"></textarea>
+                                <button class="btn btn_primary">
+                                    Сохранить
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <mask id="mask0_569_1052" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                          <rect width="24" height="24"/>
+                                        </mask>
+                                        <g mask="url(#mask0_569_1052)">
+                                          <path d="M16.6116 12.75H5.25C5.03718 12.75 4.85898 12.6782 4.7154 12.5346C4.5718 12.391 4.5 12.2128 4.5 12C4.5 11.7872 4.5718 11.609 4.7154 11.4654C4.85898 11.3218 5.03718 11.25 5.25 11.25H16.6116L13.3192 7.95769C13.1705 7.80897 13.0971 7.63493 13.099 7.43558C13.1009 7.23623 13.1743 7.05899 13.3192 6.90386C13.4743 6.74874 13.6525 6.66862 13.8538 6.66349C14.0551 6.65835 14.2333 6.73335 14.3884 6.88849L18.8672 11.3673C18.9608 11.4609 19.0269 11.5596 19.0653 11.6635C19.1038 11.7673 19.123 11.8795 19.123 12C19.123 12.1205 19.1038 12.2327 19.0653 12.3365C19.0269 12.4404 18.9608 12.5391 18.8672 12.6327L14.3884 17.1115C14.2397 17.2603 14.0631 17.3337 13.8586 17.3317C13.6541 17.3298 13.4743 17.2513 13.3192 17.0962C13.1743 16.941 13.0993 16.7654 13.0942 16.5692C13.0891 16.3731 13.1641 16.1975 13.3192 16.0423L16.6116 12.75Z"/>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </section>
+                            <section class="singleHome-infoblock singleHome-description">
+                                <div class="singleHome-titleBlock">Расположение</div>
+                                <div class="singleHome-description_address">
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <mask id="mask0_386_42095" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                                <rect width="20" height="20" fill="#D9D9D9"></rect>
+                                            </mask>
+                                            <g mask="url(#mask0_386_42095)">
+                                                <path d="M10 16.2611C11.6303 14.8017 12.8779 13.4019 13.7428 12.0616C14.6076 10.7213 15.0401 9.54745 15.0401 8.53996C15.0401 7.02074 14.5574 5.77181 13.5921 4.79317C12.6269 3.81453 11.4295 3.32521 10 3.32521C8.57052 3.32521 7.37313 3.81453 6.40786 4.79317C5.44258 5.77181 4.95994 7.02074 4.95994 8.53996C4.95994 9.54745 5.39236 10.7213 6.25721 12.0616C7.12207 13.4019 8.36967 14.8017 10 16.2611ZM10 17.4502C9.83761 17.4502 9.67522 17.4221 9.51284 17.3661C9.35045 17.31 9.20354 17.2232 9.07213 17.1056C8.32428 16.4166 7.6245 15.7069 6.97279 14.9767C6.32109 14.2464 5.75458 13.5165 5.27327 12.7868C4.79197 12.0571 4.41109 11.3338 4.13065 10.6169C3.85019 9.90001 3.70996 9.2077 3.70996 8.53996C3.70996 6.61691 4.33202 5.06002 5.57615 3.86931C6.82026 2.67861 8.29488 2.08325 10 2.08325C11.7051 2.08325 13.1797 2.67861 14.4239 3.86931C15.668 5.06002 16.29 6.61691 16.29 8.53996C16.29 9.2077 16.1498 9.89868 15.8694 10.6129C15.5889 11.3271 15.2094 12.0504 14.7307 12.7828C14.2521 13.5151 13.6869 14.2451 13.0352 14.9727C12.3835 15.7002 11.6837 16.4085 10.9359 17.0976C10.8064 17.2152 10.6592 17.3033 10.4944 17.3621C10.3296 17.4208 10.1648 17.4502 10 17.4502ZM10.0014 9.88771C10.4161 9.88771 10.7706 9.74007 11.0649 9.44479C11.3592 9.14952 11.5064 8.79455 11.5064 8.3799C11.5064 7.96525 11.3588 7.61075 11.0635 7.31642C10.7682 7.02209 10.4132 6.87492 9.99859 6.87492C9.58393 6.87492 9.22944 7.02256 8.93511 7.31784C8.64077 7.61311 8.49361 7.96808 8.49361 8.38273C8.49361 8.79738 8.64125 9.15188 8.93652 9.44621C9.2318 9.74055 9.58677 9.88771 10.0014 9.88771Z" fill="#969696"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <p>Ленинградская обл., Всеволожский муниципальный р-н, Щегловское сельское поселение, в районе дер. Плинтовка, ПК «Всеволожский», уч. 260</p>
+                                </div>
+                                <section class="singleHome-map map" data-map-id="map425" data-address="Ленинградская обл., Всеволожский муниципальный р-н, Щегловское сельское поселение, в районе дер. Плинтовка, ПК «Всеволожский», уч. 260">
+                                    <div id="map"></div>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+@@include('modules/footer.html')

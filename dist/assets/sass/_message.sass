@@ -1,0 +1,89 @@
+@import colors
+@import mixins
+
+.message
+    &-container
+        padding: 0
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        @media screen and ( max-width: 768px )
+            grid-template-columns: repeat(1, 1fr)
+        @media screen and ( max-width: 500px )
+            grid-template-columns: repeat(1, 1fr)
+    &-video
+        position: relative
+        .video
+            &-preview
+                position: relative
+                z-index: 1
+                img,
+                video
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            &-play
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                display: flex
+                align-items: center
+                justify-content: center
+                a
+                    position: relative
+                    top: 100px
+                    opacity: 0
+                    transition: top .4s, opacity .5s
+                &:hover
+                    a
+                        top: 0
+                        opacity: 1
+    &-messageContainer
+        position: relative
+        min-height: 400px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 40px 120px
+        @media screen and ( max-width: 768px )
+            padding: 20px 32px
+        @media screen and ( max-width: 500px )
+            padding: 40px 40px
+    &-text
+        position: relative
+        &::before
+            content: ''
+            background-image: url('../img/icons/format_quote.svg')
+            width: 200px
+            height: 200px
+            background-size: cover
+            background-repeat: no-repeat
+            position: absolute
+            z-index: 0
+            top: -100px
+            left: -100px
+        p
+            position: relative
+            z-index: 1
+            text-wrap: balance
+    &-autograph
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        width: 100%
+        position: relative
+        top: 40px
+        height: 0
+        p
+            margin-bottom: 0
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+        img
+            margin-top: 12px
+            width: 120px
+            height: auto

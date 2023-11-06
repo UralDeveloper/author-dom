@@ -1,0 +1,505 @@
+@import colors
+@import mixins
+
+.personalArea_manager
+.personalArea
+    &-clientsList
+        display: flex
+        flex-direction: column
+        gap: 12px
+        &-item
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            padding: 28px 40px
+            gap: 24px
+            border-radius: 20px
+            background-color: #fff
+            @media screen and ( max-width: 1024px )
+                grid-template-columns: repeat(2, 1fr)
+            @media screen and ( max-width: 500px )
+                grid-template-columns: repeat(1, 1fr)
+            &_name
+                a
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 1.3em
+                    text-decoration: none
+                    color: $mainBlack
+                    &:hover
+                        color: $mainBlue
+            &_phone
+                a
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+                    color: #969696
+                    text-decoration: none
+                    &:hover
+                        color: $mainBlue
+            &_status
+                display: flex
+                align-items: center
+                gap: 8px
+                font-size: 12px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+    &-clientPage
+        .cpObject
+            &-content_pane
+                margin-top: 20px
+            &-mainInfo
+                margin-top: 0
+        &-header
+            border-bottom: 1px solid #d9d9d9
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            width: 100%
+            gap: 16px 0
+            border-bottom: 1px solid #D9D9D9
+            padding-bottom: 24px
+            h1
+                font-size: 28px
+                font-style: normal
+                font-weight: 700
+                line-height: 1.3em
+                margin-bottom: 0
+            &_phone
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: flex-end
+                a
+                    font-size: 20px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 1.3em
+                    text-decoration: none
+                    color: $mainBlack
+                    transition: color .3s
+                    &:hover
+                        color: $mainBlue
+        &-clientInfo
+            display: flex
+            padding: 28px 40px
+            flex-direction: column
+            align-items: flex-start
+            gap: 0
+            background-color: #fff
+            border-radius: 20px
+        &-tab
+            margin-top: 24px
+            .nav
+                gap: 40px
+                &-item
+                &-link
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+                    color: $mainGray
+                    border-bottom: 2px solid transparent
+                    border-radius: 0
+                    padding: 0 0 12px
+                    &.active
+                        color: $mainBlue
+                        background-color: transparent
+                        border-color: $mainBlue
+        &-title
+            background-color: #fff
+            padding: 28px 40px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 16px
+            border-radius: 20px
+            .title
+                font-size: 28px
+                font-style: normal
+                font-weight: 700
+                line-height: 1.3em
+            .address
+                font-size: 12px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                color: #969696
+
+.passedTests
+    &-wrapper
+        display: flex
+        padding: 28px 40px
+        flex-direction: column
+        align-items: flex-start
+        gap: 24px
+        border-radius: 20px
+        background: #fff
+        h3
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+            color: $mainBlack
+    &-resultList
+        display: flex
+        padding: 12px 20px
+        justify-content: space-between
+        align-items: center
+        align-self: stretch
+        gap: 20px
+        width: clamp(280px, 100%, 400px)
+        @media screen and ( max-width: 768px )
+            flex-direction: column
+    &-list
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 12px
+        align-self: stretch
+    &-item
+        display: flex
+        padding: 12px 20px
+        justify-content: space-between
+        align-items: center
+        align-self: stretch
+        border-bottom: 1px solid #D9D9D9
+        flex-wrap: wrap
+        position: relative
+    &-name
+        color: $mainBlack
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        flex: 1
+        a
+            color: $mainBlack
+            text-decoration: none
+            &:hover
+                color: $mainBlue
+    &-result
+        color: #969696
+        font-size: 16px
+        font-style: normal
+        font-weight: 600
+        line-height: normal
+        flex: 1
+    &-date
+        color: #969696
+        font-size: 12px
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        flex: 1
+    &-status
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        gap: 8px
+        font-size: 12px
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        flex: 1
+
+.newTests
+    &-wrapper
+        display: flex
+        padding: 28px 40px
+        flex-direction: column
+        align-items: flex-start
+        gap: 24px
+        border-radius: 20px
+        background: #fff
+        margin-top: 20px
+    &-list
+        width: 100%
+    &-item
+        width: 100%
+        display: flex
+        padding: 12px 20px
+        justify-content: space-between
+        align-items: center
+        gap: 40px
+        border-bottom: 1px solid #D9D9D9
+        position: relative
+    &-start
+        @include btn()
+        @include btn_blue()
+        padding: 8px 32px
+        svg
+            fill: #fff
+        &:hover
+            svg
+                fill: $mainBlue
+    &-name
+        flex: 2
+        position: relative
+        a
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            color: $mainBlack
+            text-decoration: none
+            &:hover
+                color: $mainBlue
+    &-options
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex: 1
+    &-countQuestions
+    &-time
+
+.personalArea
+    &-personalInfo
+        &-income
+            padding: 28px 40px
+            display: flex
+            flex-direction: column
+            gap: 24px
+            border-radius: 20px
+            background-color: #fff
+            h3
+                font-size: 16px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+            &-chart
+                display: flex
+                flex-direction: column
+                &-titles,
+                &-values
+                    display: none
+            &-total
+                display: flex
+                flex-direction: column
+                gap: 12px
+                align-items: flex-start
+        &-profile
+            padding: 28px 40px
+            display: grid
+            grid-template-columns: 280px 1fr
+            gap: 40px
+            background-color: #fff
+            border-radius: 20px
+            @media screen and ( max-width: 768px )
+                grid-template-columns: 1fr
+            &_avatar
+                border-radius: 20px
+                width: clamp(280px, 100%, 292px)
+                overflow: hidden
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    object-position: center
+            &_bio
+                width: 100%
+                display: flex
+                flex-direction: column
+                gap: 20px
+            &_header
+                display: flex
+                align-items: center
+                gap: 20px
+                align-self: stretch
+                justify-content: space-between
+                border-bottom: 1px solid #D9D9D9
+                padding-bottom: 20px
+                h3
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: normal
+                    margin-bottom: 0
+                a
+                    @include btn()
+                    @include btn_blue()
+                    padding: 8px 32px
+            &_fields
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 20px
+                .form
+                    &-floating
+                    &-control
+                        padding: 12px 15px
+                        align-items: center
+                        gap: 10px
+                        border-radius: 12px
+                        background-color: #F7F7F5
+        &-achievements
+            padding: 28px 40px
+            display: flex
+            flex-direction: column
+            gap: 24px
+            border-radius: 20px
+            background-color: #fff
+            margin-top: 20px
+            h3
+                font-size: 16px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+            &-list
+                display: flex
+                flex-direction: column
+                gap: 20px
+                a
+                    @include btn()
+                    @include btn_blue()
+                    padding: 8px 32px
+                    svg
+                        fill: #fff
+                    &:hover
+                        svg
+                            fill: $mainBlue
+            &-item
+                display: flex
+                align-items: center
+                justify-content: space-between
+                gap: 40px
+                align-self: stretch
+                padding-bottom: 20px
+                &:not(:nth-last-child(1))
+                    border-bottom: 1px solid #D9D9D9
+                &_icon
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 60px
+                    height: 60px
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: contain
+                        object-position: center
+                &_title
+                    flex: 2
+                    p
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: normal
+                        margin-bottom: 0
+                &_description
+                    flex: 2
+                    p
+                        font-size: 12px
+                        font-style: normal
+                        font-weight: 500
+                        line-height: normal
+                        color: #969696
+                        margin-bottom: 0
+                &_date
+                    flex: 1
+                    p
+                        font-size: 12px
+                        font-style: normal
+                        font-weight: 500
+                        line-height: normal
+                        color: #969696
+                        margin-bottom: 0
+                        text-align: right
+    &-profile
+        &_summary
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 20px
+            padding: 20px 0
+            @media screen and ( max-width: 768px )
+                grid-template-columns: repeat(2, 1fr)
+            @media screen and ( max-width: 500px )
+                grid-template-columns: repeat(1, 1fr)
+            &-item
+                display: flex
+                flex-direction: column
+                padding: 20px
+                align-items: flex-start
+                justify-content: space-between
+                gap: 12px
+                background-color: #fff
+                border-radius: 20px
+                .name
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+                .value
+                    font-size: 28px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 1.3em
+                    text-transform: uppercase
+                    span
+                        font-size: 16px
+                &.income
+                    background-color: $mainBlue
+                    color: #fff
+                    .name
+                        color: #fff
+                    .value
+                        color: #fff
+#income_collapse
+    width: 100%
+    .d-flex.align-items-start
+        gap: 20px
+    .nav-pills
+        flex: 1
+        gap: 12px
+        button
+            display: flex
+            padding: 12px 16px
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            border-radius: 12px
+            background-color: #F9F9F9
+            color: $mainBlack
+            width: 100%
+            flex: 1
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+            &.active
+                border: 1px solid $mainBlue
+                background-color: #fff
+                color: $mainBlack
+    .tab-content
+        width: 100%
+        flex: 6
+    .income_list
+        display: flex
+        flex-direction: column
+        gap: 12px
+        width: 100%
+        &-item
+            display: flex
+            padding: 12px 20px
+            justify-content: space-between
+            align-items: center
+            align-self: stretch
+            width: 100%
+            &:not(:nth-last-child(1))
+                border-bottom: 1px solid #D9D9D9
+            &_name
+                flex: 2
+            &_amountOfDeals
+                flex: 1
+            &_value
+                flex: 1
+                text-align: right
+.income_btn
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 12px
+    align-self: stretch
+    background: none
+    border: none

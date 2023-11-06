@@ -1,0 +1,118 @@
+@import colors
+@import mixins
+
+#credit
+    padding-top: 60px
+
+.credit
+    &-title
+        max-width: 960px
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 0 auto
+        h1
+            font-family: Inter
+            font-size: 28px
+            font-style: normal
+            font-weight: 700
+            line-height: 1.3em
+            text-transform: uppercase
+        p
+            text-align: center
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            text-wrap: balance
+    &-info
+        display: grid
+        grid-template-columns: 300px 1fr
+        grid-gap: 80px
+        max-width: 960px
+        margin: 0 auto
+        padding: 60px 0
+        &_list
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            gap: 24px
+        &_item
+            display: grid
+            grid-template-columns: 50px 1fr
+            grid-gap: 20px
+            align-items: center
+            span
+                font-size: 18px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+    &-banks
+        &_list
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+            grid-gap: 20px
+        &_item
+            border: 1px solid #D9D9D9
+            border-radius: 40px
+            padding: 40px 40px
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            gap: 40px
+            &-logo
+                img
+                    width: 100%
+        &_info
+            &-item
+                // .item_row
+                padding: 14px 0
+                border-bottom: 1px solid #E4E3E3
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                &:nth-last-child(1)
+                    border-bottom: none
+                @media screen and ( max-width: 420px )
+                    flex-direction: column
+                    align-items: flex-start
+                    gap: 8px
+                span
+                    &.title
+                        color: $mainGray
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: normal
+                    &.desc
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: normal
+                        &.blue
+                            color: $mainBlue
+                &_multiple
+                    flex-direction: column
+                    gap: 8px
+                    .item_row
+                        display: flex
+                        flex-direction: row
+                        justify-content: space-between
+                        @media screen and ( max-width: 420px )
+                            flex-direction: column
+                            align-items: flex-start
+                            gap: 8px
+                        span
+                            &.title
+                                color: $mainGray
+                                font-size: 14px
+                                font-style: normal
+                                font-weight: 600
+                                line-height: normal
+                            &.desc
+                                font-size: 16px
+                                font-style: normal
+                                font-weight: 600
+                                line-height: normal
+                                color: $mainBlue
