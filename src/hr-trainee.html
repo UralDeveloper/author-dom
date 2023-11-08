@@ -1,0 +1,103 @@
+@@include('modules/header.html')
+<div class="personalArea">
+    <div class="container">
+        <div class="personalArea-sidebar">
+            @@include('modules/hr-sidebar.html')
+        </div>
+        <div class="personalArea-personalInfo">
+            <div class="accordion hr_managers-list" id="accordionExample">
+                <div class="accordion-item hr_managers-item">
+                    <div class="accordion-header">
+                        <div class="accordion-button collapsed hr_managers-item_row" type="button" data-bs-toggle="collapse" data-bs-target="#manager_id_1" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="hr_managers-item_bio">
+                                <div class="hr_managers-item_photo">
+                                    <img src="@img/avatar.png" alt="">
+                                </div>
+                                <div class="hr_managers-item_name">
+                                    <p>Ревчеев Александр Сергеевич </p>
+                                </div>
+                            </div>
+                            <div class="hr_managers-item_email">
+                                <span>dlinnayapochtaeshe-jeioe@mail.ru</span>
+                            </div>
+                            <div class="hr_managers-item_phone">
+                                <span>+7 (999) 999-99-99</span>
+                            </div>
+                            <div class="hr_managers-item_department">
+                                <span>Готовые дома</span>
+                            </div>
+                            <div class="hr_managers-item_load">
+                                <span>200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="manager_id_1" class="accordion-collapse collapse hr_managers-item_collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body hr_managers-item_body">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="pills-clients-tab" data-bs-toggle="pill" data-bs-target="#pills-clients" type="button" role="tab" aria-controls="pills-clients" aria-selected="true">Клиенты</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-testing-tab" data-bs-toggle="pill" data-bs-target="#pills-testing" type="button" role="tab" aria-controls="pills-testing" aria-selected="false">Тестирование</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-personalData-tab" data-bs-toggle="pill" data-bs-target="#pills-personalData" type="button" role="tab" aria-controls="pills-personalData" aria-selected="false">Личные данные</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-income-tab" data-bs-toggle="pill" data-bs-target="#pills-income" type="button" role="tab" aria-controls="pills-income" aria-selected="false">Доходы</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-clients" role="tabpanel" aria-labelledby="pills-clients-tab" tabindex="0">
+                                    @@include('modules/hr-tabs/pills-clients.html')
+                                </div>
+                                <div class="tab-pane fade" id="pills-testing" role="tabpanel" aria-labelledby="pills-testing-tab" tabindex="0">
+                                    @@include('modules/hr-tabs/pills-passedTests.html')
+                                </div>
+                                <div class="tab-pane fade" id="pills-personalData" role="tabpanel" aria-labelledby="pills-personalData-tab" tabindex="0">
+                                    <div class="tab_bio personalArea-personalInfo-profile_fields">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputValue_fio" placeholder="" value="">
+                                            <label for="floatingInputValue_fio">ФИО</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="floatingInputValue_phone" placeholder="+7 999 888 8888" value="">
+                                            <label for="floatingInputValue_phone">Телефон</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="floatingInputValue_email" placeholder="E-mail" value="">
+                                            <label for="floatingInputValue_email">E-mail</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <select class="form-control form-select" aria-label="Default select example">
+                                                <option selected>Выберите должность</option>
+                                                <option value="1">Менеджер</option>
+                                                <option value="2">Стажер</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-floating">
+                                            <select class="form-control form-select" aria-label="Default select example">
+                                                <option selected>Выберите должность</option>
+                                                <option value="1">Готовые дома</option>
+                                                <option value="2">Строительство</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="date" class="form-control" id="floatingInputValue_date" placeholder="01.01.0001" value="">
+                                            <label for="floatingInputValue_date">Дата рождения</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-income" role="tabpanel" aria-labelledby="pills-income-tab" tabindex="0">
+                                    @@include('modules/hr-tabs/pills-income_chart.html')
+                                    @@include('modules/hr-tabs/pills-income.html')
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('modules/footer.html')

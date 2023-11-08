@@ -1,0 +1,72 @@
+<div class="tab_clientsList">
+    <input type="text" name="#searchInput" id="searchInput" placeholder="Поиск">
+    <div class="tab_clientsList-wrapper">
+        <div class="tab_clientsList-item">
+            <div class="tab_clientsList-item_name">Иванов Иван Иванович</div>
+            <div class="tab_clientsList-item_meta">
+                <div class="tab_clientsList-item_phone">+7 (888) 999-99-99</div>
+                <div class="tab_clientsList-item_project">Длинное название проекта</div>
+                <div class="tab_clientsList-item_status">
+                    <img src="@img/icons/expectation.svg" alt="expectation">
+                    проверка документов
+                </div>
+            </div>
+        </div>
+        <div class="tab_clientsList-item">
+            <div class="tab_clientsList-item_name">Семен Иван Иванович</div>
+            <div class="tab_clientsList-item_meta">
+                <div class="tab_clientsList-item_phone">+7 (777) 999-99-99</div>
+                <div class="tab_clientsList-item_project">Кассис</div>
+                <div class="tab_clientsList-item_status">
+                    <img src="@img/icons/status_done.svg" alt="expectation">
+                    Завершен
+                </div>
+            </div>
+        </div>
+        <div class="tab_clientsList-item">
+            <div class="tab_clientsList-item_name">Петр Иван Иванович</div>
+            <div class="tab_clientsList-item_meta">
+                <div class="tab_clientsList-item_phone">+7 (444) 999-99-99</div>
+                <div class="tab_clientsList-item_project">Кассис</div>
+                <div class="tab_clientsList-item_status">
+                    <img src="@img/icons/status_done.svg" alt="expectation">
+                    Завершен
+                </div>
+            </div>
+        </div>
+        <div class="tab_clientsList-item">
+            <div class="tab_clientsList-item_name">Иван Иван Иванович</div>
+            <div class="tab_clientsList-item_meta">
+                <div class="tab_clientsList-item_phone">+7 (999) 999-99-99</div>
+                <div class="tab_clientsList-item_project">Кассис</div>
+                <div class="tab_clientsList-item_status">
+                    <img src="@img/icons/status_done.svg" alt="expectation">
+                    Завершен
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+function searchClients(input) {
+  var searchValue = input.value.toLowerCase();
+  var clients = document.querySelectorAll(".tab_clientsList-item");
+  
+  clients.forEach(function(client) {
+    var name = client.querySelector(".tab_clientsList-item_name").textContent.toLowerCase();
+    var phone = client.querySelector(".tab_clientsList-item_phone").textContent.toLowerCase();
+    var project = client.querySelector(".tab_clientsList-item_project").textContent.toLowerCase();
+    
+    if (name.includes(searchValue) || phone.includes(searchValue) || project.includes(searchValue)) {
+      client.style.display = "flex";
+    } else {
+      client.style.display = "none";
+    }
+  });
+}
+
+var searchInput = document.querySelector("#searchInput");
+searchInput.addEventListener("input", function() {
+  searchClients(this);
+});
+</script>

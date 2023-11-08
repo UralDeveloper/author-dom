@@ -1,0 +1,236 @@
+@import colors
+@import mixins
+
+
+.hr_managers
+    &-list
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 20px
+    &-item
+        padding: 28px 40px
+        gap: 24px
+        border-radius: 20px
+        &:first-of-type,
+        &:last-of-type
+            border-radius: 20px
+        &_row
+            display: grid
+            grid-template-columns: 280px 1.2fr 1fr 1fr 0.5fr
+            gap: 20px
+            padding: 0
+            &:not(.collapsed)
+                background: none
+                box-shadow: none
+            &::after
+                display: none !important
+        &_bio
+            display: grid
+            grid-template-columns: 80px 1fr
+            gap: 20px
+            align-items: center
+        &_photo
+            width: 80px
+            height: 80px
+            border-radius: 92px
+            overflow: hidden
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: center
+        &_name
+            p
+                margin-bottom: 0
+                font-size: 16px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                color: $mainBlack
+        &_email
+            text-align: center
+            span
+                font-size: 12px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                color: $mainBlack
+        &_phone
+            text-align: center
+            span
+                font-size: 12px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                color: $mainBlack
+        &_department
+            text-align: center
+            span
+                font-size: 12px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                color: $mainBlack
+        &_load
+            text-align: center
+            span
+                font-size: 12px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                color: $mainBlack
+        &_body
+            padding: 0
+            padding-top: 20px
+            margin-top: 20px
+            border-top: 1px solid #D9D9D9
+            .nav
+                gap: 40px
+                &-link
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+                    color: #969696
+                    border-bottom: 2px solid transparent
+                    border-radius: 0
+                    padding: 0 0 12px
+                    &.active
+                        color: $mainBlue
+                        background-color: transparent
+                        border-color: $mainBlue
+
+.tab_clientsList
+    display: flex
+    flex-direction: column
+    gap: 20px
+    margin-top: 32px
+    input
+        padding: 12px 15px
+        align-items: center
+        width: clamp(280px, 100%, 400px)
+        gap: 10px
+        border-radius: 12px
+        background: #F7F7F5
+        border: none
+    &-wrapper
+        display: flex
+        flex-direction: column
+    &-item
+        display: flex
+        padding: 12px 0
+        justify-content: space-between
+        align-items: center
+        gap: 20px
+        align-self: stretch
+        &:not(:nth-last-child(1))
+            border-bottom: 1px solid #D9D9D9
+        &_name
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+        &_meta
+            display: grid
+            grid-template-columns: 160px 140px 200px
+            gap: 20px
+            align-items: center
+        &_phone
+            font-size: 12px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+        &_project
+            font-size: 12px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            color: #969696
+        &_status
+            font-size: 12px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            display: flex
+            align-items: center
+            gap: 8px
+
+.tab_passedTests
+    .passedTests
+        &-wrapper
+            padding: 0
+            margin-top: 32px
+        &-item
+            padding: 0
+
+.tab_rating
+    display: flex
+    padding: 20px
+    justify-content: space-between
+    align-items: flex-end
+    border-radius: 20px
+    background: #F6FAFF
+    margin: 20px 0
+    &-item
+        display: flex
+        flex-direction: column
+        gap: 12px
+        &_title
+            span
+                color: #969696
+                font-size: 16px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+        &_value
+            font-size: 28px
+            font-style: normal
+            font-weight: 700
+            line-height: 1.3em
+            text-transform: uppercase
+    &-button
+        button,
+        a
+            @include btn()
+            @include btn_blue()
+            padding: 12px 36px
+            svg
+                fill: #fff
+            &:hover
+                svg
+                    fill: $mainBlue
+
+.tab_income
+    display: grid
+    grid-template-columns: 1fr 2fr
+    gap: 40px
+    margin: 20px 0
+    .personalArea
+        &-profile
+            &_summary
+                grid-template-columns: 1fr
+                &-item
+                    &.income
+                        background-color: #F6FAFF
+                        span
+                            color: $mainBlack
+.tab_bio
+    margin: 20px 0
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 20px
+    .form
+        &-select
+            padding-top: 12px !important
+            padding-bottom: 12px !important
+        &-floating
+        &-control
+            padding: 12px 15px
+            align-items: center
+            gap: 10px
+            border-radius: 12px
+            background-color: #F7F7F5
