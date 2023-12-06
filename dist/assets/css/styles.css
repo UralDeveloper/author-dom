@@ -8708,6 +8708,64 @@ body {
   background-color: #F7F7F5;
 }
 
+.appoint-header {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 28px 40px;
+}
+
+.appoint-header h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3em;
+  margin-bottom: 0;
+}
+
+.appoint-nav {
+  padding: 0;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #D9D9D9;
+}
+
+.appoint-nav .nav {
+  gap: 40px;
+}
+
+.appoint-nav .nav-link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #969696;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 0 0 12px;
+}
+
+.appoint-nav .nav-link.active {
+  color: #4a92fe;
+  background-color: transparent;
+  border-color: #4a92fe;
+}
+
+.appoint-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 28px 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 20px;
+  background: #fff;
+  margin-top: 20px;
+}
+
 @keyframes pulse {
   0% {
     -webkit-transform: scale(1);

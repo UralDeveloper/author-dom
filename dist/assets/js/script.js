@@ -511,41 +511,46 @@ step_3.forEach((element) => {
 // 	}
 // })
 
+if (document.querySelector('#select_manager')) {
+  $('#select_manager').select2()
+}
 
-// Получаем элемент с данными о месяцах и значениях доходов
-const manager_income_titles = document.querySelector('.personalArea-personalInfo-income-chart-titles').innerText.split(',');
-const manager_income_values = document.querySelector('.personalArea-personalInfo-income-chart-values').innerText.split(',');
+if (document.getElementById('incomeChart')) {
+  // Получаем элемент с данными о месяцах и значениях доходов
+  const manager_income_titles = document.querySelector('.personalArea-personalInfo-income-chart-titles').innerText.split(',');
+  const manager_income_values = document.querySelector('.personalArea-personalInfo-income-chart-values').innerText.split(',');
 
-// Создаем canvas элемент
-const canvas = document.getElementById('incomeChart');
+  // Создаем canvas элемент
+  const canvas = document.getElementById('incomeChart');
 
-// Создаем график
-const manager_income_ctx = canvas.getContext('2d');
-const manager_income_chart = new Chart(manager_income_ctx, {
-    type: 'line',
-    data: {
-        labels: manager_income_titles,
-        datasets: [{
-            label: 'Доход',
-            data: manager_income_values,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1,
-            fill: true,
-            tension: 0.3
-        }]
-    },
-    options: {
-        plugins: {
-            legend: {
-                display: false
-            }
-        },
-        responsive: true,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
+  // Создаем график
+  const manager_income_ctx = canvas.getContext('2d');
+  const manager_income_chart = new Chart(manager_income_ctx, {
+      type: 'line',
+      data: {
+          labels: manager_income_titles,
+          datasets: [{
+              label: 'Доход',
+              data: manager_income_values,
+              backgroundColor: 'rgba(54, 162, 235, 0.2)',
+              borderColor: 'rgba(54, 162, 235, 1)',
+              borderWidth: 1,
+              fill: true,
+              tension: 0.3
+          }]
+      },
+      options: {
+          plugins: {
+              legend: {
+                  display: false
+              }
+          },
+          responsive: true,
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+}
